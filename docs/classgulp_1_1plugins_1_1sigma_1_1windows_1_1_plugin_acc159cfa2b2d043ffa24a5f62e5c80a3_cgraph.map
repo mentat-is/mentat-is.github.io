@@ -1,0 +1,11 @@
+<map id="pipeline" name="pipeline">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,79,85"/>
+<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#a0e422abddcbb67f93856a6f754cbfef7" title=" " alt="" coords="127,49,340,94"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,68,111,68,111,74,79,74"/>
+<area shape="rect" id="Node000003" href="$classgulp_1_1plugin_1_1_plugin_base.html#adafcb65c64ccf4cd7aa243765c95cc92" title=" " alt="" coords="388,5,602,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,47,407,34,408,39,341,53"/>
+<area shape="rect" id="Node000004" href="$classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="390,57,600,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="340,68,374,68,374,74,340,74"/>
+<area shape="rect" id="Node000005" href="$classgulp_1_1plugins_1_1csv_1_1_plugin.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="390,109,600,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="341,90,408,103,407,108,340,95"/>
+</map>

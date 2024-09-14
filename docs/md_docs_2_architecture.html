@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta name="generator" content="Doxygen 1.12.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- BEGIN opengraph metadata -->
+        <meta property="og:title" content="gULP! Documentation" />
+        <meta
+            property="og:image"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta
+            property="og:description"
+            content="Custom CSS theme for doxygen html-documentation with lots of customization parameters."
+        />
+        <meta
+            property="og:url"
+            content="https://github.com/rcskunkworks/gulp"
+        />
+        <!-- END opengraph metadata -->
+        <!-- BEGIN twitter metadata -->
+        <meta
+            name="twitter:image:src"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta name="twitter:title" content="Mentat" />
+        <meta name="twitter:description" content="mentat.is" />
+        <!-- END twitter metadata -->
+        <title>(g)ULP!: Architecture</title>
+        <link href="tabs.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-darkmode-toggle.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-fragment-copy-button.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-paragraph-link.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-interactive-toc.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-tabs.js"
+        ></script>
+        <script type="text/javascript">
+            DoxygenAwesomeFragmentCopyButton.init();
+            DoxygenAwesomeDarkModeToggle.init();
+            DoxygenAwesomeParagraphLink.init();
+            DoxygenAwesomeInteractiveToc.init();
+            DoxygenAwesomeTabs.init();
+        </script>
+        </script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+ <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
+        <a
+            href="https://github.com/rcskunkworks/gulp"
+            class="github-corner"
+            title="View source on GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <svg
+                viewBox="0 0 250 250"
+                width="40"
+                height="40"
+                style="
+                    position: absolute;
+                    top: 0;
+                    border: 0;
+                    right: 0;
+                    z-index: 99;
+                "
+                aria-hidden="true"
+            >
+                <path
+                    d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
+                ></path>
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor"
+                    style="transform-origin: 130px 106px"
+                    class="octo-arm"
+                ></path>
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor"
+                    class="octo-body"
+                ></path></svg
+        ></a>
+        <style>
+            .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
+            @keyframes octocat-wave {
+                0%,
+                100% {
+                    transform: rotate(0);
+                }
+                20%,
+                60% {
+                    transform: rotate(-25deg);
+                }
+                40%,
+                80% {
+                    transform: rotate(10deg);
+                }
+            }
+            @media (max-width: 500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none;
+                }
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out;
+                }
+            }
+        </style>
+        <div id="top">
+            <!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 56px">
+                            <td id="projectalign" style="padding-left: 0.5em">
+                                <div id="projectname">
+                                    (g)ULP!
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+        </div>
+    </body>
+</html>
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('md_docs_2_architecture.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Architecture</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul>
+  <li class="level1">
+    <a href="#autotoc_md3">Introduction</a>
+    <ul>
+      <li class="level2">
+        <a href="#autotoc_md4">GULP architecture</a>
+        <ul>
+          <li class="level3">
+            <a href="#autotoc_md5">Plugins</a>
+            <ul>
+              <li class="level4">
+                <a href="#autotoc_md6">Mapping files</a>
+              </li>
+            </ul>
+          </li>
+          <li class="level3">
+            <a href="#autotoc_md7">API</a>
+            <ul>
+              <li class="level4">
+                <a href="#autotoc_md8">API flow</a>
+              </li>
+              <li class="level4">
+                <a href="#autotoc_md9">Websocket</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md3"></a>
+Introduction</h1>
+<p>In the following document there's a high level overview of GULP's architecture.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+GULP architecture</h2>
+<p>TLDR :)</p>
+<center><pre class="mermaid">
+flowchart LR
+gulp[gULP
+  main
+  API server]
+
+collab[(PostgreSQL
+  collaboration DB)]
+
+extension_plugin[ExtensionPlugins
+  i.e. extend API,
+    add functionality,
+    whatever...]
+
+data_plugin[IngestionPlugins
+  parse events]
+
+sigma_plugin[SigmaPlugins
+  converts Sigma YAML
+  to
+  Lucene DSL
+]
+
+opensearch[(OpenSearch
+  data)]
+
+gulp &lt;--&gt;|users,
+  sessions,
+  operations,
+  clients,
+  glyph,
+  notes,
+  highlights,
+  links,
+  arbitrary shared data,
+  stored queries,
+  stats
+  | collab
+
+gulp &lt;--&gt;|startup| extension_plugin
+gulp &lt;--&gt;|ingest| data_plugin
+data_plugin&lt;-.ingest.-&gt;opensearch
+gulp &lt;--&gt;|query| sigma_plugin&lt;-.query.-&gt;opensearch
+gulp&lt;-.query raw (DSL),
+  query using simple filter.-&gt;opensearch
+</pre></center><p>All components are based on the <a href="https://github.com/mentat-is/muty-python">muty utility library</a></p>
+<center><pre class="mermaid">
+flowchart TB
+
+muty[muty
+  utilities &amp; primitives lib]
+
+muty&lt;-.-&gt;gULP
+muty&lt;-.-&gt;ExtensionPlugins
+muty&lt;-.-&gt;IngestionPlugins
+muty&lt;-.-&gt;SigmaPlugins
+</pre></center><h3><a class="anchor" id="autotoc_md5"></a>
+Plugins</h3>
+<p>all plugins conforms to the <a href="https://github.com/mentat-is/gulp/src/gulp/plugin.py">PluginBase</a> class.</p>
+<blockquote class="doxtable">
+<p>&zwj;<a href="https://github.com/mentat-is/gulp/Doxyfile">doxygen</a> documentation may be generated in the <code>./docs</code> directory, to ease browsing of plugin-related source code. To generate simply run <code>git submodule update --init --recursive &amp;&amp; doxygen</code> from inside the root of the cloned repository </p>
+</blockquote>
+<ul>
+<li><em>ingestion plugins</em> ingests events from different sources, i.e. <em>windows evtx, apache CLF</em>, ... creating documents on OpenSearch.<ul>
+<li>documents are created mapping each event field to the <a href="https://www.elastic.c/guide/en/ecs/current/index.html">ECS standard</a> as close as possible, resulting in ECS-compliant data stored in the OpenSearch index.</li>
+</ul>
+</li>
+<li><em>sigma plugins</em> leverages <a href="https://sigmahq-pysigma.readthedocs.io/en/latest/index.html">pysigma pipelines</a> to convert <a href="https://github.com/SigmaHQ/sigma">sigma rules</a> to <a href="https://www.opensearch.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">Lucene DSL queries</a> mapping the original rule fields to <em>ECS</em>.<ul>
+<li>to implement sigma plugins, look at the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/sigma/windows.py">windows sigma plugin</a>.</li>
+</ul>
+</li>
+<li><em>extension plugins</em> are loaded at startup and may extend API and add functionality. <blockquote class="doxtable">
+<p>&zwj;look at the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/extension/extension_example.py">extension_example</a> to see how they work (documentation inside). </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>&zwj;plugins may be stacked in a chain, as in the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked</a> plugin. </p>
+</blockquote>
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md6"></a>
+Mapping files</h4>
+<p>to customize mappings, plugins may use specifically crafted JSON files to be put in the <a href="https://github.com/mentat-is/gulp/src/gulp/ecs">ecs</a> directory.</p>
+<p>examples of such files and related API parameters may be found in the <a href="https://github.com/mentat-is/gulp/src/gulp/ecs">ecs</a> folder and in <a href="https://github.com/mentat-is/gulp/src/gulp/plugin_internal.py">plugin_internal_py</a>.</p>
+<p>for an extensive use of custom mapping, look at the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/csv.py">csv plugin</a>, which allows to ingest arbitrary CSV files with (<em>and also without</em>) mapping files.</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+API</h3>
+<p>Once you start gulp, the api is available via the <a href="http://localhost:8080/openapi.json">openapi</a> endpoint.</p>
+<h4><a class="anchor" id="autotoc_md8"></a>
+API flow</h4>
+<center><pre class="mermaid">
+sequenceDiagram
+  autonumber
+  participant client
+  participant gulp
+
+  client-&gt;&gt;gulp: login(user, password)
+  gulp--&gt;&gt;client: token
+  client-&gt;&gt;gulp: some_api(token, ...)
+  gulp--&gt;&gt;client: JSEND response
+</pre></center><p>users must be created first with an ADMIN account</p>
+<center><pre class="mermaid">
+sequenceDiagram
+  autonumber
+  participant client
+  participant gulp
+
+  client-&gt;&gt;gulp: login(admin, password)
+  gulp--&gt;&gt;client: token
+  client-&gt;&gt;gulp: user_create(token, ...)
+  gulp--&gt;&gt;client: JSEND response
+</pre></center><p>for ingestion, ingestion client must be created by admin user</p>
+<center><pre class="mermaid">
+sequenceDiagram
+  autonumber
+  participant client
+  participant gulp
+
+  client-&gt;&gt;gulp: login(admin, password)
+  gulp--&gt;&gt;client: token
+  client-&gt;&gt;gulp: client_create(token, ...)
+  gulp--&gt;&gt;client: JSEND response
+</pre></center><h4><a class="anchor" id="autotoc_md9"></a>
+Websocket</h4>
+<p>The endpoint <code>/ws</code> provides live feedback and results for <em>ingestion</em>, <em>queries</em> and <em>collaboration objects</em> via websocket:</p>
+<p><code>Make sure you pass a ws_id value as string</code></p>
+<center><pre class="mermaid">
+sequenceDiagram
+
+client-&gt;&gt;server: {"token": "...", "ws_id": "...", "types": [...]}
+server--&gt;&gt;client: { WsData }
+</pre></center><p>Response from the websocket is a <a href="./src/gulp/api/rest/ws.py">WsData</a> object like the following:</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">  // type can be one of the defined WsQueueDataType in gulp/api/rest/ws.py</div>
+<div class="line">  // it will be checked agains websocket parameter &quot;types&quot;, to send to the websocket only the types it is interested in (empty &quot;types&quot;=send all)</div>
+<div class="line">  &quot;type&quot;: 2,</div>
+<div class="line">  // data contains the object (GulpStats or CollabObject) itself</div>
+<div class="line">  &quot;data&quot;: {</div>
+<div class="line">    &quot;type&quot;: 5,</div>
+<div class="line">    &quot;req_id&quot;: &quot;099ff6b6-65fb-41aa-821f-d7fc9bd612c1&quot;,</div>
+<div class="line">    &quot;operation_id&quot;: 1,</div>
+<div class="line">    &quot;client_id&quot;: 1,</div>
+<div class="line">    &quot;context&quot;: &quot;testcontext&quot;,</div>
+<div class="line">    &quot;status&quot;: 0,</div>
+<div class="line">    &quot;time_created&quot;: 1720705375978,</div>
+<div class="line">    &quot;time_expire&quot;: 1720791775978,</div>
+<div class="line">    &quot;time_update&quot;: 1720705447966,</div>
+<div class="line">    &quot;time_end&quot;: 0,</div>
+<div class="line">    &quot;ev_failed&quot;: 3,</div>
+<div class="line">    &quot;ev_skipped&quot;: 1,</div>
+<div class="line">    &quot;ev_processed&quot;: 66602,</div>
+<div class="line">    &quot;files_processed&quot;: 23,</div>
+<div class="line">    &quot;files_total&quot;: 24,</div>
+<div class="line">    &quot;ingest_errors&quot;: {</div>
+<div class="line">      &quot;/home/gulp/gulp/samples/win_evtx/sample_with_a_bad_chunk_magic.evtx&quot;: [</div>
+<div class="line">        &quot;[/home/gulp/gulp/src/gulp/plugins/win_evtx.py:ingest:349] IndexError: list index out of range\n&quot;</div>
+<div class="line">      ],</div>
+<div class="line">      &quot;/home/gulp/gulp/samples/win_evtx/sysmon.evtx&quot;: [</div>
+<div class="line">        &quot;[/home/gulp/gulp/src/gulp/plugins/win_evtx.py:ingest:337] RuntimeError: Failed to parse chunk header\n&quot;</div>
+<div class="line">      ],</div>
+<div class="line">      &quot;/home/gulp/gulp/samples/win_evtx/security.evtx&quot;: [</div>
+<div class="line">        &quot;[/home/gulp/gulp/src/gulp/plugins/win_evtx.py:record_to_gulp_document:138]   File \&quot;&lt;string&gt;\&quot;, line 33\n[/home/gulp/gulp/src/gulp/plugins/win_evtx.py:record_to_gulp_document:138] lxml.etree.XMLSyntaxError: PCDATA invalid Char value 3, line 33, column 33\n&quot;</div>
+<div class="line">      ]</div>
+<div class="line">    },</div>
+<div class="line">    &quot;current_src_file&quot;: &quot;/home/gulp/gulp/samples/win_evtx/security_big_sample.evtx&quot;</div>
+<div class="line">  },</div>
+<div class="line">  &quot;req_id&quot;: &quot;...&quot;,</div>
+<div class="line">  // the caller username, if available</div>
+<div class="line">  &quot;username&quot;: null,</div>
+<div class="line">  &quot;timestamp&quot;: 1720705447975,</div>
+<div class="line">  &quot;ws_id&quot;: &quot;def&quot;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "dark",
+    });
+</script>

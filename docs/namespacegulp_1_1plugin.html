@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta name="generator" content="Doxygen 1.12.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- BEGIN opengraph metadata -->
+        <meta property="og:title" content="gULP! Documentation" />
+        <meta
+            property="og:image"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta
+            property="og:description"
+            content="Custom CSS theme for doxygen html-documentation with lots of customization parameters."
+        />
+        <meta
+            property="og:url"
+            content="https://github.com/rcskunkworks/gulp"
+        />
+        <!-- END opengraph metadata -->
+        <!-- BEGIN twitter metadata -->
+        <meta
+            name="twitter:image:src"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta name="twitter:title" content="Mentat" />
+        <meta name="twitter:description" content="mentat.is" />
+        <!-- END twitter metadata -->
+        <title>(g)ULP!: gulp.plugin Namespace Reference</title>
+        <link href="tabs.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-darkmode-toggle.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-fragment-copy-button.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-paragraph-link.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-interactive-toc.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-tabs.js"
+        ></script>
+        <script type="text/javascript">
+            DoxygenAwesomeFragmentCopyButton.init();
+            DoxygenAwesomeDarkModeToggle.init();
+            DoxygenAwesomeParagraphLink.init();
+            DoxygenAwesomeInteractiveToc.init();
+            DoxygenAwesomeTabs.init();
+        </script>
+        </script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+ <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
+        <a
+            href="https://github.com/rcskunkworks/gulp"
+            class="github-corner"
+            title="View source on GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <svg
+                viewBox="0 0 250 250"
+                width="40"
+                height="40"
+                style="
+                    position: absolute;
+                    top: 0;
+                    border: 0;
+                    right: 0;
+                    z-index: 99;
+                "
+                aria-hidden="true"
+            >
+                <path
+                    d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
+                ></path>
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor"
+                    style="transform-origin: 130px 106px"
+                    class="octo-arm"
+                ></path>
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor"
+                    class="octo-body"
+                ></path></svg
+        ></a>
+        <style>
+            .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
+            @keyframes octocat-wave {
+                0%,
+                100% {
+                    transform: rotate(0);
+                }
+                20%,
+                60% {
+                    transform: rotate(-25deg);
+                }
+                40%,
+                80% {
+                    transform: rotate(10deg);
+                }
+            }
+            @media (max-width: 500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none;
+                }
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out;
+                }
+            }
+        </style>
+        <div id="top">
+            <!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 56px">
+                            <td id="projectalign" style="padding-left: 0.5em">
+                                <div id="projectname">
+                                    (g)ULP!
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+        </div>
+    </body>
+</html>
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('namespacegulp_1_1plugin.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">gulp.plugin Namespace Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgulp_1_1plugin_1_1_plugin_base.html">PluginBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abb00832220a7a4b752ad4e752efdc946" id="r_abb00832220a7a4b752ad4e752efdc946"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb00832220a7a4b752ad4e752efdc946">_get_plugin_path</a> (str plugin, **kwargs)</td></tr>
+<tr class="separator:abb00832220a7a4b752ad4e752efdc946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01189de942f84e5d69c99d4e9ed054c7" id="r_a01189de942f84e5d69c99d4e9ed054c7"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01189de942f84e5d69c99d4e9ed054c7">get_plugin_tags</a> (str plugin)</td></tr>
+<tr class="separator:a01189de942f84e5d69c99d4e9ed054c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b74780046e4ade35e214c7f2926d02c" id="r_a0b74780046e4ade35e214c7f2926d02c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b74780046e4ade35e214c7f2926d02c">init</a> (logging.Logger logger)</td></tr>
+<tr class="separator:a0b74780046e4ade35e214c7f2926d02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af35dd01859f67f273a67cc0c774701" id="r_a5af35dd01859f67f273a67cc0c774701"><td class="memItemLeft" align="right" valign="top">list[dict]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af35dd01859f67f273a67cc0c774701">list_plugins</a> ()</td></tr>
+<tr class="separator:a5af35dd01859f67f273a67cc0c774701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b05fe36b952a46571666d228d193558" id="r_a9b05fe36b952a46571666d228d193558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgulp_1_1plugin_1_1_plugin_base.html">PluginBase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b05fe36b952a46571666d228d193558">load_plugin</a> (str plugin, AsyncEngine collab=None, AsyncElasticsearch elastic=None, **kwargs)</td></tr>
+<tr class="separator:a9b05fe36b952a46571666d228d193558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5c9184d00e49a445eb6b8f77ad60a3" id="r_a1c5c9184d00e49a445eb6b8f77ad60a3"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c5c9184d00e49a445eb6b8f77ad60a3">plugin_cache_add</a> (ModuleType m, str name)</td></tr>
+<tr class="separator:a1c5c9184d00e49a445eb6b8f77ad60a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714b6e278c22eb32907dd3d4afa0b56d" id="r_a714b6e278c22eb32907dd3d4afa0b56d"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a714b6e278c22eb32907dd3d4afa0b56d">plugin_cache_clear</a> ()</td></tr>
+<tr class="separator:a714b6e278c22eb32907dd3d4afa0b56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d88e1de40580ca31b2c05838fdfc03f" id="r_a8d88e1de40580ca31b2c05838fdfc03f"><td class="memItemLeft" align="right" valign="top">ModuleType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d88e1de40580ca31b2c05838fdfc03f">plugin_cache_get</a> (str plugin)</td></tr>
+<tr class="separator:a8d88e1de40580ca31b2c05838fdfc03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49455ddc351f40d6438de1a81a68d742" id="r_a49455ddc351f40d6438de1a81a68d742"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49455ddc351f40d6438de1a81a68d742">plugin_cache_remove</a> (str plugin)</td></tr>
+<tr class="separator:a49455ddc351f40d6438de1a81a68d742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e97ab32e715777b3ab97717986e594f" id="r_a0e97ab32e715777b3ab97717986e594f"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e97ab32e715777b3ab97717986e594f">unload_plugin</a> (<a class="el" href="classgulp_1_1plugin_1_1_plugin_base.html">PluginBase</a> mod)</td></tr>
+<tr class="separator:a0e97ab32e715777b3ab97717986e594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a928d8794fba69c8e585a9de2d20d5465" id="r_a928d8794fba69c8e585a9de2d20d5465"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a928d8794fba69c8e585a9de2d20d5465">_cache</a> = {}</td></tr>
+<tr class="separator:a928d8794fba69c8e585a9de2d20d5465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddd134f01ffaf4a48113569d98fd962" id="r_a2ddd134f01ffaf4a48113569d98fd962"><td class="memItemLeft" align="right" valign="top">logging&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ddd134f01ffaf4a48113569d98fd962">_logger</a> = None</td></tr>
+<tr class="separator:a2ddd134f01ffaf4a48113569d98fd962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Gulp plugin base class and plugin utilities.
+</pre> </div><h2 class="groupheader">Function Documentation</h2>
+<a id="abb00832220a7a4b752ad4e752efdc946" name="abb00832220a7a4b752ad4e752efdc946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb00832220a7a4b752ad4e752efdc946">&#9670;&#160;</a></span>_get_plugin_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str _get_plugin_path </td>
+          <td>(</td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>plugin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01010">1010</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1010</span><span class="keyword">def </span>_get_plugin_path(plugin: str, **kwargs) -&gt; str:</div>
+<div class="line"><span class="lineno"> 1011</span> </div>
+<div class="line"><span class="lineno"> 1012</span>    <span class="comment"># try plain .py first</span></div>
+<div class="line"><span class="lineno"> 1013</span>    <span class="comment"># TODO: on license manager, disable plain .py load (only encrypted pyc)</span></div>
+<div class="line"><span class="lineno"> 1014</span>    <span class="comment"># get path according to plugin type</span></div>
+<div class="line"><span class="lineno"> 1015</span>    plugin_type = kwargs.get(<span class="stringliteral">&quot;plugin_type&quot;</span>, GulpPluginType.INGESTION)</div>
+<div class="line"><span class="lineno"> 1016</span>    path_plugins = config.path_plugins(plugin_type)</div>
+<div class="line"><span class="lineno"> 1017</span> </div>
+<div class="line"><span class="lineno"> 1018</span>    ppy = muty.file.safe_path_join(path_plugins, plugin + <span class="stringliteral">&quot;.py&quot;</span>)</div>
+<div class="line"><span class="lineno"> 1019</span>    <span class="keywordflow">if</span> <span class="keywordflow">not</span> muty.file.exists(ppy):</div>
+<div class="line"><span class="lineno"> 1020</span>        <span class="comment"># try pyc</span></div>
+<div class="line"><span class="lineno"> 1021</span>        ppyc = muty.file.safe_path_join(path_plugins, plugin + <span class="stringliteral">&quot;.pyc&quot;</span>)</div>
+<div class="line"><span class="lineno"> 1022</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> muty.file.exists(ppyc):</div>
+<div class="line"><span class="lineno"> 1023</span>            <span class="keywordflow">raise</span> ObjectNotFound(</div>
+<div class="line"><span class="lineno"> 1024</span>                <span class="stringliteral">&quot;plugin %s not found (tried %s, %s)&quot;</span> % (plugin, ppy, ppyc)</div>
+<div class="line"><span class="lineno"> 1025</span>            )</div>
+<div class="line"><span class="lineno"> 1026</span>        <span class="keywordflow">return</span> ppyc</div>
+<div class="line"><span class="lineno"> 1027</span>    <span class="keywordflow">return</span> ppy</div>
+<div class="line"><span class="lineno"> 1028</span> </div>
+<div class="line"><span class="lineno"> 1029</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_abb00832220a7a4b752ad4e752efdc946_icgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_abb00832220a7a4b752ad4e752efdc946_icgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_abb00832220a7a4b752ad4e752efdc946_icgraph" id="anamespacegulp_1_1plugin_abb00832220a7a4b752ad4e752efdc946_icgraph">
+<area shape="rect" title=" " alt="" coords="322,32,454,60"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a9b05fe36b952a46571666d228d193558" title=" " alt="" coords="178,32,274,60"/>
+<area shape="poly" title=" " alt="" coords="306,48,275,48,275,43,306,43"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a01189de942f84e5d69c99d4e9ed054c7" title=" " alt="" coords="5,5,130,33"/>
+<area shape="poly" title=" " alt="" coords="162,38,130,32,131,27,163,33"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a5af35dd01859f67f273a67cc0c774701" title=" " alt="" coords="20,57,115,85"/>
+<area shape="poly" title=" " alt="" coords="163,59,116,66,115,61,162,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a01189de942f84e5d69c99d4e9ed054c7" name="a01189de942f84e5d69c99d4e9ed054c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01189de942f84e5d69c99d4e9ed054c7">&#9670;&#160;</a></span>get_plugin_tags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] get_plugin_tags </td>
+          <td>(</td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>plugin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Get the tags for a given (ingestion) plugin.
+
+Args:
+    plugin (str): The name of the plugin to get the tags for.
+Returns:
+    list[str]: The tags for the given plugin.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01118">1118</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1118</span><span class="keyword">async def </span>get_plugin_tags(plugin: str) -&gt; list[str]:</div>
+<div class="line"><span class="lineno"> 1119</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1120</span><span class="stringliteral">    Get the tags for a given (ingestion) plugin.</span></div>
+<div class="line"><span class="lineno"> 1121</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1122</span><span class="stringliteral">    Args:</span></div>
+<div class="line"><span class="lineno"> 1123</span><span class="stringliteral">        plugin (str): The name of the plugin to get the tags for.</span></div>
+<div class="line"><span class="lineno"> 1124</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1125</span><span class="stringliteral">        list[str]: The tags for the given plugin.</span></div>
+<div class="line"><span class="lineno"> 1126</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1127</span>    p = load_plugin(plugin)</div>
+<div class="line"><span class="lineno"> 1128</span>    tags = p.tags()</div>
+<div class="line"><span class="lineno"> 1129</span>    <span class="keywordflow">return</span> tags</div>
+<div class="line"><span class="lineno"> 1130</span> </div>
+<div class="line"><span class="lineno"> 1131</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a01189de942f84e5d69c99d4e9ed054c7_cgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a01189de942f84e5d69c99d4e9ed054c7_cgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a01189de942f84e5d69c99d4e9ed054c7_cgraph" id="anamespacegulp_1_1plugin_a01189de942f84e5d69c99d4e9ed054c7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,57,130,85"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a9b05fe36b952a46571666d228d193558" title=" " alt="" coords="178,57,274,85"/>
+<area shape="poly" title=" " alt="" coords="130,68,162,68,162,74,130,74"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#abb00832220a7a4b752ad4e752efdc946" title=" " alt="" coords="324,5,457,33"/>
+<area shape="poly" title=" " alt="" coords="272,54,329,36,331,41,273,59"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a1c5c9184d00e49a445eb6b8f77ad60a3" title=" " alt="" coords="322,57,459,85"/>
+<area shape="poly" title=" " alt="" coords="275,68,307,68,307,74,275,74"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a8d88e1de40580ca31b2c05838fdfc03f" title=" " alt="" coords="324,109,458,137"/>
+<area shape="poly" title=" " alt="" coords="273,83,331,102,329,107,272,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0b74780046e4ade35e214c7f2926d02c" name="a0b74780046e4ade35e214c7f2926d02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b74780046e4ade35e214c7f2926d02c">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">init </td>
+          <td>(</td>
+          <td class="paramtype">logging.Logger</td>          <td class="paramname"><span class="paramname"><em>logger</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Initializes the plugin base module.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l00047">47</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span><span class="keyword">def </span>init(logger: logging.Logger):</div>
+<div class="line"><span class="lineno">   48</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   49</span><span class="stringliteral">    Initializes the plugin base module.</span></div>
+<div class="line"><span class="lineno">   50</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="keyword">global</span> _logger</div>
+<div class="line"><span class="lineno">   52</span>    _logger = logger</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5af35dd01859f67f273a67cc0c774701" name="a5af35dd01859f67f273a67cc0c774701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af35dd01859f67f273a67cc0c774701">&#9670;&#160;</a></span>list_plugins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[dict] list_plugins </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">List all available plugins.
+
+Returns:
+    list[dict]: The list of available plugins.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01082">1082</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1082</span><span class="keyword">async def </span>list_plugins() -&gt; list[dict]:</div>
+<div class="line"><span class="lineno"> 1083</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1084</span><span class="stringliteral">    List all available plugins.</span></div>
+<div class="line"><span class="lineno"> 1085</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1086</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1087</span><span class="stringliteral">        list[dict]: The list of available plugins.</span></div>
+<div class="line"><span class="lineno"> 1088</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1089</span>    path_plugins = config.path_plugins()</div>
+<div class="line"><span class="lineno"> 1090</span>    files = await muty.file.list_directory_async(path_plugins, <span class="stringliteral">&quot;*.py*&quot;</span>, recursive=<span class="keyword">True</span>)</div>
+<div class="line"><span class="lineno"> 1091</span>    l = []</div>
+<div class="line"><span class="lineno"> 1092</span>    <span class="keywordflow">for</span> f <span class="keywordflow">in</span> files:</div>
+<div class="line"><span class="lineno"> 1093</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;__init__&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> f <span class="keywordflow">and</span> <span class="stringliteral">&quot;__pycache__&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> f:</div>
+<div class="line"><span class="lineno"> 1094</span>            <span class="keywordflow">try</span>:</div>
+<div class="line"><span class="lineno"> 1095</span>                p = load_plugin(f)</div>
+<div class="line"><span class="lineno"> 1096</span>                n = {</div>
+<div class="line"><span class="lineno"> 1097</span>                    <span class="stringliteral">&quot;name&quot;</span>: p.name(),</div>
+<div class="line"><span class="lineno"> 1098</span>                    <span class="stringliteral">&quot;type&quot;</span>: str(p.type()),</div>
+<div class="line"><span class="lineno"> 1099</span>                    <span class="stringliteral">&quot;desc&quot;</span>: p.desc(),</div>
+<div class="line"><span class="lineno"> 1100</span>                    <span class="stringliteral">&quot;filename&quot;</span>: os.path.basename(p.path),</div>
+<div class="line"><span class="lineno"> 1101</span>                    <span class="stringliteral">&quot;internal&quot;</span>: p.internal(),</div>
+<div class="line"><span class="lineno"> 1102</span>                    <span class="stringliteral">&quot;options&quot;</span>: [o.to_dict() <span class="keywordflow">for</span> o <span class="keywordflow">in</span> p.options()],</div>
+<div class="line"><span class="lineno"> 1103</span>                    <span class="stringliteral">&quot;depends_on&quot;</span>: p.depends_on(),</div>
+<div class="line"><span class="lineno"> 1104</span>                    <span class="stringliteral">&quot;tags&quot;</span>: p.tags(),</div>
+<div class="line"><span class="lineno"> 1105</span>                    <span class="stringliteral">&quot;event_type_field&quot;</span>: p.event_type_field(),</div>
+<div class="line"><span class="lineno"> 1106</span>                    <span class="stringliteral">&quot;version&quot;</span>: p.version(),</div>
+<div class="line"><span class="lineno"> 1107</span>                }</div>
+<div class="line"><span class="lineno"> 1108</span>                l.append(n)</div>
+<div class="line"><span class="lineno"> 1109</span>                unload_plugin(p)</div>
+<div class="line"><span class="lineno"> 1110</span>            <span class="keywordflow">except</span> Exception <span class="keyword">as</span> ex:</div>
+<div class="line"><span class="lineno"> 1111</span>                _logger.exception(ex)</div>
+<div class="line"><span class="lineno"> 1112</span>                _logger.error(<span class="stringliteral">&quot;could not load plugin %s&quot;</span> % (f))</div>
+<div class="line"><span class="lineno"> 1113</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno"> 1114</span> </div>
+<div class="line"><span class="lineno"> 1115</span>    <span class="keywordflow">return</span> l</div>
+<div class="line"><span class="lineno"> 1116</span> </div>
+<div class="line"><span class="lineno"> 1117</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a5af35dd01859f67f273a67cc0c774701_cgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a5af35dd01859f67f273a67cc0c774701_cgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a5af35dd01859f67f273a67cc0c774701_cgraph" id="anamespacegulp_1_1plugin_a5af35dd01859f67f273a67cc0c774701_cgraph">
+<area shape="rect" title=" " alt="" coords="5,84,101,112"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a9b05fe36b952a46571666d228d193558" title=" " alt="" coords="157,57,253,85"/>
+<area shape="poly" title=" " alt="" coords="101,87,141,80,142,85,102,92"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a0e97ab32e715777b3ab97717986e594f" title=" " alt="" coords="149,109,261,137"/>
+<area shape="poly" title=" " alt="" coords="102,103,134,109,133,114,101,108"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#abb00832220a7a4b752ad4e752efdc946" title=" " alt="" coords="312,5,444,33"/>
+<area shape="poly" title=" " alt="" coords="253,54,314,35,316,40,254,59"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a1c5c9184d00e49a445eb6b8f77ad60a3" title=" " alt="" coords="309,57,446,85"/>
+<area shape="poly" title=" " alt="" coords="254,68,294,68,294,74,254,74"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a8d88e1de40580ca31b2c05838fdfc03f" title=" " alt="" coords="310,109,445,137"/>
+<area shape="poly" title=" " alt="" coords="254,83,316,102,314,107,253,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b05fe36b952a46571666d228d193558" name="a9b05fe36b952a46571666d228d193558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b05fe36b952a46571666d228d193558">&#9670;&#160;</a></span>load_plugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classgulp_1_1plugin_1_1_plugin_base.html">PluginBase</a> load_plugin </td>
+          <td>(</td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>plugin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AsyncEngine </td>          <td class="paramname"><span class="paramname"><em>collab</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AsyncElasticsearch </td>          <td class="paramname"><span class="paramname"><em>elastic</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**</td>          <td class="paramname"><span class="paramname"><em>kwargs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Load a plugin from a given path or from the default plugin path.
+
+Args:
+    plugin (str): The name or path of the plugin to load.
+    req_id (str, optional): The request ID to associate with the plugin loading. Defaults to None.
+    collab (AsyncEngine, optional): The SQLAlchemy engine instance. Defaults to None (not needed for pysigma plugins).
+    elastic (AsyncElasticsearch, optional): The Elasticsearch client instance. Defaults to None (not needed for pysigma plugins).
+    kwargs: additional arguments:
+        "plugin_type" (GulpPluginType, default=GulpPluginType.INGESTION)
+Returns:
+    PluginBase: The loaded plugin.
+
+Raises:
+    Exception: If the plugin could not be loaded.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01030">1030</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1035</span>) -&gt; PluginBase:</div>
+<div class="line"><span class="lineno"> 1036</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1037</span><span class="stringliteral">    Load a plugin from a given path or from the default plugin path.</span></div>
+<div class="line"><span class="lineno"> 1038</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1039</span><span class="stringliteral">    Args:</span></div>
+<div class="line"><span class="lineno"> 1040</span><span class="stringliteral">        plugin (str): The name or path of the plugin to load.</span></div>
+<div class="line"><span class="lineno"> 1041</span><span class="stringliteral">        req_id (str, optional): The request ID to associate with the plugin loading. Defaults to None.</span></div>
+<div class="line"><span class="lineno"> 1042</span><span class="stringliteral">        collab (AsyncEngine, optional): The SQLAlchemy engine instance. Defaults to None (not needed for pysigma plugins).</span></div>
+<div class="line"><span class="lineno"> 1043</span><span class="stringliteral">        elastic (AsyncElasticsearch, optional): The Elasticsearch client instance. Defaults to None (not needed for pysigma plugins).</span></div>
+<div class="line"><span class="lineno"> 1044</span><span class="stringliteral">        kwargs: additional arguments:</span></div>
+<div class="line"><span class="lineno"> 1045</span><span class="stringliteral">            &quot;plugin_type&quot; (GulpPluginType, default=GulpPluginType.INGESTION)</span></div>
+<div class="line"><span class="lineno"> 1046</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1047</span><span class="stringliteral">        PluginBase: The loaded plugin.</span></div>
+<div class="line"><span class="lineno"> 1048</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1049</span><span class="stringliteral">    Raises:</span></div>
+<div class="line"><span class="lineno"> 1050</span><span class="stringliteral">        Exception: If the plugin could not be loaded.</span></div>
+<div class="line"><span class="lineno"> 1051</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1052</span>    _logger.debug(</div>
+<div class="line"><span class="lineno"> 1053</span>        <span class="stringliteral">&quot;load_plugin %s, collab=%s, elastic=%s ...&quot;</span> % (plugin, collab, elastic)</div>
+<div class="line"><span class="lineno"> 1054</span>    )</div>
+<div class="line"><span class="lineno"> 1055</span> </div>
+<div class="line"><span class="lineno"> 1056</span>    m = plugin_cache_get(plugin)</div>
+<div class="line"><span class="lineno"> 1057</span>    <span class="keywordflow">if</span> m <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1058</span>        <span class="keywordflow">return</span> m.Plugin(plugin, collab, elastic, **kwargs)</div>
+<div class="line"><span class="lineno"> 1059</span> </div>
+<div class="line"><span class="lineno"> 1060</span>    <span class="keywordflow">if</span> <span class="stringliteral">&quot;/&quot;</span> <span class="keywordflow">in</span> plugin:</div>
+<div class="line"><span class="lineno"> 1061</span>        <span class="comment"># plugins is an absolute path</span></div>
+<div class="line"><span class="lineno"> 1062</span>        path = muty.file.abspath(plugin)</div>
+<div class="line"><span class="lineno"> 1063</span>    <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno"> 1064</span>        <span class="comment"># uses &quot;plugin_type&quot; to load from the correct subfolder</span></div>
+<div class="line"><span class="lineno"> 1065</span>        path = _get_plugin_path(plugin, **kwargs)</div>
+<div class="line"><span class="lineno"> 1066</span> </div>
+<div class="line"><span class="lineno"> 1067</span>    <span class="keywordflow">try</span>:</div>
+<div class="line"><span class="lineno"> 1068</span>        m: PluginBase = muty.dynload.load_dynamic_module_from_file(path)</div>
+<div class="line"><span class="lineno"> 1069</span>    <span class="keywordflow">except</span> Exception <span class="keyword">as</span> ex:</div>
+<div class="line"><span class="lineno"> 1070</span>        <span class="keywordflow">raise</span> Exception(</div>
+<div class="line"><span class="lineno"> 1071</span>            <span class="stringliteral">&quot;load_dynamic_module_from_file() failed, could not load plugin %s !&quot;</span></div>
+<div class="line"><span class="lineno"> 1072</span>            % (path)</div>
+<div class="line"><span class="lineno"> 1073</span>        ) <span class="keyword">from</span> ex</div>
+<div class="line"><span class="lineno"> 1074</span> </div>
+<div class="line"><span class="lineno"> 1075</span>    mod: PluginBase = m.Plugin(path, collab, elastic, **kwargs)</div>
+<div class="line"><span class="lineno"> 1076</span>    _logger.debug(<span class="stringliteral">&quot;loaded plugin: %s&quot;</span> % (mod.name()))</div>
+<div class="line"><span class="lineno"> 1077</span>    plugin_cache_add(m, plugin)</div>
+<div class="line"><span class="lineno"> 1078</span> </div>
+<div class="line"><span class="lineno"> 1079</span>    <span class="keywordflow">return</span> mod</div>
+<div class="line"><span class="lineno"> 1080</span> </div>
+<div class="line"><span class="lineno"> 1081</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_cgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_cgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_cgraph" id="anamespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_cgraph">
+<area shape="rect" title=" " alt="" coords="5,57,102,85"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#abb00832220a7a4b752ad4e752efdc946" title=" " alt="" coords="152,5,284,33"/>
+<area shape="poly" title=" " alt="" coords="99,54,157,36,159,41,101,59"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a1c5c9184d00e49a445eb6b8f77ad60a3" title=" " alt="" coords="150,57,287,85"/>
+<area shape="poly" title=" " alt="" coords="102,68,134,68,134,74,102,74"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a8d88e1de40580ca31b2c05838fdfc03f" title=" " alt="" coords="151,109,286,137"/>
+<area shape="poly" title=" " alt="" coords="101,83,159,102,157,107,99,88"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_icgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_icgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_icgraph" id="anamespacegulp_1_1plugin_a9b05fe36b952a46571666d228d193558_icgraph">
+<area shape="rect" title=" " alt="" coords="178,32,274,60"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a01189de942f84e5d69c99d4e9ed054c7" title=" " alt="" coords="5,5,130,33"/>
+<area shape="poly" title=" " alt="" coords="162,38,130,32,131,27,163,33"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a5af35dd01859f67f273a67cc0c774701" title=" " alt="" coords="20,57,115,85"/>
+<area shape="poly" title=" " alt="" coords="163,59,116,66,115,61,162,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c5c9184d00e49a445eb6b8f77ad60a3" name="a1c5c9184d00e49a445eb6b8f77ad60a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5c9184d00e49a445eb6b8f77ad60a3">&#9670;&#160;</a></span>plugin_cache_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None plugin_cache_add </td>
+          <td>(</td>
+          <td class="paramtype">ModuleType</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Add a plugin to the process's own plugin cache.
+
+Args:
+    m (ModuleType): The plugin module to add to the cache.
+    name (str): The name/path of the plugin.
+
+Returns:
+    None
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01193">1193</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1193</span><span class="keyword">def </span>plugin_cache_add(m: ModuleType, name: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1194</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1195</span><span class="stringliteral">    Add a plugin to the process&#39;s own plugin cache.</span></div>
+<div class="line"><span class="lineno"> 1196</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1197</span><span class="stringliteral">    Args:</span></div>
+<div class="line"><span class="lineno"> 1198</span><span class="stringliteral">        m (ModuleType): The plugin module to add to the cache.</span></div>
+<div class="line"><span class="lineno"> 1199</span><span class="stringliteral">        name (str): The name/path of the plugin.</span></div>
+<div class="line"><span class="lineno"> 1200</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1201</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1202</span><span class="stringliteral">        None</span></div>
+<div class="line"><span class="lineno"> 1203</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1204</span>    <span class="keyword">global</span> _cache</div>
+<div class="line"><span class="lineno"> 1205</span>    <span class="keywordflow">if</span> <span class="keywordflow">not</span> config.plugin_cache_enabled():</div>
+<div class="line"><span class="lineno"> 1206</span>        <span class="keywordflow">return</span></div>
+<div class="line"><span class="lineno"> 1207</span> </div>
+<div class="line"><span class="lineno"> 1208</span>    mm = _cache.get(name, <span class="keywordtype">None</span>)</div>
+<div class="line"><span class="lineno"> 1209</span>    <span class="keywordflow">if</span> mm <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1210</span>        _logger.debug(<span class="stringliteral">&quot;adding plugin %s (%s) to cache&quot;</span> % (name, m))</div>
+<div class="line"><span class="lineno"> 1211</span>        _cache[name] = m</div>
+<div class="line"><span class="lineno"> 1212</span> </div>
+<div class="line"><span class="lineno"> 1213</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a1c5c9184d00e49a445eb6b8f77ad60a3_icgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a1c5c9184d00e49a445eb6b8f77ad60a3_icgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a1c5c9184d00e49a445eb6b8f77ad60a3_icgraph" id="anamespacegulp_1_1plugin_a1c5c9184d00e49a445eb6b8f77ad60a3_icgraph">
+<area shape="rect" title=" " alt="" coords="322,32,459,60"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a9b05fe36b952a46571666d228d193558" title=" " alt="" coords="178,32,274,60"/>
+<area shape="poly" title=" " alt="" coords="306,48,275,48,275,43,306,43"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a01189de942f84e5d69c99d4e9ed054c7" title=" " alt="" coords="5,5,130,33"/>
+<area shape="poly" title=" " alt="" coords="162,38,130,32,131,27,163,33"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a5af35dd01859f67f273a67cc0c774701" title=" " alt="" coords="20,57,115,85"/>
+<area shape="poly" title=" " alt="" coords="163,59,116,66,115,61,162,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a714b6e278c22eb32907dd3d4afa0b56d" name="a714b6e278c22eb32907dd3d4afa0b56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714b6e278c22eb32907dd3d4afa0b56d">&#9670;&#160;</a></span>plugin_cache_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None plugin_cache_clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Clear the process's own plugin cache.
+
+Returns:
+    None
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01157">1157</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1157</span><span class="keyword">def </span>plugin_cache_clear() -&gt; None:</div>
+<div class="line"><span class="lineno"> 1158</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1159</span><span class="stringliteral">    Clear the process&#39;s own plugin cache.</span></div>
+<div class="line"><span class="lineno"> 1160</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1161</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1162</span><span class="stringliteral">        None</span></div>
+<div class="line"><span class="lineno"> 1163</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1164</span>    <span class="keyword">global</span> _cache</div>
+<div class="line"><span class="lineno"> 1165</span>    <span class="keywordflow">if</span> <span class="keywordflow">not</span> config.plugin_cache_enabled():</div>
+<div class="line"><span class="lineno"> 1166</span>        <span class="keywordflow">return</span></div>
+<div class="line"><span class="lineno"> 1167</span> </div>
+<div class="line"><span class="lineno"> 1168</span>    _cache = {}</div>
+<div class="line"><span class="lineno"> 1169</span> </div>
+<div class="line"><span class="lineno"> 1170</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8d88e1de40580ca31b2c05838fdfc03f" name="a8d88e1de40580ca31b2c05838fdfc03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d88e1de40580ca31b2c05838fdfc03f">&#9670;&#160;</a></span>plugin_cache_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> ModuleType plugin_cache_get </td>
+          <td>(</td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>plugin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Retrieve a plugin from the process's own plugin cache.
+
+Args:
+    plugin (str): The name/path of the plugin to retrieve.
+
+Returns:
+    ModuleType: The plugin module if found in the cache, otherwise None.
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01214">1214</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1214</span><span class="keyword">def </span>plugin_cache_get(plugin: str) -&gt; ModuleType:</div>
+<div class="line"><span class="lineno"> 1215</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1216</span><span class="stringliteral">    Retrieve a plugin from the process&#39;s own plugin cache.</span></div>
+<div class="line"><span class="lineno"> 1217</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1218</span><span class="stringliteral">    Args:</span></div>
+<div class="line"><span class="lineno"> 1219</span><span class="stringliteral">        plugin (str): The name/path of the plugin to retrieve.</span></div>
+<div class="line"><span class="lineno"> 1220</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1221</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1222</span><span class="stringliteral">        ModuleType: The plugin module if found in the cache, otherwise None.</span></div>
+<div class="line"><span class="lineno"> 1223</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1224</span>    <span class="keyword">global</span> _cache</div>
+<div class="line"><span class="lineno"> 1225</span>    <span class="keywordflow">if</span> <span class="keywordflow">not</span> config.plugin_cache_enabled():</div>
+<div class="line"><span class="lineno"> 1226</span>        <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno"> 1227</span> </div>
+<div class="line"><span class="lineno"> 1228</span>    p = _cache.get(plugin, <span class="keywordtype">None</span>)</div>
+<div class="line"><span class="lineno"> 1229</span>    <span class="keywordflow">if</span> p <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1230</span>        _logger.debug(<span class="stringliteral">&quot;found plugin %s in cache&quot;</span> % (plugin))</div>
+<div class="line"><span class="lineno"> 1231</span>    <span class="keywordflow">return</span> p</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a8d88e1de40580ca31b2c05838fdfc03f_icgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a8d88e1de40580ca31b2c05838fdfc03f_icgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a8d88e1de40580ca31b2c05838fdfc03f_icgraph" id="anamespacegulp_1_1plugin_a8d88e1de40580ca31b2c05838fdfc03f_icgraph">
+<area shape="rect" title=" " alt="" coords="322,32,456,60"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a9b05fe36b952a46571666d228d193558" title=" " alt="" coords="178,32,274,60"/>
+<area shape="poly" title=" " alt="" coords="306,48,275,48,275,43,306,43"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a01189de942f84e5d69c99d4e9ed054c7" title=" " alt="" coords="5,5,130,33"/>
+<area shape="poly" title=" " alt="" coords="162,38,130,32,131,27,163,33"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a5af35dd01859f67f273a67cc0c774701" title=" " alt="" coords="20,57,115,85"/>
+<area shape="poly" title=" " alt="" coords="163,59,116,66,115,61,162,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a49455ddc351f40d6438de1a81a68d742" name="a49455ddc351f40d6438de1a81a68d742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49455ddc351f40d6438de1a81a68d742">&#9670;&#160;</a></span>plugin_cache_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None plugin_cache_remove </td>
+          <td>(</td>
+          <td class="paramtype">str</td>          <td class="paramname"><span class="paramname"><em>plugin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Remove a plugin from the process's own plugin cache.
+
+Args:
+    plugin (str): The name/path of the plugin to remove from the cache.
+
+Returns:
+    None
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01171">1171</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1171</span><span class="keyword">def </span>plugin_cache_remove(plugin: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1172</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1173</span><span class="stringliteral">    Remove a plugin from the process&#39;s own plugin cache.</span></div>
+<div class="line"><span class="lineno"> 1174</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1175</span><span class="stringliteral">    Args:</span></div>
+<div class="line"><span class="lineno"> 1176</span><span class="stringliteral">        plugin (str): The name/path of the plugin to remove from the cache.</span></div>
+<div class="line"><span class="lineno"> 1177</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1178</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1179</span><span class="stringliteral">        None</span></div>
+<div class="line"><span class="lineno"> 1180</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1181</span>    <span class="keyword">global</span> _cache</div>
+<div class="line"><span class="lineno"> 1182</span>    <span class="keywordflow">if</span> <span class="keywordflow">not</span> config.plugin_cache_enabled():</div>
+<div class="line"><span class="lineno"> 1183</span>        <span class="keywordflow">return</span></div>
+<div class="line"><span class="lineno"> 1184</span> </div>
+<div class="line"><span class="lineno"> 1185</span>    <span class="keywordflow">if</span> plugin <span class="keywordflow">in</span> _cache:</div>
+<div class="line"><span class="lineno"> 1186</span>        _logger.debug(<span class="stringliteral">&quot;removing plugin %s from cache&quot;</span> % (plugin))</div>
+<div class="line"><span class="lineno"> 1187</span> </div>
+<div class="line"><span class="lineno"> 1188</span>        <span class="comment"># cleanup module and delete</span></div>
+<div class="line"><span class="lineno"> 1189</span>        m = _cache[plugin]</div>
+<div class="line"><span class="lineno"> 1190</span>        del _cache[plugin]</div>
+<div class="line"><span class="lineno"> 1191</span> </div>
+<div class="line"><span class="lineno"> 1192</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0e97ab32e715777b3ab97717986e594f" name="a0e97ab32e715777b3ab97717986e594f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e97ab32e715777b3ab97717986e594f">&#9670;&#160;</a></span>unload_plugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None unload_plugin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgulp_1_1plugin_1_1_plugin_base.html">PluginBase</a></td>          <td class="paramname"><span class="paramname"><em>mod</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Unloads a plugin module by calling its `unload` method and deletes the module object
+
+NOTE: mod is **no more valid** after this function returns.
+
+Args:
+    mod (PluginBase): The plugin module to unload.
+    run_gc (bool): if set, garbage collector is called after unloading the module. Defaults to True.
+
+Returns:
+    None
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l01132">1132</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1132</span><span class="keyword">def </span>unload_plugin(mod: PluginBase) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1133</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1134</span><span class="stringliteral">    Unloads a plugin module by calling its `unload` method and deletes the module object</span></div>
+<div class="line"><span class="lineno"> 1135</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1136</span><span class="stringliteral">    NOTE: mod is **no more valid** after this function returns.</span></div>
+<div class="line"><span class="lineno"> 1137</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1138</span><span class="stringliteral">    Args:</span></div>
+<div class="line"><span class="lineno"> 1139</span><span class="stringliteral">        mod (PluginBase): The plugin module to unload.</span></div>
+<div class="line"><span class="lineno"> 1140</span><span class="stringliteral">        run_gc (bool): if set, garbage collector is called after unloading the module. Defaults to True.</span></div>
+<div class="line"><span class="lineno"> 1141</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno"> 1142</span><span class="stringliteral">    Returns:</span></div>
+<div class="line"><span class="lineno"> 1143</span><span class="stringliteral">        None</span></div>
+<div class="line"><span class="lineno"> 1144</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno"> 1145</span>    <span class="keywordflow">if</span> config.plugin_cache_enabled():</div>
+<div class="line"><span class="lineno"> 1146</span>        <span class="keywordflow">return</span></div>
+<div class="line"><span class="lineno"> 1147</span> </div>
+<div class="line"><span class="lineno"> 1148</span>    <span class="keywordflow">if</span> mod <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno"> 1149</span>        <span class="comment"># delete from cache if any</span></div>
+<div class="line"><span class="lineno"> 1150</span>        <span class="comment"># plugin_cache_delete(mod)</span></div>
+<div class="line"><span class="lineno"> 1151</span> </div>
+<div class="line"><span class="lineno"> 1152</span>        _logger.debug(<span class="stringliteral">&quot;unloading plugin: %s&quot;</span> % (mod.name()))</div>
+<div class="line"><span class="lineno"> 1153</span>        mod.cleanup()</div>
+<div class="line"><span class="lineno"> 1154</span>        del mod</div>
+<div class="line"><span class="lineno"> 1155</span> </div>
+<div class="line"><span class="lineno"> 1156</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacegulp_1_1plugin_a0e97ab32e715777b3ab97717986e594f_icgraph.png" border="0" usemap="#anamespacegulp_1_1plugin_a0e97ab32e715777b3ab97717986e594f_icgraph" alt=""/></div>
+<map name="anamespacegulp_1_1plugin_a0e97ab32e715777b3ab97717986e594f_icgraph" id="anamespacegulp_1_1plugin_a0e97ab32e715777b3ab97717986e594f_icgraph">
+<area shape="rect" title=" " alt="" coords="149,5,261,33"/>
+<area shape="rect" href="namespacegulp_1_1plugin.html#a5af35dd01859f67f273a67cc0c774701" title=" " alt="" coords="5,5,101,33"/>
+<area shape="poly" title=" " alt="" coords="133,22,101,22,101,16,133,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a928d8794fba69c8e585a9de2d20d5465" name="a928d8794fba69c8e585a9de2d20d5465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928d8794fba69c8e585a9de2d20d5465">&#9670;&#160;</a></span>_cache</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict _cache = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l00044">44</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+
+</div>
+</div>
+<a id="a2ddd134f01ffaf4a48113569d98fd962" name="a2ddd134f01ffaf4a48113569d98fd962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddd134f01ffaf4a48113569d98fd962">&#9670;&#160;</a></span>_logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">logging _logger = None</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="plugin_8py_source.html#l00041">41</a> of file <a class="el" href="plugin_8py_source.html">plugin.py</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "dark",
+    });
+</script>

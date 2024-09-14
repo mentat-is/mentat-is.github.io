@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta name="generator" content="Doxygen 1.12.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- BEGIN opengraph metadata -->
+        <meta property="og:title" content="gULP! Documentation" />
+        <meta
+            property="og:image"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta
+            property="og:description"
+            content="Custom CSS theme for doxygen html-documentation with lots of customization parameters."
+        />
+        <meta
+            property="og:url"
+            content="https://github.com/rcskunkworks/gulp"
+        />
+        <!-- END opengraph metadata -->
+        <!-- BEGIN twitter metadata -->
+        <meta
+            name="twitter:image:src"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta name="twitter:title" content="Mentat" />
+        <meta name="twitter:description" content="mentat.is" />
+        <!-- END twitter metadata -->
+        <title>(g)ULP!: GulpMappingOptions Class Reference</title>
+        <link href="tabs.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-darkmode-toggle.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-fragment-copy-button.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-paragraph-link.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-interactive-toc.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-tabs.js"
+        ></script>
+        <script type="text/javascript">
+            DoxygenAwesomeFragmentCopyButton.init();
+            DoxygenAwesomeDarkModeToggle.init();
+            DoxygenAwesomeParagraphLink.init();
+            DoxygenAwesomeInteractiveToc.init();
+            DoxygenAwesomeTabs.init();
+        </script>
+        </script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+ <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
+        <a
+            href="https://github.com/rcskunkworks/gulp"
+            class="github-corner"
+            title="View source on GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <svg
+                viewBox="0 0 250 250"
+                width="40"
+                height="40"
+                style="
+                    position: absolute;
+                    top: 0;
+                    border: 0;
+                    right: 0;
+                    z-index: 99;
+                "
+                aria-hidden="true"
+            >
+                <path
+                    d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
+                ></path>
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor"
+                    style="transform-origin: 130px 106px"
+                    class="octo-arm"
+                ></path>
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor"
+                    class="octo-body"
+                ></path></svg
+        ></a>
+        <style>
+            .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
+            @keyframes octocat-wave {
+                0%,
+                100% {
+                    transform: rotate(0);
+                }
+                20%,
+                60% {
+                    transform: rotate(-25deg);
+                }
+                40%,
+                80% {
+                    transform: rotate(10deg);
+                }
+            }
+            @media (max-width: 500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none;
+                }
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out;
+                }
+            }
+        </style>
+        <div id="top">
+            <!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 56px">
+                            <td id="projectalign" style="padding-left: 0.5em">
+                                <div id="projectname">
+                                    (g)ULP!
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+        </div>
+    </body>
+</html>
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classmapping_1_1models_1_1_gulp_mapping_options.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classmapping_1_1models_1_1_gulp_mapping_options-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">GulpMappingOptions Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for GulpMappingOptions:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmapping_1_1models_1_1_gulp_mapping_options__inherit__graph.png" border="0" usemap="#a_gulp_mapping_options_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_gulp_mapping_options_inherit__map" id="a_gulp_mapping_options_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,81,163,109"/>
+<area shape="rect" title=" " alt="" coords="37,5,131,33"/>
+<area shape="poly" title=" " alt="" coords="87,49,87,81,81,81,81,49"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for GulpMappingOptions:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmapping_1_1models_1_1_gulp_mapping_options__coll__graph.png" border="0" usemap="#a_gulp_mapping_options_coll__map" alt="Collaboration graph"/></div>
+<map name="a_gulp_mapping_options_coll__map" id="a_gulp_mapping_options_coll__map">
+<area shape="rect" title=" " alt="" coords="83,217,240,245"/>
+<area shape="rect" title=" " alt="" coords="5,5,99,33"/>
+<area shape="poly" title=" " alt="" coords="68,46,157,215,152,218,64,48"/>
+<area shape="rect" title=" " alt="" coords="123,5,200,33"/>
+<area shape="poly" title=" " alt="" coords="164,49,164,216,159,216,159,49"/>
+<area shape="rect" title=" " alt="" coords="303,5,348,33"/>
+<area shape="poly" title=" " alt="" coords="332,48,333,81,330,120,319,160,298,195,272,215,241,226,239,221,269,210,294,191,314,158,325,119,328,81,326,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3afb8c54f9c26db579bb05cc3cf72bb3" id="r_a3afb8c54f9c26db579bb05cc3cf72bb3"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3afb8c54f9c26db579bb05cc3cf72bb3">to_dict</a> (self)</td></tr>
+<tr class="separator:a3afb8c54f9c26db579bb05cc3cf72bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c3e0dd73ae9a69243906f84bcffeb0e" id="r_a2c3e0dd73ae9a69243906f84bcffeb0e"><td class="memItemLeft" align="right" valign="top">&quot;GulpMappingOptions&quot;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c3e0dd73ae9a69243906f84bcffeb0e">from_dict</a> (dict d)</td></tr>
+<tr class="separator:a2c3e0dd73ae9a69243906f84bcffeb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a7d652855638e7fe17054df9f12894bc8" id="r_a7d652855638e7fe17054df9f12894bc8"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d652855638e7fe17054df9f12894bc8">agent_type</a></td></tr>
+<tr class="separator:a7d652855638e7fe17054df9f12894bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20e0f5113f91ddf6aa6bc925eaf5cb1" id="r_ad20e0f5113f91ddf6aa6bc925eaf5cb1"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20e0f5113f91ddf6aa6bc925eaf5cb1">default_event_code</a></td></tr>
+<tr class="separator:ad20e0f5113f91ddf6aa6bc925eaf5cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5df11aee2372a31dec94b30b5f4fdc6" id="r_ac5df11aee2372a31dec94b30b5f4fdc6"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5df11aee2372a31dec94b30b5f4fdc6">ignore_blanks</a></td></tr>
+<tr class="separator:ac5df11aee2372a31dec94b30b5f4fdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc55f0e1edd2d8679410791c8c49485" id="r_a7dc55f0e1edd2d8679410791c8c49485"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dc55f0e1edd2d8679410791c8c49485">ignore_unmapped</a></td></tr>
+<tr class="separator:a7dc55f0e1edd2d8679410791c8c49485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d351072468002271b718bacc58e4e68" id="r_a3d351072468002271b718bacc58e4e68"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d351072468002271b718bacc58e4e68">mapping_id</a></td></tr>
+<tr class="separator:a3d351072468002271b718bacc58e4e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85be9a1fa57326e7a4a22042d5e4d66" id="r_ad85be9a1fa57326e7a4a22042d5e4d66"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad85be9a1fa57326e7a4a22042d5e4d66">model_config</a></td></tr>
+<tr class="separator:ad85be9a1fa57326e7a4a22042d5e4d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa869a248b308c65c2ee9fd13d8e2e66a" id="r_aa869a248b308c65c2ee9fd13d8e2e66a"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa869a248b308c65c2ee9fd13d8e2e66a">timestamp_dayfirst</a></td></tr>
+<tr class="separator:aa869a248b308c65c2ee9fd13d8e2e66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c7834a395345a5806fbc614d0d7545" id="r_ac1c7834a395345a5806fbc614d0d7545"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1c7834a395345a5806fbc614d0d7545">timestamp_utc</a></td></tr>
+<tr class="separator:ac1c7834a395345a5806fbc614d0d7545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7042b0e2a7796de5454d2372178c64" id="r_afd7042b0e2a7796de5454d2372178c64"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd7042b0e2a7796de5454d2372178c64">timestamp_yearfirst</a></td></tr>
+<tr class="separator:afd7042b0e2a7796de5454d2372178c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">GulpMappingOptions defines global options for a mapping (an array of FieldMappingEntry).
+</pre> 
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00007">7</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c3e0dd73ae9a69243906f84bcffeb0e" name="a2c3e0dd73ae9a69243906f84bcffeb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3e0dd73ae9a69243906f84bcffeb0e">&#9670;&#160;</a></span>from_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> &quot;GulpMappingOptions&quot; from_dict </td>
+          <td>(</td>
+          <td class="paramtype">dict</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00074">74</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>    <span class="keyword">def </span>from_dict(d: dict) -&gt; <span class="stringliteral">&quot;GulpMappingOptions&quot;</span>:</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">return</span> GulpMappingOptions(</div>
+<div class="line"><span class="lineno">   76</span>            agent_type=d.get(<span class="stringliteral">&quot;agent_type&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   77</span>            default_event_code=d.get(<span class="stringliteral">&quot;default_event_code&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   78</span>            mapping_id=d.get(<span class="stringliteral">&quot;mapping_id&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   79</span>            ignore_blanks=d.get(<span class="stringliteral">&quot;purge_blanks&quot;</span>, <span class="keyword">True</span>),</div>
+<div class="line"><span class="lineno">   80</span>            ignore_unmapped=d.get(<span class="stringliteral">&quot;ignore_unmapped&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">   81</span>            timestamp_yearfirst=d.get(<span class="stringliteral">&quot;timestamp_yearfirst&quot;</span>, <span class="keyword">True</span>),</div>
+<div class="line"><span class="lineno">   82</span>            timestamp_dayfirst=d.get(<span class="stringliteral">&quot;timestamp_dayfirst&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">   83</span>            timestamp_utc=d.get(<span class="stringliteral">&quot;timestamp_utc&quot;</span>, <span class="keyword">True</span>),</div>
+<div class="line"><span class="lineno">   84</span>        )</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3afb8c54f9c26db579bb05cc3cf72bb3" name="a3afb8c54f9c26db579bb05cc3cf72bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afb8c54f9c26db579bb05cc3cf72bb3">&#9670;&#160;</a></span>to_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict to_dict </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00060">60</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
+<div class="line"><span class="lineno">   61</span>        d = {</div>
+<div class="line"><span class="lineno">   62</span>            <span class="stringliteral">&quot;agent_type&quot;</span>: self.agent_type,</div>
+<div class="line"><span class="lineno">   63</span>            <span class="stringliteral">&quot;mapping_id&quot;</span>: self.mapping_id,</div>
+<div class="line"><span class="lineno">   64</span>            <span class="stringliteral">&quot;default_event_code&quot;</span>: self.default_event_code,</div>
+<div class="line"><span class="lineno">   65</span>            <span class="stringliteral">&quot;purge_blanks&quot;</span>: self.ignore_blanks,</div>
+<div class="line"><span class="lineno">   66</span>            <span class="stringliteral">&quot;ignore_unmapped&quot;</span>: self.ignore_unmapped,</div>
+<div class="line"><span class="lineno">   67</span>            <span class="stringliteral">&quot;timestamp_yearfirst&quot;</span>: self.timestamp_yearfirst,</div>
+<div class="line"><span class="lineno">   68</span>            <span class="stringliteral">&quot;timestamp_dayfirst&quot;</span>: self.timestamp_dayfirst,</div>
+<div class="line"><span class="lineno">   69</span>            <span class="stringliteral">&quot;timestamp_utc&quot;</span>: self.timestamp_utc</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> d</div>
+<div class="line"><span class="lineno">   72</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7d652855638e7fe17054df9f12894bc8" name="a7d652855638e7fe17054df9f12894bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d652855638e7fe17054df9f12894bc8">&#9670;&#160;</a></span>agent_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional agent_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keywordtype">None</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;if set, forces events fot this mapping to have &quot;agent.type&quot; set to this value.&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00012">12</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="ad20e0f5113f91ddf6aa6bc925eaf5cb1" name="ad20e0f5113f91ddf6aa6bc925eaf5cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20e0f5113f91ddf6aa6bc925eaf5cb1">&#9670;&#160;</a></span>default_event_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional default_event_code</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keywordtype">None</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;if set, this is the &quot;event_code&quot; to be set for this mapping: this may be overridden by &quot;event_code&quot; in FieldMappingEntry when &quot;is_timestamp&quot;: true forces generation of a new event with such &quot;@timestamp&quot; and, possibly, &quot;event.code&quot;.&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00017">17</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="ac5df11aee2372a31dec94b30b5f4fdc6" name="ac5df11aee2372a31dec94b30b5f4fdc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5df11aee2372a31dec94b30b5f4fdc6">&#9670;&#160;</a></span>ignore_blanks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional ignore_blanks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keyword">True</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;if True, remove blank (string) fields from the event (default: True).&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00029">29</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="a7dc55f0e1edd2d8679410791c8c49485" name="a7dc55f0e1edd2d8679410791c8c49485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc55f0e1edd2d8679410791c8c49485">&#9670;&#160;</a></span>ignore_unmapped</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional ignore_unmapped</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keyword">False</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;if True, ignore(=do not set in the output document) unmapped fields. Default is False, if a field does not have a corresponding mapping entry it will be mapped as &quot;gulp.unmapped.fieldname&quot;).&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00021">21</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="a3d351072468002271b718bacc58e4e68" name="a3d351072468002271b718bacc58e4e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d351072468002271b718bacc58e4e68">&#9670;&#160;</a></span>mapping_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional mapping_id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keywordtype">None</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;mapping identifier, i.e. to select this mapping via GulpPluginParams.&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00025">25</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="ad85be9a1fa57326e7a4a22042d5e4d66" name="ad85be9a1fa57326e7a4a22042d5e4d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85be9a1fa57326e7a4a22042d5e4d66">&#9670;&#160;</a></span>model_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict model_config</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  {</div>
+<div class="line">        <span class="stringliteral">&quot;json_schema_extra&quot;</span>: {</div>
+<div class="line">            <span class="stringliteral">&quot;example&quot;</span>: {</div>
+<div class="line">                <span class="stringliteral">&quot;agent_type&quot;</span>: <span class="stringliteral">&quot;my_agent_type&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;default_event_code&quot;</span>: <span class="stringliteral">&quot;my_event_code&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;mapping_id&quot;</span>: <span class="stringliteral">&quot;my_mapping_id&quot;</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;purge_blanks&quot;</span>: <span class="keyword">True</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;timestamp_yearfirst&quot;</span>: <span class="keyword">True</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;timestamp_dayfirst&quot;</span>: <span class="keyword">False</span>,</div>
+<div class="line">                <span class="stringliteral">&quot;timestamp_utc&quot;</span>: <span class="keyword">True</span>,</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00046">46</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="aa869a248b308c65c2ee9fd13d8e2e66a" name="aa869a248b308c65c2ee9fd13d8e2e66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa869a248b308c65c2ee9fd13d8e2e66a">&#9670;&#160;</a></span>timestamp_dayfirst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional timestamp_dayfirst</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keyword">False</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;to convert timestamp string, indicating if the day comes first in the timestamp string (default: False).&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00037">37</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="ac1c7834a395345a5806fbc614d0d7545" name="ac1c7834a395345a5806fbc614d0d7545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c7834a395345a5806fbc614d0d7545">&#9670;&#160;</a></span>timestamp_utc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional timestamp_utc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keyword">True</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;to convert timestamp string, indicating if the converted timestamp should be UTC (default: True).&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00041">41</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<a id="afd7042b0e2a7796de5454d2372178c64" name="afd7042b0e2a7796de5454d2372178c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7042b0e2a7796de5454d2372178c64">&#9670;&#160;</a></span>timestamp_yearfirst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional timestamp_yearfirst</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        <span class="keyword">True</span>,</div>
+<div class="line">        description=<span class="stringliteral">&quot;to convert timestamp string, indicating if the year comes first in the timestamp string (default: True).&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00033">33</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/gulp/api/mapping/<a class="el" href="models_8py_source.html">models.py</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "dark",
+    });
+</script>

@@ -1,0 +1,9 @@
+<map id="GulpMappingOptions" name="GulpMappingOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,217,240,245"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,99,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,46,157,215,152,218,64,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,5,200,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,49,164,216,159,216,159,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="303,5,348,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,48,333,81,330,120,319,160,298,195,272,215,241,226,239,221,269,210,294,191,314,158,325,119,328,81,326,48"/>
+</map>

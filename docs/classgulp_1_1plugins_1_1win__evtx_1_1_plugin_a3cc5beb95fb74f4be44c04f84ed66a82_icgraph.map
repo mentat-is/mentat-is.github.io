@@ -1,0 +1,29 @@
+<map id="name" name="name">
+<area shape="rect" id="Node000001" title=" " alt="" coords="899,208,957,236"/>
+<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#a400aabb1893cbe98511a69414c8e58a2" title=" " alt="" coords="658,75,831,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="902,199,878,174,849,151,799,122,801,118,852,147,881,170,906,195"/>
+<area shape="rect" id="Node000007" href="$classgulp_1_1plugin_1_1_plugin_base.html#a66de2da998fe4b3958a3a6ce1189fbe8" title=" " alt="" coords="119,144,332,189"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="883,214,851,208,711,191,571,180,333,170,333,165,571,175,712,186,851,202,884,209"/>
+<area shape="rect" id="Node000008" href="$classgulp_1_1plugins_1_1win__evtx_1_1_plugin.html#a38a3b56e6818d69a12aa847ac980895e" title=" " alt="" coords="390,211,580,239"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="884,225,580,227,580,222,884,220"/>
+<area shape="rect" id="Node000009" href="$classgulp_1_1plugin_1_1_plugin_base.html#a0e422abddcbb67f93856a6f754cbfef7" title=" " alt="" coords="638,260,851,305"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="885,239,816,262,814,257,884,234"/>
+<area shape="rect" id="Node000012" href="$classgulp_1_1plugin__internal_1_1_gulp_plugin_option.html#a3afb8c54f9c26db579bb05cc3cf72bb3" title=" " alt="" coords="652,329,836,374"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="913,251,888,286,853,319,831,331,829,327,849,315,884,283,909,248"/>
+<area shape="rect" id="Node000003" href="$classgulp_1_1plugin_1_1_plugin_base.html#a0f3983f38b1d29c20df0dd5a496359af" title=" " alt="" coords="139,5,312,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="642,75,589,65,443,46,312,35,313,30,444,41,590,60,643,70"/>
+<area shape="rect" id="Node000005" href="$classgulp_1_1plugin_1_1_plugin_base.html#ad9cf9630b6d3e7ae9eab1b880e786222" title=" " alt="" coords="398,75,572,119"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="642,100,572,100,572,94,642,94"/>
+<area shape="rect" id="Node000004" href="$classgulp_1_1plugins_1_1win__evtx_1_1_plugin.html#ab96082a9ecc6d0db5a48ee6958ac3239" title=" " alt="" coords="10,118,71,146"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,59,120,65,84,92,56,119,52,116,80,88,118,60,128,55"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="72,105,61,99,40,96,21,98,11,103,8,109,13,116,8,119,3,109,7,99,20,93,40,91,62,94,74,100"/>
+<area shape="rect" id="Node000006" href="$classgulp_1_1plugin_1_1_plugin_base.html#abf39f32a2e7e60975eac7054393625da" title=" " alt="" coords="139,75,312,119"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="383,100,313,100,313,94,383,94"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="124,119,72,129,71,123,123,113"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="103,146,71,140,72,135,104,141"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="375,239,315,239,249,235,182,224,118,203,97,192,78,177,50,148,54,144,82,173,100,187,120,199,183,219,250,230,315,234,375,233"/>
+<area shape="rect" id="Node000010" href="$classgulp_1_1plugins_1_1sigma_1_1windows_1_1_plugin.html#acc159cfa2b2d043ffa24a5f62e5c80a3" title=" " alt="" coords="380,263,590,307"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="622,286,590,287,590,281,622,281"/>
+<area shape="rect" id="Node000011" href="$classgulp_1_1plugin__internal_1_1_gulp_plugin_params.html#a3afb8c54f9c26db579bb05cc3cf72bb3" title=" " alt="" coords="133,264,318,309"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="365,288,318,289,318,283,365,283"/>
+</map>

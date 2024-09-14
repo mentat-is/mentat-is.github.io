@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <meta name="generator" content="Doxygen 1.12.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- BEGIN opengraph metadata -->
+        <meta property="og:title" content="gULP! Documentation" />
+        <meta
+            property="og:image"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta
+            property="og:description"
+            content="Custom CSS theme for doxygen html-documentation with lots of customization parameters."
+        />
+        <meta
+            property="og:url"
+            content="https://github.com/rcskunkworks/gulp"
+        />
+        <!-- END opengraph metadata -->
+        <!-- BEGIN twitter metadata -->
+        <meta
+            name="twitter:image:src"
+            content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452"
+        />
+        <meta name="twitter:title" content="Mentat" />
+        <meta name="twitter:description" content="mentat.is" />
+        <!-- END twitter metadata -->
+        <title>(g)ULP!: Creating Plugins</title>
+        <link href="tabs.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="dynsections.js"></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-darkmode-toggle.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-fragment-copy-button.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-paragraph-link.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-interactive-toc.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="doxygen-awesome-tabs.js"
+        ></script>
+        <script type="text/javascript">
+            DoxygenAwesomeFragmentCopyButton.init();
+            DoxygenAwesomeDarkModeToggle.init();
+            DoxygenAwesomeParagraphLink.init();
+            DoxygenAwesomeInteractiveToc.init();
+            DoxygenAwesomeTabs.init();
+        </script>
+        </script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+ <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js"></script>
+        <a
+            href="https://github.com/rcskunkworks/gulp"
+            class="github-corner"
+            title="View source on GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <svg
+                viewBox="0 0 250 250"
+                width="40"
+                height="40"
+                style="
+                    position: absolute;
+                    top: 0;
+                    border: 0;
+                    right: 0;
+                    z-index: 99;
+                "
+                aria-hidden="true"
+            >
+                <path
+                    d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
+                ></path>
+                <path
+                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                    fill="currentColor"
+                    style="transform-origin: 130px 106px"
+                    class="octo-arm"
+                ></path>
+                <path
+                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                    fill="currentColor"
+                    class="octo-body"
+                ></path></svg
+        ></a>
+        <style>
+            .github-corner:hover .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
+            @keyframes octocat-wave {
+                0%,
+                100% {
+                    transform: rotate(0);
+                }
+                20%,
+                60% {
+                    transform: rotate(-25deg);
+                }
+                40%,
+                80% {
+                    transform: rotate(10deg);
+                }
+            }
+            @media (max-width: 500px) {
+                .github-corner:hover .octo-arm {
+                    animation: none;
+                }
+                .github-corner .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out;
+                }
+            }
+        </style>
+        <div id="top">
+            <!-- do not remove this div, it is closed by doxygen! -->
+            <div id="titlearea">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr style="height: 56px">
+                            <td id="projectalign" style="padding-left: 0.5em">
+                                <div id="projectname">
+                                    (g)ULP!
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end header part -->
+        </div>
+    </body>
+</html>
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('md_docs_2_creating_01_plugins.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Creating Plugins</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul>
+  <li class="level1">
+    <a href="#autotoc_md10">Ingestion plugins</a>
+    <ul>
+      <li class="level2">
+        <a href="#autotoc_md11">Mapping files</a>
+        <ul>
+          <li class="level3">
+            <a href="#autotoc_md12">mapping fields</a>
+          </li>
+          <li class="level3">
+            <a href="#autotoc_md13">options field</a>
+          </li>
+        </ul>
+      </li>
+      <li class="level2">
+        <a href="#autotoc_md14">Stacked plugins</a>
+      </li>
+      <li class="level2">
+        <a href="#autotoc_md15">Python plugins</a>
+      </li>
+    </ul>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md16">Extension plugins</a>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md17">Sigma plugins</a>
+  </li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md10"></a>
+Ingestion plugins</h1>
+<p>Gulp's architecture allows developers and users to add supported files for ingestion.</p>
+<p>Gulp supports a bunch of different log formats for ingestion. We currently support the following:</p><ul>
+<li>Apache's standard <code>access.log</code> and <code>error.log</code></li>
+<li>Windows <code>evtx</code></li>
+<li>Windows <code>registry</code> hives</li>
+<li>Systemd <code>journal</code> files</li>
+<li>A few of the Zimmerman tools' output files</li>
+<li>A few Autopsy exports files</li>
+<li>Chrome <code>history</code> and <code>webdata</code> db files</li>
+<li>Network capture <code>pcap</code> and <code>pcapng</code> files</li>
+<li>Email message boxes using <code>mbox</code> and plain <code>eml</code> files</li>
+<li>Teamviewer's <code>connection_incoming.txt</code></li>
+<li>Generic <code>sqlite</code> databases</li>
+<li>Generic single-line text files via the <code>regex</code> plugin</li>
+<li>Generic <code>csv</code> files</li>
+</ul>
+<p>Along side the specific ones we also provide some generic "base" plugins which can be used as a base to build your own plugins!</p>
+<p>Gulp dives ingestion plugins in 3 major categories:</p><ul>
+<li>mapping files</li>
+<li>stacked plugins</li>
+<li>python plugins</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Mapping files</h2>
+<p>While mapping files are not technically plugins, they serve a very similar purpose, with some limitations. A mapping file basically instructs an existing plugins how to parse the various fields from the log, using a simplified <code>json</code> stucture.</p>
+<p>While making mappings, try to adhere to one of the following conventions (ordered from most to least preferred):</p><ol type="1">
+<li><code>ECS</code> standard defined by elastic <a href="https://www.elastic.co/guide/en/ecs/current/index.html">here</a></li>
+<li><code>gulp.&lt;meaningful_name&gt;.*</code> such as <code>gulp.http.query.params.&lt;name&gt;</code> or <code>gulp.pcap.&lt;protocol&gt;.field</code></li>
+<li>anything else</li>
+</ol>
+<p>Remember, the more standardized the logs we collect are, the easier it will be to create and share detection rules and query snippets!</p>
+<p>Mapping files are extremely useful when using a base plugin such as the <code>csv</code>, <code>sqlite</code> or <code>regex</code> plugins.</p>
+<p>Here's a minimal example taken from the <code>RecentFileCacheParser_csv.json</code> file under <code>src/gulp/ecs</code> folder, where mappings are typically placed. </p><div class="fragment"><div class="line">{</div>
+<div class="line">  &quot;metadata&quot;: {</div>
+<div class="line">    &quot;plugin&quot;: [</div>
+<div class="line">      &quot;csv&quot;</div>
+<div class="line">    ]</div>
+<div class="line">  },</div>
+<div class="line">  &quot;mappings&quot;: [</div>
+<div class="line">    {</div>
+<div class="line">      &quot;fields&quot;: {</div>
+<div class="line">        &quot;SourceFile&quot;: {</div>
+<div class="line">          &quot;map_to&quot;: &quot;file.path&quot;</div>
+<div class="line">        },</div>
+<div class="line">        &quot;SourceCreated&quot;: {</div>
+<div class="line">          &quot;is_timestamp&quot;: true,</div>
+<div class="line">          &quot;event_code&quot;: &quot;Created&quot;</div>
+<div class="line">        },</div>
+<div class="line">        &quot;SourceModified&quot;: {</div>
+<div class="line">          &quot;is_timestamp&quot;: true,</div>
+<div class="line">          &quot;event_code&quot;: &quot;Modified&quot;</div>
+<div class="line">        },</div>
+<div class="line">        &quot;SourceAccessed&quot;: {</div>
+<div class="line">          &quot;is_timestamp&quot;: true,</div>
+<div class="line">          &quot;event_code&quot;: &quot;Accessed&quot;</div>
+<div class="line">        }</div>
+<div class="line">      },</div>
+<div class="line">      &quot;options&quot;: {</div>
+<div class="line">        &quot;event_code&quot;: &quot;RecentFileCacheParser&quot;,</div>
+<div class="line">        &quot;agent_type&quot;: &quot;RecentFileCacheParser&quot;,</div>
+<div class="line">        &quot;mapping_id&quot;: &quot;recentfilecacheparser&quot;</div>
+<div class="line">      }</div>
+<div class="line">    }</div>
+<div class="line">  ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Let's break it down, starting from <code>metadata</code>. This field contains useful information the server uses to categorize and suggest plugins to its clients. In particular, <code>plugin</code> lists all plugins which gulp should suggest this mapping for, in our case it's the <code>csv</code> plugin.</p>
+<p>The next section is the <code>mappings</code> section, the core of the mapping file, this is a list of objects which are composed of 2 fields:</p><ul>
+<li>mapping : which contains the actual field-by-field mappings</li>
+<li>options : options specific for each mapping (such as the <code>mapping_id</code>, <code>event_code</code>, <code>agent_type</code>)</li>
+</ul>
+<p>Starting from the <code>mapping</code>, under this section we specify the fields and what to map them to. In our example, the log contains the following fields, which we want to map to the following mappings:</p><ul>
+<li><b>SourceFile</b>: indicates the name of the file</li>
+<li><b>SourceCreated</b>: this field in the log specifies when the file has been <b>created</b></li>
+<li><b>SourceModified</b>: similarly this contains the last <b>modified</b> date of the file</li>
+<li><b>SourceModified</b>: finally, this contains the last <b>accessed</b> date of the file</li>
+</ul>
+<p>Every mapping <b>must contain</b> at least one field specified as <code>is_timestamp</code> (or a <code>map_to</code> set to <code>@timestamp</code>), in order to allow indexing by the backing database. The <code>is_timestamp</code> parameter implies <code>@timestamp</code>, moreover, when <code>is_timestamp</code> is set a new event is generated for each field indicated as timestamp.</p>
+<p>Other options are described in more detail in the mapping_fields section.</p>
+<p>At the end of the mapping field, the <code>options</code> field contains some, well, options for this specific mapping, such as the value to fill the <code>event.code</code> field with, a <code>mapping_id</code>, etc.</p>
+<h3><a class="anchor" id="autotoc_md12"></a>
+mapping fields</h3>
+<p>Each mapping field (<a href="/docs/html/classmapping_1_1models_1_1_field_mapping_entry.html">FieldMappingEntry</a>) must contain the <code>map_to</code> field, additionally they can contain any of the following attributes:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">name   </th><th class="markdownTableHeadNone">description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">map_to   </td><td class="markdownTableBodyNone">the field name to map to on the database    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">is_timestamp   </td><td class="markdownTableBodyNone">if true, gulp will attempt to parse the field as a timestamp and convert it automatically (default: false)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">is_timestamp_chrome   </td><td class="markdownTableBodyNone">if true, the timestamp will be treated as a webkit/chrome epoch (01/01/1601 00:00:00)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">do_multiply   </td><td class="markdownTableBodyNone">if value is numeric multiplies it by this value before saving it to te db (e.g. useful for converting ms to ns timestamps)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">event_code   </td><td class="markdownTableBodyNone">if set overrides the event code for the generated events   </td></tr>
+</table>
+<dl class="section note"><dt>Note</dt><dd>If <code>map_to</code> is set to <code>@timestamp</code> the field will be mapped as timestamp and will be assumed to be in <b>milliseconds</b>. This is equivalent to setting <code>is_timestamp</code> to <code>True</code>, but without any parsing/conversion applied.</dd></dl>
+<h3><a class="anchor" id="autotoc_md13"></a>
+options field</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">name   </th><th class="markdownTableHeadNone">description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">default_event_code   </td><td class="markdownTableBodyNone">the default event code to apply to each event    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">agent_type   </td><td class="markdownTableBodyNone">name of the plugin/mapping    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">mapping_id   </td><td class="markdownTableBodyNone">a unique identifier, to identify a specific mapping in a file (in case multiple mappings are present)   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Stacked plugins</h2>
+<p>Stacked plugins are python plugins which are base upon other plugins, usually generic plugins (such as <code>csv</code>, <code>sqlite</code>, etc), but require a little more logic than a plain mapping files.</p>
+<p>Instead of receiving a raw event from the log file, stacked plugins receive a <code>GulpDocument</code>, which can be further modified before it gets ingested.</p>
+<p>While you can <b>technically</b> stack as many plugins as you want, it is advised against for 3 main reasons:</p><ul>
+<li>readibility: quite self explanatory</li>
+<li>performance: you go through more functions for each event in each file, this may impact performance depending on how performant each function is</li>
+<li>KISS principle: if an event requires logic that is split into many different files to be parsed correctly, maybe it'd be better to write a python plugin instead!</li>
+</ul>
+<p>Let's get down to business! A quite simple example of a stacked plugin is the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked</a> plugin, which is based onto the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/sqlite.py">sqlite.py</a> generic plugin.</p>
+<p>Since the logic behind acquiring data from an <code>sqlite</code> plugin is generic enough, it is a good foundation to build upon. Here's a quick overview of how the data flows:</p>
+<center><pre class="mermaid">
+flowchart TD
+    A(Log file) --&gt;|parsed by| B[Base plugin]
+    B --&gt; |Generates GulpDocument| C[Stacked plugin]
+    C --&gt; |Modifies GulpDocument| D(Ingest events)
+</pre></center><div class="fragment"><div class="line"><span class="keyword">async def </span>ingest(</div>
+<div class="line">    self,</div>
+<div class="line">    index: str,</div>
+<div class="line">    req_id: str,</div>
+<div class="line">    client_id: int,</div>
+<div class="line">    operation_id: int,</div>
+<div class="line">    context: str,</div>
+<div class="line">    source: str | list[dict],</div>
+<div class="line">    ws_id: str,</div>
+<div class="line">    plugin_params: GulpPluginParams = <span class="keywordtype">None</span>,</div>
+<div class="line">    flt: GulpIngestionFilter = <span class="keywordtype">None</span>,</div>
+<div class="line">    **kwargs,</div>
+<div class="line">) -&gt; GulpRequestStatus:</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">#...</span></div>
+<div class="line">    <span class="keywordflow">try</span>:</div>
+<div class="line">        mod = gulp_plugin.load_plugin(<span class="stringliteral">&quot;sqlite&quot;</span>, self.collab, self.elastic, **kwargs)</div>
+<div class="line">        <span class="keywordflow">if</span> plugin_params <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line">            plugin_params = GulpPluginParams()</div>
+<div class="line">    <span class="keywordflow">except</span> Exception:</div>
+<div class="line">        Plugin.logger().exception(<span class="stringliteral">&quot;error!&quot;</span>)</div>
+<div class="line">        <span class="keywordflow">return</span> GulpRequestStatus.FAILED</div>
+<div class="line"> </div>
+<div class="line">    plugin_params.record_to_gulp_document_fun.append(self.record_to_gulp_document)</div>
+<div class="line">    plugin_params.mapping_file = <span class="stringliteral">&quot;chrome_history.json&quot;</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">#...</span></div>
+</div><!-- fragment --><p>Here the plugin loads the base plugin and appends it's own <code>record_to_gulp_document</code> function to be executed after the base plugin. In this example, it also hardcodes a specific <code>mapping_file</code> to point to the one providing the mappings for Note that here the plugin does not .</p>
+<p>The other big difference from the Python plugins is that the <code>record_to_gulp_document</code> function does <b>not</b> receive a raw event, but instead receives a <code>GulpDocument</code>. </p><div class="fragment"><div class="line"><span class="keyword">async def </span>record_to_gulp_document(</div>
+<div class="line">   #...</div>
+<div class="line">) -&gt; list[GulpDocument]:</div>
+<div class="line">    <span class="keywordflow">for</span> r <span class="keywordflow">in</span> record:</div>
+<div class="line">        event: GulpDocument = r</div>
+<div class="line"> </div>
+<div class="line">        fme: list[FieldMappingEntry] = []</div>
+<div class="line">        <span class="keywordflow">for</span> k, v <span class="keywordflow">in</span> event.to_dict().items():</div>
+<div class="line">            e = self._map_source_key(</div>
+<div class="line">                plugin_params,</div>
+<div class="line">                custom_mapping,</div>
+<div class="line">                k,</div>
+<div class="line">                v,</div>
+<div class="line">                index_type_mapping=index_type_mapping,</div>
+<div class="line">                **kwargs,</div>
+<div class="line">            )</div>
+<div class="line">            fme.extend(e)</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment"># replace gulp event code with a value of the table</span></div>
+<div class="line">        extra = kwargs[<span class="stringliteral">&quot;extra&quot;</span>]</div>
+<div class="line">        event.gulp_event_code = self.ChromeHistoryTable[</div>
+<div class="line">            extra[<span class="stringliteral">&quot;gulp.sqlite.db.table.name&quot;</span>]</div>
+<div class="line">        ].value</div>
+<div class="line">        event_code = event.extra.get(<span class="stringliteral">&quot;event.code&quot;</span>, <span class="keywordtype">None</span>)</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">#TODO update with newset code</span></div>
+<div class="line">        <span class="comment"># if we are handling a download, we can calculate event.duration with start_time and end_time</span></div>
+<div class="line">        <span class="keywordflow">if</span> event_code <span class="keywordflow">in</span> [<span class="stringliteral">&quot;download_start&quot;</span>, <span class="stringliteral">&quot;download_end&quot;</span>]:</div>
+<div class="line">            end_time = event.extra.get(<span class="stringliteral">&quot;download_end_time&quot;</span>, 0)</div>
+<div class="line">            start_time = event.extra.get(<span class="stringliteral">&quot;download_start_time&quot;</span>, 0)</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> start_time &gt; 0 <span class="keywordflow">and</span> end_time &gt; 0:</div>
+<div class="line">                event.duration_nsec = end_time - start_time</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> record</div>
+</div><!-- fragment --><p>For this plugin the only real change to the ingested document we perform is to calculate the <code>event.duration</code> of the event, to make it render nicely on the GUI.</p>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Python plugins</h2>
+<p>Python plugins are the most versatile kind of extensions, allowing for parsing of complex log formats, converting data and handling more complex scenarios.</p>
+<p>A few good examples of python plugins are the <code>win_evtx</code> and <code>systemd_journal</code> which allow parsing of binary formats for Windows System logs and Systemd journal files respectively.</p>
+<p>While plugins can be as complex as needed, a simple plugin <b>must</b> implement the functions:</p><ul>
+<li><code>name</code></li>
+<li><code>type</code></li>
+<li><code>ingest</code></li>
+<li><code>record_to_gulp_document</code></li>
+</ul>
+<p>The first function, <code>name</code>, should return the name of the plugin. The second, <code>type</code>, should return one of the supported <code>GulpPluginType</code>, for ingestion plugins this is always set to: <code>GulpPluginType.INGESTION</code>.</p>
+<p>The <code>ingest</code> function the entry point to the plugin, it is typically used to setup the parsing of a file, which usually translates: to opening the file, iterating through the records, updating stats, handling errors, etc.</p>
+<p>The <code>record_to_gulp_document</code> function is responsible for applying custom mappings and translating the record into a <code>GulpDocument</code>.</p>
+<p>Plugins can accept parameters via the <a href="/docs/html/classgulp_1_1plugin__internal_1_1_gulp_plugin_option.html">GulpPluginOption</a>, these can be used to modify the behavior of the plugin as needed (e.g. provide decryption keys for encrypted log files, automatically decode data, etc.). These should be specified in the <code>options</code> implementation of the plugin.</p>
+<p>Further documentation about plugins can be found looking for the <a href="/docs/html/namespacegulp_1_1plugin.html">Plugin</a> class in the docs.</p>
+<h1><a class="anchor" id="autotoc_md16"></a>
+Extension plugins</h1>
+<p>Extensions plugins are useful for extending gulp's API. TODO</p>
+<h1><a class="anchor" id="autotoc_md17"></a>
+Sigma plugins</h1>
+<p>Sigma plugins are useful for transforming sigma rules into elastic queries. TODO </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: "dark",
+    });
+</script>

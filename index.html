@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gULP</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=chrome"/>
+  <style>
+    * {
+      -webkit-tap-highlight-color: transparent;
+      font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+      -webkit-user-select: none;
+      color: white;
+      background: black !important;
+      scroll-behavior: smooth;
+      -moz-user-select: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      -ms-user-select: none;
+      letter-spacing: 0.5px;
+      user-select: none;
+      background: none;
+      font-weight: 300;
+      line-height: 1;
+      outline: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500;
+    }
+    img {
+      -webkit-user-drag: none;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+    li::marker {
+      display: none;
+
+    }
+    html,
+    body {
+      max-width: 100%;
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: visible;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+
+    body {
+      overflow: unset;
+      padding: 8px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance:none;
+    }
+    .pad {
+      margin-left: 32px;
+    }
+  </style>
+</head>
+<body>
+  <p>gULP [general Universal Log Processor]</p>
+  <p>(c) Mentat Srl. All rights reserved.</p>
+  <br>
+  <br>
+  <p>Our socials:</p>
+  <p></p>
+  <p class="pad">[1] LinkedIn: <a href="https://linkedin.com/company/mentat-solutions-srl">https://linkedin.com/company/mentat-solutions-srl</a></p>
+  <p class="pad">[2] GitHub: <a href="https://github.com/mentat-is">https://github.com/mentat-is</a></p>
+  <p class="pad">[3] Discord: <a href="https://discord.gg/rWEzzRhtrp">https://discord.gg/rWEzzRhtrp</a></p>
+  <!-- <p>    X (Twitter): <a href="/">/</a></p> -->
+  <br>
+  <br>
+  <p id="end">gulp@Mentat/$ </p>
+</body>
+
+<script>
+  const endElement = document.getElementById('end');
+  let showCursor = true;
+
+  setInterval(() => {
+    if (showCursor) {
+      endElement.textContent = 'gulp@Mentat/$ ';
+    } else {
+      endElement.textContent = 'gulp@Mentat/$ |';
+    }
+    showCursor = !showCursor;
+  }, 500);
+</script>
+</html>

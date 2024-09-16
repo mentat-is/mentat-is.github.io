@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['web_20client_0',['Web Client',['../index.html#autotoc_md79',1,'']]],
+  ['web_20client_0',['Web Client',['../index.html#autotoc_md80',1,'']]],
   ['websocket_1',['Websocket',['../md_docs_2_architecture.html#autotoc_md9',1,'']]],
   ['win_5fevtx_20plugin_2',['win_evtx plugin',['../md_docs_2_testing_01_plugins.html#autotoc_md54',1,'']]],
   ['win_5fevtx_2epy_3',['win_evtx.py',['../win__evtx_8py.html',1,'']]],

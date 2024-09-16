@@ -15,7 +15,7 @@ var searchData=
   ['plugins_12',['Plugins',['../md_docs_2_creating_01_plugins.html',1,'Creating Plugins'],['../md_docs_2_architecture.html#autotoc_md5',1,'Plugins'],['../md_docs_2_testing_01_plugins.html',1,'Testing Plugins']]],
   ['plugins_13',['plugins',['../md_docs_2_creating_01_plugins.html#autotoc_md16',1,'Extension plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md10',1,'Ingestion plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md15',1,'Python plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md17',1,'Sigma plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md14',1,'Stacked plugins']]],
   ['prepare_20directories_20and_20configuration_14',['5. prepare directories and configuration',['../md_docs_2_install_01_dev.html#autotoc_md43',1,'']]],
-  ['prerequisites_15',['Prerequisites',['../index.html#autotoc_md72',1,'']]],
+  ['prerequisites_15',['Prerequisites',['../index.html#autotoc_md73',1,'']]],
   ['prerequisites_16',['1. prerequisites',['../md_docs_2_install_01_dev.html#autotoc_md39',1,'']]],
   ['python_20plugins_17',['Python plugins',['../md_docs_2_creating_01_plugins.html#autotoc_md15',1,'']]]
 ];

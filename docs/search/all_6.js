@@ -12,7 +12,7 @@ var searchData=
   ['apache_5ferror_5fclf_20plugin_9',['apache_error_clf plugin',['../md_docs_2_testing_01_plugins.html#autotoc_md57',1,'']]],
   ['api_10',['API',['../md_docs_2_architecture.html#autotoc_md7',1,'']]],
   ['api_20flow_11',['API flow',['../md_docs_2_architecture.html#autotoc_md8',1,'']]],
-  ['architecture_12',['Architecture',['../md_docs_2_architecture.html',1,'Architecture'],['../index.html#autotoc_md70',1,'Architecture']]],
+  ['architecture_12',['Architecture',['../md_docs_2_architecture.html',1,'Architecture'],['../index.html#autotoc_md71',1,'Architecture']]],
   ['architecture_13',['GULP architecture',['../md_docs_2_architecture.html#autotoc_md4',1,'']]],
   ['architecture_2emd_14',['Architecture.md',['../_architecture_8md.html',1,'']]]
 ];

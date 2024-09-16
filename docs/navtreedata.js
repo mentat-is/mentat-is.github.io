@@ -29,19 +29,20 @@ var NAVTREE =
       [ "Description", "index.html#autotoc_md68", [
         [ "Current features", "index.html#autotoc_md69", null ]
       ] ],
-      [ "Architecture", "index.html#autotoc_md70", null ],
-      [ "Installation", "index.html#autotoc_md71", [
-        [ "Prerequisites", "index.html#autotoc_md72", null ],
-        [ "Environment variables", "index.html#autotoc_md73", null ],
-        [ "SSL", "index.html#autotoc_md74", null ],
-        [ "Exposed services", "index.html#autotoc_md75", null ],
-        [ "Run", "index.html#autotoc_md76", [
-          [ "Test ingestion", "index.html#autotoc_md77", null ]
+      [ "Timeline", "index.html#autotoc_md70", null ],
+      [ "Architecture", "index.html#autotoc_md71", null ],
+      [ "Installation", "index.html#autotoc_md72", [
+        [ "Prerequisites", "index.html#autotoc_md73", null ],
+        [ "Environment variables", "index.html#autotoc_md74", null ],
+        [ "SSL", "index.html#autotoc_md75", null ],
+        [ "Exposed services", "index.html#autotoc_md76", null ],
+        [ "Run", "index.html#autotoc_md77", [
+          [ "Test ingestion", "index.html#autotoc_md78", null ]
         ] ]
       ] ],
-      [ "Clients", "index.html#autotoc_md78", [
-        [ "Web Client", "index.html#autotoc_md79", null ],
-        [ ".NET Client", "index.html#autotoc_md80", null ]
+      [ "Clients", "index.html#autotoc_md79", [
+        [ "Web Client", "index.html#autotoc_md80", null ],
+        [ ".NET Client", "index.html#autotoc_md81", null ]
       ] ],
       [ "For developers", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
       [ "Bug reporting", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ]
@@ -163,7 +164,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"md_docs_2_testing_01_plugins.html#autotoc_md61"
+"md_docs_2_testing_01_plugins.html#autotoc_md60"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,8 +1,6 @@
 <map id="to_dict" name="to_dict">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,32,74,60"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="8,33,3,23,7,14,20,7,41,5,64,8,76,14,74,19,63,13,41,11,22,13,11,17,8,23,13,30"/>
-<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#ae7a969999e7d7be46f79b575de5f2224" title=" " alt="" coords="122,5,343,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,39,113,33,114,38,75,44"/>
-<area shape="rect" id="Node000003" href="$classgulp_1_1plugins_1_1csv_1_1_plugin.html#ae7a969999e7d7be46f79b575de5f2224" title=" " alt="" coords="122,57,343,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="75,47,109,52,108,57,74,53"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,29,74,57"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="8,30,3,20,7,11,20,5,41,3,64,5,76,12,74,16,63,10,41,8,22,10,11,15,8,20,13,27"/>
+<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#ae7a969999e7d7be46f79b575de5f2224" title=" " alt="" coords="122,29,343,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,40,106,40,106,46,74,46"/>
 </map>

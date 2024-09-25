@@ -241,15 +241,13 @@ Collaboration diagram for GulpPluginParams:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgulp_1_1plugin__internal_1_1_gulp_plugin_params__coll__graph.png" border="0" usemap="#a_gulp_plugin_params_coll__map" alt="Collaboration graph"/></div>
 <map name="a_gulp_plugin_params_coll__map" id="a_gulp_plugin_params_coll__map">
-<area shape="rect" title=" " alt="" coords="159,234,300,262"/>
+<area shape="rect" title=" " alt="" coords="91,234,232,262"/>
 <area shape="rect" title=" " alt="" coords="5,5,99,33"/>
-<area shape="poly" title=" " alt="" coords="60,47,70,83,86,126,109,170,139,208,157,221,178,231,175,236,154,226,135,212,104,173,81,128,65,85,55,49"/>
+<area shape="poly" title=" " alt="" coords="67,45,158,233,153,235,62,48"/>
 <area shape="rect" title=" " alt="" coords="123,5,200,33"/>
-<area shape="poly" title=" " alt="" coords="156,49,149,83,146,125,149,168,165,209,176,222,191,231,188,236,172,226,160,211,144,170,140,125,144,83,151,48"/>
+<area shape="poly" title=" " alt="" coords="164,48,164,234,159,234,159,48"/>
 <area shape="rect" title=" " alt="" coords="241,5,356,33"/>
-<area shape="poly" title=" " alt="" coords="299,49,290,136,282,180,272,211,250,235,246,232,267,209,277,179,284,136,294,48"/>
-<area shape="rect" title=" " alt="" coords="503,5,548,33"/>
-<area shape="poly" title=" " alt="" coords="533,48,536,85,534,129,523,174,512,194,498,212,484,221,465,229,414,240,300,249,300,243,413,235,463,224,481,217,494,208,508,191,518,172,529,128,531,85,528,48"/>
+<area shape="poly" title=" " alt="" coords="305,48,307,84,305,128,294,172,284,193,271,212,254,227,233,237,231,232,251,222,267,208,280,190,289,170,299,127,302,84,300,49"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -269,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a43a5c9e85aab2daa110f1235d7846d14" id="r_a43a5c9e85aab2daa110f1235d7846d14"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43a5c9e85aab2daa110f1235d7846d14">config_override</a></td></tr>
 <tr class="separator:a43a5c9e85aab2daa110f1235d7846d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d010a504115955057e04e65a188c0e0" id="r_a0d010a504115955057e04e65a188c0e0"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d010a504115955057e04e65a188c0e0">extra</a> = Field({}, description=&quot;any extra custom options, i.e. the ones listed in plugin.options().&quot;)</td></tr>
+<tr class="memitem:a0d010a504115955057e04e65a188c0e0" id="r_a0d010a504115955057e04e65a188c0e0"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d010a504115955057e04e65a188c0e0">extra</a></td></tr>
 <tr class="separator:a0d010a504115955057e04e65a188c0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af07add341d3f93ea47e6b186fe099e0e" id="r_af07add341d3f93ea47e6b186fe099e0e"><td class="memItemLeft" align="right" valign="top">Optional&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af07add341d3f93ea47e6b186fe099e0e">ignore_mapping_ingest</a></td></tr>
 <tr class="separator:af07add341d3f93ea47e6b186fe099e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,20 +314,20 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00073">73</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>    <span class="keyword">def </span>from_dict(d: dict) -&gt; <span class="stringliteral">&quot;GulpPluginParams&quot;</span>:</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">return</span> GulpPluginParams(</div>
-<div class="line"><span class="lineno">   75</span>            mapping_file=d.get(<span class="stringliteral">&quot;mapping_file&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">   76</span>            mapping_id=d.get(<span class="stringliteral">&quot;mapping_id&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">   77</span>            timestamp_field=d.get(<span class="stringliteral">&quot;timestamp_field&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">   78</span>            ignore_mapping_ingest=d.get(<span class="stringliteral">&quot;ignore_mapping_ingest&quot;</span>, <span class="keyword">False</span>),</div>
-<div class="line"><span class="lineno">   79</span>            ignore_mapping_sigma_query=d.get(<span class="stringliteral">&quot;ignore_mapping_sigma_query&quot;</span>, <span class="keyword">False</span>),</div>
-<div class="line"><span class="lineno">   80</span>            config_override=d.get(<span class="stringliteral">&quot;config_override&quot;</span>, {}),</div>
-<div class="line"><span class="lineno">   81</span>            extra=d.get(<span class="stringliteral">&quot;extra&quot;</span>, {}),</div>
-<div class="line"><span class="lineno">   82</span>            record_to_gulp_document_fun=d.get(<span class="stringliteral">&quot;record_to_gulp_document_fun&quot;</span>, []),</div>
-<div class="line"><span class="lineno">   83</span>            pipeline=d.get(<span class="stringliteral">&quot;pipeline&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">   84</span>        )</div>
-<div class="line"><span class="lineno">   85</span> </div>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00076">76</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>    <span class="keyword">def </span>from_dict(d: dict) -&gt; <span class="stringliteral">&quot;GulpPluginParams&quot;</span>:</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> GulpPluginParams(</div>
+<div class="line"><span class="lineno">   78</span>            mapping_file=d.get(<span class="stringliteral">&quot;mapping_file&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   79</span>            mapping_id=d.get(<span class="stringliteral">&quot;mapping_id&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   80</span>            timestamp_field=d.get(<span class="stringliteral">&quot;timestamp_field&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   81</span>            ignore_mapping_ingest=d.get(<span class="stringliteral">&quot;ignore_mapping_ingest&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">   82</span>            ignore_mapping_sigma_query=d.get(<span class="stringliteral">&quot;ignore_mapping_sigma_query&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">   83</span>            config_override=d.get(<span class="stringliteral">&quot;config_override&quot;</span>, {}),</div>
+<div class="line"><span class="lineno">   84</span>            extra=d.get(<span class="stringliteral">&quot;extra&quot;</span>, {}),</div>
+<div class="line"><span class="lineno">   85</span>            record_to_gulp_document_fun=d.get(<span class="stringliteral">&quot;record_to_gulp_document_fun&quot;</span>, []),</div>
+<div class="line"><span class="lineno">   86</span>            pipeline=d.get(<span class="stringliteral">&quot;pipeline&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">   87</span>        )</div>
+<div class="line"><span class="lineno">   88</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -348,39 +346,29 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00058">58</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
-<div class="line"><span class="lineno">   59</span>        d = {</div>
-<div class="line"><span class="lineno">   60</span>            <span class="stringliteral">&quot;mapping_file&quot;</span>: self.mapping_file,</div>
-<div class="line"><span class="lineno">   61</span>            <span class="stringliteral">&quot;mapping_id&quot;</span>: self.mapping_id,</div>
-<div class="line"><span class="lineno">   62</span>            <span class="stringliteral">&quot;config_override&quot;</span>: self.config_override,</div>
-<div class="line"><span class="lineno">   63</span>            <span class="stringliteral">&quot;ignore_mapping_ingest&quot;</span>: self.ignore_mapping_ingest,</div>
-<div class="line"><span class="lineno">   64</span>            <span class="stringliteral">&quot;ignore_mapping_sigma_query&quot;</span>: self.ignore_mapping_sigma_query,</div>
-<div class="line"><span class="lineno">   65</span>            <span class="stringliteral">&quot;extra&quot;</span>: self.extra,</div>
-<div class="line"><span class="lineno">   66</span>            <span class="stringliteral">&quot;timestamp_field&quot;</span>: self.timestamp_field,</div>
-<div class="line"><span class="lineno">   67</span>            <span class="stringliteral">&quot;record_to_gulp_document_fun&quot;</span>: self.record_to_gulp_document_fun,</div>
-<div class="line"><span class="lineno">   68</span>            <span class="stringliteral">&quot;pipeline&quot;</span>: self.pipeline,</div>
-<div class="line"><span class="lineno">   69</span>        }</div>
-<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">return</span> d</div>
-<div class="line"><span class="lineno">   71</span> </div>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00061">61</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
+<div class="line"><span class="lineno">   62</span>        d = {</div>
+<div class="line"><span class="lineno">   63</span>            <span class="stringliteral">&quot;mapping_file&quot;</span>: self.mapping_file,</div>
+<div class="line"><span class="lineno">   64</span>            <span class="stringliteral">&quot;mapping_id&quot;</span>: self.mapping_id,</div>
+<div class="line"><span class="lineno">   65</span>            <span class="stringliteral">&quot;config_override&quot;</span>: self.config_override,</div>
+<div class="line"><span class="lineno">   66</span>            <span class="stringliteral">&quot;ignore_mapping_ingest&quot;</span>: self.ignore_mapping_ingest,</div>
+<div class="line"><span class="lineno">   67</span>            <span class="stringliteral">&quot;ignore_mapping_sigma_query&quot;</span>: self.ignore_mapping_sigma_query,</div>
+<div class="line"><span class="lineno">   68</span>            <span class="stringliteral">&quot;extra&quot;</span>: self.extra,</div>
+<div class="line"><span class="lineno">   69</span>            <span class="stringliteral">&quot;timestamp_field&quot;</span>: self.timestamp_field,</div>
+<div class="line"><span class="lineno">   70</span>            <span class="stringliteral">&quot;record_to_gulp_document_fun&quot;</span>: self.record_to_gulp_document_fun,</div>
+<div class="line"><span class="lineno">   71</span>            <span class="stringliteral">&quot;pipeline&quot;</span>: self.pipeline,</div>
+<div class="line"><span class="lineno">   72</span>        }</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> d</div>
+<div class="line"><span class="lineno">   74</span> </div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgulp_1_1plugin__internal_1_1_gulp_plugin_params_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph.png" border="0" usemap="#aclassgulp_1_1plugin__internal_1_1_gulp_plugin_params_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph" alt=""/></div>
 <map name="aclassgulp_1_1plugin__internal_1_1_gulp_plugin_params_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph" id="aclassgulp_1_1plugin__internal_1_1_gulp_plugin_params_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,36,71,64"/>
+<area shape="rect" title=" " alt="" coords="5,5,71,33"/>
 <area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#acc159cfa2b2d043ffa24a5f62e5c80a3" title=" " alt="" coords="119,5,344,33"/>
-<area shape="poly" title=" " alt="" coords="71,42,125,33,125,39,72,47"/>
-<area shape="rect" href="classgulp_1_1plugins_1_1sigma_1_1windows_1_1_plugin.html#acc159cfa2b2d043ffa24a5f62e5c80a3" title=" " alt="" coords="127,57,336,102"/>
-<area shape="poly" title=" " alt="" coords="72,52,112,58,111,64,71,57"/>
-<area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#a0e422abddcbb67f93856a6f754cbfef7" title=" " alt="" coords="392,57,605,102"/>
-<area shape="poly" title=" " alt="" coords="337,76,377,76,377,82,337,82"/>
-<area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#adafcb65c64ccf4cd7aa243765c95cc92" title=" " alt="" coords="653,13,868,41"/>
-<area shape="poly" title=" " alt="" coords="605,55,672,42,673,47,606,61"/>
-<area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="655,65,866,93"/>
-<area shape="poly" title=" " alt="" coords="606,76,640,76,640,82,606,82"/>
-<area shape="rect" href="classgulp_1_1plugins_1_1csv_1_1_plugin.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="655,117,866,145"/>
-<area shape="poly" title=" " alt="" coords="606,98,673,111,672,116,605,103"/>
+<area shape="poly" title=" " alt="" coords="71,16,103,16,103,22,71,22"/>
 </map>
 </div>
 
@@ -405,16 +393,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00088">88</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>    <span class="keyword">def </span>to_py_dict(cls, data: str | dict):</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">if</span> data <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> {}</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> isinstance(data, dict):</div>
-<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">return</span> data</div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">return</span> json.loads(data)</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span> </div>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00091">91</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>    <span class="keyword">def </span>to_py_dict(cls, data: str | dict):</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> data <span class="keywordflow">is</span> <span class="keywordtype">None</span> <span class="keywordflow">or</span> len(data) == 0:</div>
+<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">return</span> {}</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> isinstance(data, dict):</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">return</span> data</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> json.loads(data)</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -456,7 +444,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Optional extra = Field({}, description=&quot;any extra custom options, i.e. the ones listed in plugin.options().&quot;)</td>
+          <td class="memname">Optional extra</td>
         </tr>
       </table>
   </td>
@@ -465,7 +453,11 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
+<div class="line">        {},</div>
+<div class="line">        description=<span class="stringliteral">&quot;any extra custom options, i.e. the ones listed in plugin.options().&quot;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00045">45</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 
 </div>
@@ -612,7 +604,7 @@ Here is the call graph for this function:</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00047">47</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00050">50</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 
 </div>
 </div>

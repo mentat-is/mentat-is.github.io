@@ -7,19 +7,6 @@ var annotated_dup =
       [ "plugin_internal", "namespacegulp_1_1plugin__internal.html", [
         [ "GulpPluginOption", "classgulp_1_1plugin__internal_1_1_gulp_plugin_option.html", "classgulp_1_1plugin__internal_1_1_gulp_plugin_option" ],
         [ "GulpPluginParams", "classgulp_1_1plugin__internal_1_1_gulp_plugin_params.html", "classgulp_1_1plugin__internal_1_1_gulp_plugin_params" ]
-      ] ],
-      [ "plugins", "namespacegulp_1_1plugins.html", [
-        [ "csv", "namespacegulp_1_1plugins_1_1csv.html", [
-          [ "Plugin", "classgulp_1_1plugins_1_1csv_1_1_plugin.html", "classgulp_1_1plugins_1_1csv_1_1_plugin" ]
-        ] ],
-        [ "sigma", "namespacegulp_1_1plugins_1_1sigma.html", [
-          [ "windows", "namespacegulp_1_1plugins_1_1sigma_1_1windows.html", [
-            [ "Plugin", "classgulp_1_1plugins_1_1sigma_1_1windows_1_1_plugin.html", "classgulp_1_1plugins_1_1sigma_1_1windows_1_1_plugin" ]
-          ] ]
-        ] ],
-        [ "win_evtx", "namespacegulp_1_1plugins_1_1win__evtx.html", [
-          [ "Plugin", "classgulp_1_1plugins_1_1win__evtx_1_1_plugin.html", "classgulp_1_1plugins_1_1win__evtx_1_1_plugin" ]
-        ] ]
       ] ]
     ] ],
     [ "mapping", "namespacemapping.html", [

@@ -224,60 +224,69 @@ $(function(){initNavTree('md_docs_2_install_01_dev.html',''); initResizable(true
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md39">1. prerequisites</a>
+    <a href="#autotoc_md20">Using the setup script</a>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md21">1. prerequisites</a>
     <ul>
       <li class="level2">
-        <a href="#autotoc_md40">1. install OS dependencies</a>
+        <a href="#autotoc_md22">1. install OS dependencies</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md41">2. clone repositories</a>
+        <a href="#autotoc_md23">2. clone repositories</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md42">4. create and enter virtualenv</a>
+        <a href="#autotoc_md24">4. create and enter virtualenv</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md43">5. prepare directories and configuration</a>
+        <a href="#autotoc_md25">5. prepare directories and configuration</a>
       </li>
     </ul>
   </li>
   <li class="level1">
-    <a href="#autotoc_md44">2. dev install</a>
+    <a href="#autotoc_md26">2. dev install</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md45">3. run</a>
+    <a href="#autotoc_md27">3. run</a>
     <ul>
       <li class="level2">
-        <a href="#autotoc_md46">1. test</a>
+        <a href="#autotoc_md28">1. test</a>
       </li>
     </ul>
   </li>
   <li class="level1">
-    <a href="#autotoc_md47">4. troubleshoot</a>
+    <a href="#autotoc_md29">4. troubleshoot</a>
   </li>
 </ul>
 </div>
-<div class="textblock"><p><a class="anchor" id="autotoc_md38"></a></p>
-<h1><a class="anchor" id="autotoc_md39"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md19"></a></p>
+<h1><a class="anchor" id="autotoc_md20"></a>
+Using the setup script</h1>
+<p>Installation of a development environment can be done using the <a href="https://github.com/mentat-is/gulp/blob/develop/setup.sh">setup.sh</a> script. </p><div class="fragment"><div class="line">curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/setup.sh -o gulp_setup.sh</div>
+<div class="line">chmod +x gulp_setup.sh</div>
+<div class="line">sudo ./gulp_setup.sh --dev -d ./gulp</div>
+</div><!-- fragment --><p>If your OS is not supported please refer to the manual installation instructions below.</p>
+<h1><a class="anchor" id="autotoc_md21"></a>
 1. prerequisites</h1>
 <p>the following should be done only <b>first time</b>.</p>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 1. install OS dependencies</h2>
 <p>this depends on your OS, on EndeavourOS(arch):</p>
 <div class="fragment"><div class="line"># ensure python is at least 3.12</div>
 <div class="line">sudo pacman -S rust python docker docker-compose docker-buildx jq libpqxx git-lfs</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md41"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md23"></a>
 2. clone repositories</h2>
 <div class="fragment"><div class="line">mkdir ./repos &amp;&amp; cd ./repos</div>
 <div class="line">git clone https://github.com/mentat-is/muty-python.git</div>
 <div class="line">git clone --recurse-submodules https://github.com/mentat-is/gulp.git</div>
 <div class="line"> </div>
 <div class="line"># note: git-lfs is used to track samples and .zip files in test_scripts</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md24"></a>
 4. create and enter virtualenv</h2>
 <div class="fragment"><div class="line">cd ./repos/gulp</div>
 <div class="line">python3 -m venv ./.venv</div>
 <div class="line">source ./.venv/bin/activate</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md25"></a>
 5. prepare directories and configuration</h2>
 <div class="fragment"><div class="line"># create configuration directory</div>
 <div class="line">mkdir -p ~/.config/gulp</div>
@@ -291,13 +300,13 @@ $(function(){initNavTree('md_docs_2_install_01_dev.html',''); initResizable(true
 <div class="line">mkdir ./opensearch_data2</div>
 <div class="line">mkdir ./opensearch_data3</div>
 <div class="line">mkdir ./postgres_data</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md44"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md26"></a>
 2. dev install</h1>
 <p>install all packages as editable</p>
 <div class="fragment"><div class="line"># install all packages as editable (-e)</div>
 <div class="line">cd ./repos/gulp</div>
 <div class="line">pip3 install -U -e . &amp;&amp; pip3 install -U -e ../muty-python</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md45"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md27"></a>
 3. run</h1>
 <div class="fragment"><div class="line">cd ./repos/gulp</div>
 <div class="line"> </div>
@@ -309,12 +318,12 @@ $(function(){initNavTree('md_docs_2_install_01_dev.html',''); initResizable(true
 <div class="line">gulp --bind-to 0.0.0.0 8080 --reset-collab --reset-elastic testidx</div>
 <div class="line"> </div>
 <div class="line"># otherwise just run gulp --bind-to 0.0.0.0 8080</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md46"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md28"></a>
 1. test</h2>
 <div class="fragment"><div class="line"># check it ingests 98630 events (i.e. using elasticvue)</div>
 <div class="line">cd ./repos/gulp</div>
 <div class="line">TEST_WS_ID=abc ./test_scripts/test_ingest.sh -p ./samples/win_evtx</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md47"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md29"></a>
 4. troubleshoot</h1>
 <p><a class="el" href="md_docs_2_troubleshooting.html">troubleshoot</a> </p>
 </div></div><!-- contents -->

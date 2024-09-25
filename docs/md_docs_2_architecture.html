@@ -324,19 +324,28 @@ Plugins</h3>
 </blockquote>
 <ul>
 <li><em>ingestion plugins</em> ingests events from different sources, i.e. <em>windows evtx, apache CLF</em>, ... creating documents on OpenSearch.<ul>
-<li>documents are created mapping each event field to the <a href="https://www.elastic.c/guide/en/ecs/current/index.html">ECS standard</a> as close as possible, resulting in ECS-compliant data stored in the OpenSearch index.</li>
+<li><b>they must be in <code>$PLUGINDIR</code> and named <code>gi_name.py/c</code></b>.</li>
+<li>documents are created mapping each event field to the <a href="https://www.elastic.c/guide/en/ecs/current/index.html">ECS standard</a> as close as possible, resulting in ECS-compliant data stored in the OpenSearch index. <blockquote class="doxtable">
+<p>&zwj;ingestion plugins may be stacked in a chain, as in the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked</a> plugin. </p>
+</blockquote>
+</li>
 </ul>
 </li>
 <li><em>sigma plugins</em> leverages <a href="https://sigmahq-pysigma.readthedocs.io/en/latest/index.html">pysigma pipelines</a> to convert <a href="https://github.com/SigmaHQ/sigma">sigma rules</a> to <a href="https://www.opensearch.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">Lucene DSL queries</a> mapping the original rule fields to <em>ECS</em>.<ul>
+<li><b>they must be in <code>$PLUGINDIR/sigma</code> and named <code>gs_name.py/c</code></b>.</li>
 <li>to implement sigma plugins, look at the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/sigma/windows.py">windows sigma plugin</a>.</li>
 </ul>
 </li>
-<li><em>extension plugins</em> are loaded at startup and may extend API and add functionality. <blockquote class="doxtable">
+<li><em>extension plugins</em> are loaded at startup and may extend API and add functionality.<ul>
+<li><b>they must be in <code>$PLUGINDIR/extension</code> and named <code>ge_name.py/c</code></b>. <blockquote class="doxtable">
 <p>&zwj;look at the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/extension/extension_example.py">extension_example</a> to see how they work (documentation inside). </p>
 </blockquote>
-<blockquote class="doxtable">
-<p>&zwj;plugins may be stacked in a chain, as in the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked</a> plugin. </p>
-</blockquote>
+</li>
+</ul>
+</li>
+<li><em>query plugins</em> are used by the <code>query_plugin</code> API to support querying external sources (i.e. <em>SIEM</em>, ...)<ul>
+<li><b>they must be in <code>$PLUGINDIR/query</code> and named <code>gq_name.py/c</code></b>.</li>
+</ul>
 </li>
 </ul>
 <h4><a class="anchor" id="autotoc_md6"></a>

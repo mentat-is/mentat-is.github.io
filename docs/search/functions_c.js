@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sigma_5fplugin_5finitialize_0',['sigma_plugin_initialize',['../classgulp_1_1plugin_1_1_plugin_base.html#a0e422abddcbb67f93856a6f754cbfef7',1,'gulp::plugin::PluginBase']]]
+  ['record_5fto_5fgulp_5fdocument_0',['record_to_gulp_document',['../classgulp_1_1plugin_1_1_plugin_base.html#a38a3b56e6818d69a12aa847ac980895e',1,'gulp::plugin::PluginBase']]]
 ];

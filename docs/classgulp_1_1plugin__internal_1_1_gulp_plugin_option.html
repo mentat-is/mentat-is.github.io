@@ -245,9 +245,9 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aaccc9105df5383111407fd5b41255e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">defines plugin specific supported options, passed through GulpPluginParams.extra
+<div class="textblock"><pre class="fragment">this is used by the UI through the plugin.options() method to list the supported options, and their types, for a plugin.
 </pre> 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00097">97</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00100">100</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad0c47a44c1dbff890a6f169cf1451bc9" name="ad0c47a44c1dbff890a6f169cf1451bc9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0c47a44c1dbff890a6f169cf1451bc9">&#9670;&#160;</a></span>__init__()</h2>
@@ -278,18 +278,28 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">any</td>          <td class="paramname"><span class="paramname"><em>default</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>&#160;)</td>
+          <td class="paramtype">any </td>          <td class="paramname"><span class="paramname"><em>default</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00101">101</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>    <span class="keyword">def </span>__init__(self, name: str, t: str, desc: str, default: any=<span class="keywordtype">None</span>):</div>
-<div class="line"><span class="lineno">  102</span>        self.name = name</div>
-<div class="line"><span class="lineno">  103</span>        self.t = t</div>
-<div class="line"><span class="lineno">  104</span>        self.default = default</div>
-<div class="line"><span class="lineno">  105</span>        self.desc = desc</div>
-<div class="line"><span class="lineno">  106</span> </div>
+<pre class="fragment">:param name: option name
+:param t: option type (use "bool", "str", "int", "float", "dict", "list" for the types.)
+:param desc: option description
+:param default: default value
+</pre> 
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00105">105</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>    <span class="keyword">def </span>__init__(self, name: str, t: str, desc: str, default: any = <span class="keywordtype">None</span>):</div>
+<div class="line"><span class="lineno">  106</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  107</span><span class="stringliteral">        :param name: option name</span></div>
+<div class="line"><span class="lineno">  108</span><span class="stringliteral">        :param t: option type (use &quot;bool&quot;, &quot;str&quot;, &quot;int&quot;, &quot;float&quot;, &quot;dict&quot;, &quot;list&quot; for the types.)</span></div>
+<div class="line"><span class="lineno">  109</span><span class="stringliteral">        :param desc: option description</span></div>
+<div class="line"><span class="lineno">  110</span><span class="stringliteral">        :param default: default value</span></div>
+<div class="line"><span class="lineno">  111</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  112</span>        self.name = name</div>
+<div class="line"><span class="lineno">  113</span>        self.t = t</div>
+<div class="line"><span class="lineno">  114</span>        self.default = default</div>
+<div class="line"><span class="lineno">  115</span>        self.desc = desc</div>
+<div class="line"><span class="lineno">  116</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -309,28 +319,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00107">107</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> {</div>
-<div class="line"><span class="lineno">  109</span>            <span class="stringliteral">&quot;name&quot;</span>: self.name,</div>
-<div class="line"><span class="lineno">  110</span>            <span class="stringliteral">&quot;type&quot;</span>: self.t,</div>
-<div class="line"><span class="lineno">  111</span>            <span class="stringliteral">&quot;default&quot;</span>: self.default,</div>
-<div class="line"><span class="lineno">  112</span>            <span class="stringliteral">&quot;desc&quot;</span>: self.desc</div>
-<div class="line"><span class="lineno">  113</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00117">117</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> {</div>
+<div class="line"><span class="lineno">  119</span>            <span class="stringliteral">&quot;name&quot;</span>: self.name,</div>
+<div class="line"><span class="lineno">  120</span>            <span class="stringliteral">&quot;type&quot;</span>: self.t,</div>
+<div class="line"><span class="lineno">  121</span>            <span class="stringliteral">&quot;default&quot;</span>: self.default,</div>
+<div class="line"><span class="lineno">  122</span>            <span class="stringliteral">&quot;desc&quot;</span>: self.desc,</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classgulp_1_1plugin__internal_1_1_gulp_plugin_option_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph.png" border="0" usemap="#aclassgulp_1_1plugin__internal_1_1_gulp_plugin_option_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph" alt=""/></div>
 <map name="aclassgulp_1_1plugin__internal_1_1_gulp_plugin_option_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph" id="aclassgulp_1_1plugin__internal_1_1_gulp_plugin_option_a3afb8c54f9c26db579bb05cc3cf72bb3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,84,71,112"/>
+<area shape="rect" title=" " alt="" coords="5,32,71,60"/>
 <area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#ad23a45a663b1933199b70ae3631e451b" title=" " alt="" coords="122,5,326,33"/>
-<area shape="poly" title=" " alt="" coords="56,81,84,62,118,43,138,36,140,41,120,48,87,66,59,86"/>
-<area shape="rect" href="classgulp_1_1plugins_1_1csv_1_1_plugin.html#ad23a45a663b1933199b70ae3631e451b" title=" " alt="" coords="122,57,326,85"/>
-<area shape="poly" title=" " alt="" coords="71,91,108,85,109,90,72,96"/>
-<area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="119,109,329,137"/>
-<area shape="poly" title=" " alt="" coords="72,100,104,104,103,109,71,105"/>
-<area shape="rect" href="classgulp_1_1plugins_1_1csv_1_1_plugin.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="119,161,329,189"/>
-<area shape="poly" title=" " alt="" coords="59,110,87,129,120,146,140,154,138,159,118,151,84,133,56,114"/>
+<area shape="poly" title=" " alt="" coords="71,39,108,33,109,38,72,44"/>
+<area shape="rect" href="classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="119,57,329,85"/>
+<area shape="poly" title=" " alt="" coords="72,48,104,52,103,57,71,53"/>
 </map>
 </div>
 
@@ -349,7 +355,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00104">104</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00114">114</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 
 </div>
 </div>
@@ -365,7 +371,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00105">105</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00115">115</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 
 </div>
 </div>
@@ -381,7 +387,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00102">102</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00112">112</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 
 </div>
 </div>
@@ -397,7 +403,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00103">103</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="plugin__internal_8py_source.html#l00113">113</a> of file <a class="el" href="plugin__internal_8py_source.html">plugin_internal.py</a>.</p>
 
 </div>
 </div>

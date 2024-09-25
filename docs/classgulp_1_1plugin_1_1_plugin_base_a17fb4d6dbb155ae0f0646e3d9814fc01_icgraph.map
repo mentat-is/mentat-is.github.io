@@ -1,15 +1,11 @@
 <map id="_build_ingestion_chunk_for_ws" name="_build_ingestion_chunk_for_ws">
-<area shape="rect" id="Node000001" title=" " alt="" coords="803,24,976,68"/>
-<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#a400aabb1893cbe98511a69414c8e58a2" title=" " alt="" coords="648,32,755,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="787,48,755,48,755,43,787,43"/>
-<area shape="rect" id="Node000003" href="$classgulp_1_1plugin_1_1_plugin_base.html#a0f3983f38b1d29c20df0dd5a496359af" title=" " alt="" coords="305,5,436,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="632,43,436,27,437,22,633,38"/>
-<area shape="rect" id="Node000005" href="$classgulp_1_1plugin_1_1_plugin_base.html#ad9cf9630b6d3e7ae9eab1b880e786222" title=" " alt="" coords="484,57,600,85"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="634,59,601,65,600,59,633,54"/>
-<area shape="rect" id="Node000004" href="$classgulp_1_1plugins_1_1win__evtx_1_1_plugin.html#ab96082a9ecc6d0db5a48ee6958ac3239" title=" " alt="" coords="5,32,257,60"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,31,257,34,257,29,289,25"/>
-<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="172,19,158,13,131,11,106,13,92,17,89,23,95,30,90,33,84,23,89,13,105,7,131,5,159,8,174,14"/>
-<area shape="rect" id="Node000006" href="$classgulp_1_1plugin_1_1_plugin_base.html#abf39f32a2e7e60975eac7054393625da" title=" " alt="" coords="307,57,434,85"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="468,74,434,74,434,68,468,68"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="292,66,257,62,257,57,292,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="513,24,687,68"/>
+<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#a400aabb1893cbe98511a69414c8e58a2" title=" " alt="" coords="359,32,465,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="498,48,466,48,466,43,498,43"/>
+<area shape="rect" id="Node000003" href="$classgulp_1_1plugin_1_1_plugin_base.html#a0f3983f38b1d29c20df0dd5a496359af" title=" " alt="" coords="180,5,311,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,38,311,32,312,27,344,32"/>
+<area shape="rect" id="Node000004" href="$classgulp_1_1plugin_1_1_plugin_base.html#ad9cf9630b6d3e7ae9eab1b880e786222" title=" " alt="" coords="187,57,304,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="344,59,304,65,303,60,343,54"/>
+<area shape="rect" id="Node000005" href="$classgulp_1_1plugin_1_1_plugin_base.html#abf39f32a2e7e60975eac7054393625da" title=" " alt="" coords="5,57,132,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="172,74,132,74,132,68,172,68"/>
 </map>

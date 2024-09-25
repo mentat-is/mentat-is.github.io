@@ -1,9 +1,7 @@
 <map id="FieldMappingEntry" name="FieldMappingEntry">
-<area shape="rect" id="Node000001" title=" " alt="" coords="91,200,232,228"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="36,200,177,228"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,99,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,45,156,198,152,201,64,47"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,47,106,199,100,200,57,48"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="123,5,200,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,48,164,200,159,200,159,48"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="315,5,360,33"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,49,343,78,340,113,329,148,310,178,279,194,233,205,232,200,277,189,306,174,325,145,335,112,338,78,338,49"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,48,113,200,108,199,151,47"/>
 </map>

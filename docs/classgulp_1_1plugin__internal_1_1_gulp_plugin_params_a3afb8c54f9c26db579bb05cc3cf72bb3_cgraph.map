@@ -1,15 +1,5 @@
 <map id="to_dict" name="to_dict">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,36,71,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,71,33"/>
 <area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#acc159cfa2b2d043ffa24a5f62e5c80a3" title=" " alt="" coords="119,5,344,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,42,125,33,125,39,72,47"/>
-<area shape="rect" id="Node000003" href="$classgulp_1_1plugins_1_1sigma_1_1windows_1_1_plugin.html#acc159cfa2b2d043ffa24a5f62e5c80a3" title=" " alt="" coords="127,57,336,102"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="72,52,112,58,111,64,71,57"/>
-<area shape="rect" id="Node000004" href="$classgulp_1_1plugin_1_1_plugin_base.html#a0e422abddcbb67f93856a6f754cbfef7" title=" " alt="" coords="392,57,605,102"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="337,76,377,76,377,82,337,82"/>
-<area shape="rect" id="Node000005" href="$classgulp_1_1plugin_1_1_plugin_base.html#adafcb65c64ccf4cd7aa243765c95cc92" title=" " alt="" coords="653,13,868,41"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="605,55,672,42,673,47,606,61"/>
-<area shape="rect" id="Node000006" href="$classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="655,65,866,93"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="606,76,640,76,640,82,606,82"/>
-<area shape="rect" id="Node000007" href="$classgulp_1_1plugins_1_1csv_1_1_plugin.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="655,117,866,145"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="606,98,673,111,672,116,605,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,16,103,16,103,22,71,22"/>
 </map>

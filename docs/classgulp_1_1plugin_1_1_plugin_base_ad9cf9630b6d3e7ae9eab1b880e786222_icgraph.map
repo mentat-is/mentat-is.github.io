@@ -1,8 +1,5 @@
 <map id="_ingest_record" name="_ingest_record">
-<area shape="rect" id="Node000001" title=" " alt="" coords="479,29,595,57"/>
-<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#abf39f32a2e7e60975eac7054393625da" title=" " alt="" coords="305,29,431,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,46,431,46,431,40,463,40"/>
-<area shape="rect" id="Node000003" href="$classgulp_1_1plugins_1_1win__evtx_1_1_plugin.html#ab96082a9ecc6d0db5a48ee6958ac3239" title=" " alt="" coords="5,29,257,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,46,257,46,257,40,289,40"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="172,16,157,10,131,8,106,10,93,15,89,20,95,27,91,30,84,20,89,11,105,5,131,3,159,5,174,12"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="180,5,296,33"/>
+<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#abf39f32a2e7e60975eac7054393625da" title=" " alt="" coords="5,5,132,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,22,132,22,132,16,164,16"/>
 </map>

@@ -224,63 +224,63 @@ $(function(){initNavTree('md_docs_2_testing_01_plugins.html',''); initResizable(
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md51">Intro</a>
+    <a href="#autotoc_md33">Intro</a>
     <ul>
       <li class="level2">
-        <a href="#autotoc_md52">Usage</a>
+        <a href="#autotoc_md34">Usage</a>
       </li>
     </ul>
   </li>
   <li class="level1">
-    <a href="#autotoc_md53">Examples</a>
+    <a href="#autotoc_md35">Examples</a>
     <ul>
       <li class="level2">
-        <a href="#autotoc_md54">win_evtx plugin</a>
+        <a href="#autotoc_md36">win_evtx plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md55">win_reg plugin</a>
+        <a href="#autotoc_md37">win_reg plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md56">apache_access_clf plugin</a>
+        <a href="#autotoc_md38">apache_access_clf plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md57">apache_error_clf plugin</a>
+        <a href="#autotoc_md39">apache_error_clf plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md58">chrome_history_sqlite_stacked plugin</a>
+        <a href="#autotoc_md40">chrome_history_sqlite_stacked plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md59">chrome_webdata_sqlite_stacked plugin</a>
+        <a href="#autotoc_md41">chrome_webdata_sqlite_stacked plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md60">eml plugin</a>
+        <a href="#autotoc_md42">eml plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md61">mbox plugin</a>
+        <a href="#autotoc_md43">mbox plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md62">teamviewer_regex_stacked plugin</a>
+        <a href="#autotoc_md44">teamviewer_regex_stacked plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md63">regex plugin</a>
+        <a href="#autotoc_md45">regex plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md64">systemd_journal plugin</a>
+        <a href="#autotoc_md46">systemd_journal plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md65">csv plugin</a>
+        <a href="#autotoc_md47">csv plugin</a>
       </li>
       <li class="level2">
-        <a href="#autotoc_md66">sqlite plugin</a>
+        <a href="#autotoc_md48">sqlite plugin</a>
       </li>
     </ul>
   </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="autotoc_md51"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md33"></a>
 Intro</h1>
 <p>Testing plugins can be achieved by 2 methods, the simplest is to just use the plugin via the GUI and check data is being ingested and treated correcly, the second way is to use the <a href="https://github.com/mentat-is/gulp/test_scripts/test_ingest.sh">test_ingest.sh</a>, a simple bash script which user <code>curl</code> to perform ingestion onto the host.</p>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md34"></a>
 Usage</h2>
 <p>Here's the <code>-h</code> output of the <code>test_ingest.sh</code> script: </p><div class="fragment"><div class="line">ingest SINGLE file, zipfile or directory in GULP.</div>
 <div class="line"> </div>
@@ -290,52 +290,52 @@ Usage</h2>
 <div class="line"> [-i to use ingest_zip_simple instead of ingest_zip for zip file (hardcoded win_evtx plugin, *.evtx mask)]</div>
 <div class="line"> [-x to reset collaboration/elasticsearch first]</div>
 <div class="line"> </div>
-<div class="line">host,operation,context,client_id,plugin,index,user,password are set respectively to &quot;localhost:8080&quot;, 1 (test operation), &quot;testcontext&quot;, 1 (test client), &quot;win_evtx&quot;, &quot;testidx&quot;, &quot;ingest&quot;, &quot;ingest&quot;.</div>
+<div class="line">host,operation,context,client_id,plugin,index,user,password are set respectively to &quot;localhost:8080&quot;, 1 (test operation), &quot;testcontext&quot;, 1 (test client), &quot;gi_win_evtx&quot;, &quot;testidx&quot;, &quot;ingest&quot;, &quot;ingest&quot;.</div>
 <div class="line"> </div>
 <div class="line">most of the parameters can be changed via environment variables:</div>
 <div class="line"> TEST_HOST, TEST_OPERATION, TEST_CONTEXT, TEST_CLIENT, TEST_PLUGIN, TEST_INDEX, TEST_USER, TEST_PASSWORD,</div>
 <div class="line"> TEST_PLUGIN_PARAMS, TEST_MASK, TEST_WS_ID.</div>
 <div class="line"> </div>
 <div class="line">a token can also be provided to avoid login via environment variable TEST_TOKEN.</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md53"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md35"></a>
 Examples</h1>
 <p>Here are a few examples on how to use the <a href="https://github.com/mentat-is/gulp/test_scripts/test_ingest.sh">test_ingest.sh</a> script.</p>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md36"></a>
 win_evtx plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/win_evtx.py">win_evtx.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=win_evtx ./test_scripts/test_ingest.sh -p samples/win_evtx</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md55"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_win_evtx.py">gi_win_evtx.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_win_evtx ./test_scripts/test_ingest.sh -p samples/gi_win_evtx</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md37"></a>
 win_reg plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/win_reg.py">win_reg.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=win_reg ./test_scripts/test_ingest.sh -p samples/win_reg</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md56"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_win_reg.py">gi_win_reg.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_win_reg ./test_scripts/test_ingest.sh -p samples/win_reg</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
 apache_access_clf plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/apache_access_clf.py">apache_access_clf.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=apache_access_clf ./test_scripts/test_ingest.sh -p samples/apache_access_clf/access.log.sample</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md57"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_apache_access_clf.py">gi_apache_access_clf.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_apache_access_clf ./test_scripts/test_ingest.sh -p samples/apache_access_clf/access.log.sample</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md39"></a>
 apache_error_clf plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/apache_error_clf.py">apache_error_clf.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=apache_error_clf ./test_scripts/test_ingest.sh -p samples/apache_error_clf/error.log</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md58"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_apache_error_clf.py">gi_apache_error_clf.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_apache_error_clf ./test_scripts/test_ingest.sh -p samples/apache_error_clf/error.log</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md40"></a>
 chrome_history_sqlite_stacked plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=chrome_history_sqlite_stacked ./test_scripts/test_ingest.sh -p $HOME/.config/chromium/Profile\ 1/History</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md59"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_chrome_history_sqlite_stacked.py">gi_chrome_history_sqlite_stacked.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_chrome_history_sqlite_stacked ./test_scripts/test_ingest.sh -p $HOME/.config/chromium/Profile\ 1/History</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md41"></a>
 chrome_webdata_sqlite_stacked plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_webdata_sqlite_stacked.py">chrome_webdata_sqlite_stacked.py</a></p>
-<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=chrome_webdata_sqlite_stacked ./test_scripts/test_ingest.sh -p $HOME/.config/chromium/Profile\ 1/Web\ Data</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md60"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_chrome_webdata_sqlite_stacked.py">gi_chrome_webdata_sqlite_stacked.py</a></p>
+<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_chrome_webdata_sqlite_stacked ./test_scripts/test_ingest.sh -p $HOME/.config/chromium/Profile\ 1/Web\ Data</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
 eml plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/eml.py">eml.py</a></p>
-<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=eml ./test_scripts/test_ingest.sh -p samples/eml/</div>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_eml.py">gi_eml.py</a></p>
+<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_eml ./test_scripts/test_ingest.sh -p samples/eml/</div>
 </div><!-- fragment --><p>This plugin supports the following options:</p><ul>
 <li><code>decode</code>: if set to <code>True</code> it automatically decodes multipart eml messages (e.g. base64, etc)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md43"></a>
 mbox plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/mbox.py">mbox.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=mbox ./test_scripts/test_ingest.sh -p samples/mbox/</div>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_mbox.py">gi_mbox.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_mbox ./test_scripts/test_ingest.sh -p samples/mbox/</div>
 </div><!-- fragment --><p>This plugin supports the same options as the <code>eml</code> plugin.</p>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md44"></a>
 teamviewer_regex_stacked plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/teamviewer_regex_stacked.py">teamviewer_regex_stacked.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=teamviewer_regex_stacked ./test_scripts/test_ingest.sh -p samples/teamviwer/connections_incoming.txt</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md63"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_teamviewer_regex_stacked.py">gi_teamviewer_regex_stacked.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=teamviewer_regex_stacked ./test_scripts/test_ingest.sh -p samples/teamviwer/connections_incoming.txt</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md45"></a>
 regex plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/regex.py">regex.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN_PARAMS=&#39;{&quot;extra&quot;:{&quot;regex&quot;:&quot;(?P&lt;test&gt;.*)-(?P&lt;timestamp&gt;.*)&quot;}}&#39; TEST_PLUGIN=regex ./test_scripts/test_ingest.sh -x -p samples/regex/test.sample</div>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_regex.py">gi_regex.py</a> </p><div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN_PARAMS=&#39;{&quot;extra&quot;:{&quot;regex&quot;:&quot;(?P&lt;test&gt;.*)-(?P&lt;timestamp&gt;.*)&quot;}}&#39; TEST_PLUGIN=gi_regex ./test_scripts/test_ingest.sh -x -p samples/regex/test.sample</div>
 </div><!-- fragment --><p>This plugin requires the following options to be set in order to work:</p><ul>
 <li><code>regex</code>: the regex to match</li>
 <li><code>flags</code>: regex flags to apply (refer to <a href="https://docs.python.org/3/library/re.html#flags">flags</a> for the values)</li>
@@ -344,16 +344,19 @@ regex plugin</h2>
 <li>must contain <b>named groups</b></li>
 <li>must contain one named group named <b>timestamp</b> (case-sensitive)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md64"></a>
+<h2><a class="anchor" id="autotoc_md46"></a>
 systemd_journal plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/systemd_journal.py">systemd_journal.py</a> TODO</p>
-<h2><a class="anchor" id="autotoc_md65"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_systemd_journal.py">gi_systemd_journal.py</a></p>
+<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_systemd_journal ./test_scripts/test_ingest.sh -p ./samples/systemd_journal/system.journal</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md47"></a>
 csv plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/csv.py">csv.py</a> TODO</p>
-<h2><a class="anchor" id="autotoc_md66"></a>
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_csv.py">gi_csv.py</a></p>
+<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_csv TEST_PLUGIN_PARAMS=&#39;{&quot;mapping_file&quot;: &quot;mftecmd_csv.json&quot;, &quot;mapping_id&quot;: &quot;record&quot;}&#39; ./test_scripts/test_ingest.sh -p ./samples/mftecmd/sample_record.csv</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md48"></a>
 sqlite plugin</h2>
-<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/sqlite.py">sqlite.py</a> TODO </p>
-</div></div><!-- contents -->
+<p>Source: <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_sqlite.py">gi_sqlite.py</a></p>
+<div class="fragment"><div class="line">TEST_WS_ID=&quot;websocket_id&quot; TEST_PLUGIN=gi_sqlite TEST_PLUGIN_PARAMS=&#39;{&quot;mapping_file&quot;: &quot;chrome_webdata.json&quot;}&#39; ./test_scripts/test_ingest.sh -p ./samples/chrome-webdata/webdata.sqlite</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <script>

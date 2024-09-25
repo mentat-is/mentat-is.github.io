@@ -1,9 +1,5 @@
 <map id="sigma_plugin_initialize" name="sigma_plugin_initialize">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,177,85"/>
-<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#adafcb65c64ccf4cd7aa243765c95cc92" title=" " alt="" coords="299,5,361,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,54,283,26,284,32,159,59"/>
-<area shape="rect" id="Node000003" href="$classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="301,57,359,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,68,285,68,285,74,177,74"/>
-<area shape="rect" id="Node000004" href="$classgulp_1_1plugins_1_1csv_1_1_plugin.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="225,109,435,137"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,83,248,103,247,108,158,88"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,177,33"/>
+<area shape="rect" id="Node000002" href="$classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82" title=" " alt="" coords="225,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,16,209,16,209,22,177,22"/>
 </map>

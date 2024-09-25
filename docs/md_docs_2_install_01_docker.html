@@ -224,29 +224,29 @@ $(function(){initNavTree('md_docs_2_install_01_docker.html',''); initResizable(t
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md49">(re)build image</a>
+    <a href="#autotoc_md31">(re)build image</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md50">run</a>
+    <a href="#autotoc_md32">run</a>
   </li>
 </ul>
 </div>
-<div class="textblock"><p><a class="anchor" id="autotoc_md48"></a></p>
-<h1><a class="anchor" id="autotoc_md49"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md30"></a></p>
+<h1><a class="anchor" id="autotoc_md31"></a>
 (re)build image</h1>
 <blockquote class="doxtable">
 <p>&zwj;until we provide a docker image to be pulled :) </p>
 </blockquote>
 <ol type="1">
 <li>clone this repository and perform <a class="el" href="md_docs_2_install_01_dev.html">install from sources</a></li>
-<li>build gulp image</li>
+<li>build gulp image using the <a href="https://github.com/docker/buildx">buildx</a> docker plugin</li>
 </ol>
 <div class="fragment"><div class="line">./update_requirements_txt.sh</div>
 <div class="line">docker build --rm --tag gulp:latest --ssh default .</div>
 <div class="line"> </div>
 <div class="line"># or rebuild adding the --no-cache flag</div>
 <div class="line"># docker build --rm --no-cache --tag gulp:latest --ssh default .</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md50"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md32"></a>
 run</h1>
 <blockquote class="doxtable">
 <p>&zwj;using default <a href="../docker-compose.yml">docket-compose</a>, you should provide your own ... </p>
@@ -254,7 +254,7 @@ run</h1>
 <div class="fragment"><div class="line"># create configuration from template, if needed</div>
 <div class="line">#</div>
 <div class="line"># NOTE: elastic_url, postgres_url, path_certs will be overridden by environment variables set in the docker-compose.yml file</div>
-<div class="line">copy ./template_cfg.json ./gulp_cfg.json</div>
+<div class="line">cp ./template_cfg.json ./gulp_cfg.json</div>
 <div class="line"> </div>
 <div class="line"># bring up the full stack of services</div>
 <div class="line">docker compose --profile full up -d</div>

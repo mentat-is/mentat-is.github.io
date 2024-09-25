@@ -251,12 +251,16 @@ $(function(){initNavTree('md_docs_2_creating_01_plugins.html',''); initResizable
   <li class="level1">
     <a href="#autotoc_md17">Sigma plugins</a>
   </li>
+  <li class="level1">
+    <a href="#autotoc_md18">Query plugins</a>
+  </li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="autotoc_md10"></a>
 Ingestion plugins</h1>
 <p>Gulp's architecture allows developers and users to add supported files for ingestion.</p>
-<p>Gulp supports a bunch of different log formats for ingestion. We currently support the following:</p><ul>
+<p>Gulp supports a bunch of different log formats for ingestion. We currently support the following:</p>
+<ul>
 <li>Apache's standard <code>access.log</code> and <code>error.log</code></li>
 <li>Windows <code>evtx</code></li>
 <li>Windows <code>registry</code> hives</li>
@@ -272,7 +276,8 @@ Ingestion plugins</h1>
 <li>Generic <code>csv</code> files</li>
 </ul>
 <p>Along side the specific ones we also provide some generic "base" plugins which can be used as a base to build your own plugins!</p>
-<p>Gulp dives ingestion plugins in 3 major categories:</p><ul>
+<p>Gulp dives ingestion plugins in 3 major categories:</p>
+<ul>
 <li>mapping files</li>
 <li>stacked plugins</li>
 <li>python plugins</li>
@@ -287,10 +292,11 @@ Mapping files</h2>
 </ol>
 <p>Remember, the more standardized the logs we collect are, the easier it will be to create and share detection rules and query snippets!</p>
 <p>Mapping files are extremely useful when using a base plugin such as the <code>csv</code>, <code>sqlite</code> or <code>regex</code> plugins.</p>
-<p>Here's a minimal example taken from the <code>RecentFileCacheParser_csv.json</code> file under <code>src/gulp/ecs</code> folder, where mappings are typically placed. </p><div class="fragment"><div class="line">{</div>
+<p>Here's a minimal example taken from the <code>RecentFileCacheParser_csv.json</code> file under <code>src/gulp/mapping_files</code> folder, where mappings are typically placed.</p>
+<div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;metadata&quot;: {</div>
 <div class="line">    &quot;plugin&quot;: [</div>
-<div class="line">      &quot;csv&quot;</div>
+<div class="line">      &quot;gi_csv.py&quot;</div>
 <div class="line">    ]</div>
 <div class="line">  },</div>
 <div class="line">  &quot;mappings&quot;: [</div>
@@ -320,12 +326,15 @@ Mapping files</h2>
 <div class="line">    }</div>
 <div class="line">  ]</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>Let's break it down, starting from <code>metadata</code>. This field contains useful information the server uses to categorize and suggest plugins to its clients. In particular, <code>plugin</code> lists all plugins which gulp should suggest this mapping for, in our case it's the <code>csv</code> plugin.</p>
-<p>The next section is the <code>mappings</code> section, the core of the mapping file, this is a list of objects which are composed of 2 fields:</p><ul>
+</div><!-- fragment --><p>Let's break it down, starting from <code>metadata</code>. This field contains useful information the server uses to categorize and suggest plugins to its clients.</p>
+<p>In particular, <code>plugin</code> array lists all (<em>bare filenames of, i.e. name.py</em>) plugins which gulp should suggest this mapping for, in our case it's the <code>csv</code> plugin.</p>
+<p>The next section is the <code>mappings</code> section, the core of the mapping file, this is a list of objects which are composed of 2 fields:</p>
+<ul>
 <li>mapping : which contains the actual field-by-field mappings</li>
 <li>options : options specific for each mapping (such as the <code>mapping_id</code>, <code>event_code</code>, <code>agent_type</code>)</li>
 </ul>
-<p>Starting from the <code>mapping</code>, under this section we specify the fields and what to map them to. In our example, the log contains the following fields, which we want to map to the following mappings:</p><ul>
+<p>Starting from the <code>mapping</code>, under this section we specify the fields and what to map them to. In our example, the log contains the following fields, which we want to map to the following mappings:</p>
+<ul>
 <li><b>SourceFile</b>: indicates the name of the file</li>
 <li><b>SourceCreated</b>: this field in the log specifies when the file has been <b>created</b></li>
 <li><b>SourceModified</b>: similarly this contains the last <b>modified</b> date of the file</li>
@@ -366,14 +375,15 @@ options field</h3>
 </table>
 <h2><a class="anchor" id="autotoc_md14"></a>
 Stacked plugins</h2>
-<p>Stacked plugins are python plugins which are base upon other plugins, usually generic plugins (such as <code>csv</code>, <code>sqlite</code>, etc), but require a little more logic than a plain mapping files.</p>
+<p>Stacked plugins are python <em>ingestion</em> plugins which are base upon other plugins, usually generic plugins (such as <code>csv</code>, <code>sqlite</code>, etc), but require a little more logic than a plain mapping files.</p>
 <p>Instead of receiving a raw event from the log file, stacked plugins receive a <code>GulpDocument</code>, which can be further modified before it gets ingested.</p>
-<p>While you can <b>technically</b> stack as many plugins as you want, it is advised against for 3 main reasons:</p><ul>
+<p>While you can <b>technically</b> stack as many plugins as you want, it is advised against for 3 main reasons:</p>
+<ul>
 <li>readibility: quite self explanatory</li>
 <li>performance: you go through more functions for each event in each file, this may impact performance depending on how performant each function is</li>
 <li>KISS principle: if an event requires logic that is split into many different files to be parsed correctly, maybe it'd be better to write a python plugin instead!</li>
 </ul>
-<p>Let's get down to business! A quite simple example of a stacked plugin is the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked</a> plugin, which is based onto the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/sqlite.py">sqlite.py</a> generic plugin.</p>
+<p>Let's get down to business! A quite simple example of a stacked plugin is the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_chrome_history_sqlite_stacked.py">chrome_history_sqlite_stacked</a> plugin, which is based onto the <a href="https://github.com/mentat-is/gulp/src/gulp/plugins/gi_sqlite.py">sqlite</a> generic plugin.</p>
 <p>Since the logic behind acquiring data from an <code>sqlite</code> plugin is generic enough, it is a good foundation to build upon. Here's a quick overview of how the data flows:</p>
 <center><pre class="mermaid">
 flowchart TD
@@ -408,7 +418,8 @@ flowchart TD
 <div class="line"> </div>
 <div class="line">    <span class="comment">#...</span></div>
 </div><!-- fragment --><p>Here the plugin loads the base plugin and appends it's own <code>record_to_gulp_document</code> function to be executed after the base plugin. In this example, it also hardcodes a specific <code>mapping_file</code> to point to the one providing the mappings for Note that here the plugin does not .</p>
-<p>The other big difference from the Python plugins is that the <code>record_to_gulp_document</code> function does <b>not</b> receive a raw event, but instead receives a <code>GulpDocument</code>. </p><div class="fragment"><div class="line"><span class="keyword">async def </span>record_to_gulp_document(</div>
+<p>The other big difference from the Python plugins is that the <code>record_to_gulp_document</code> function does <b>not</b> receive a raw event, but instead receives a <code>GulpDocument</code>.</p>
+<div class="fragment"><div class="line"><span class="keyword">async def </span>record_to_gulp_document(</div>
 <div class="line">   #...</div>
 <div class="line">) -&gt; list[GulpDocument]:</div>
 <div class="line">    <span class="keywordflow">for</span> r <span class="keywordflow">in</span> record:</div>
@@ -448,7 +459,8 @@ flowchart TD
 Python plugins</h2>
 <p>Python plugins are the most versatile kind of extensions, allowing for parsing of complex log formats, converting data and handling more complex scenarios.</p>
 <p>A few good examples of python plugins are the <code>win_evtx</code> and <code>systemd_journal</code> which allow parsing of binary formats for Windows System logs and Systemd journal files respectively.</p>
-<p>While plugins can be as complex as needed, a simple plugin <b>must</b> implement the functions:</p><ul>
+<p>While plugins can be as complex as needed, a simple plugin <b>must</b> implement the functions:</p>
+<ul>
 <li><code>name</code></li>
 <li><code>type</code></li>
 <li><code>ingest</code></li>
@@ -461,10 +473,19 @@ Python plugins</h2>
 <p>Further documentation about plugins can be found looking for the <a href="/docs/html/namespacegulp_1_1plugin.html">Plugin</a> class in the docs.</p>
 <h1><a class="anchor" id="autotoc_md16"></a>
 Extension plugins</h1>
-<p>Extensions plugins are useful for extending gulp's API. TODO</p>
+<p>Extensions plugins are useful for extending gulp's API.</p>
+<ul>
+<li>they run at gulp's startup <b>in the main process context</b>.</li>
+</ul>
+<p>they are currently not used, just a <a href="../src/gulp/plugins/extension/ge_example.py">test implementation</a> is available here: but, they will come handy when i.e. we will implement a web-management UI which will extend the REST API.</p>
 <h1><a class="anchor" id="autotoc_md17"></a>
 Sigma plugins</h1>
-<p>Sigma plugins are useful for transforming sigma rules into elastic queries. TODO </p>
+<p>Sigma plugins are useful for transforming sigma rules into elastic queries.</p>
+<p><a href="../src/gulp/plugins/sigma/gs_windows.py">the only one currently implemented</a> is used to transform Windows sigma rules to queries in the ECS format used by gulp.</p>
+<p><b>NOTE: Sigma plugins may be removed in the future.</b></p>
+<h1><a class="anchor" id="autotoc_md18"></a>
+Query plugins</h1>
+<p>This kind of plugin allows Gulp to query external sources through the <a href="../src/gulp/api/rest/query.py#async-def-query_plugin">query_plugin API</a>, i.e. SIEM <b>without ingesting their data</b>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

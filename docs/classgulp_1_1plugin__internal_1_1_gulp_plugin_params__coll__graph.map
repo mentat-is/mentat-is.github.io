@@ -1,11 +1,9 @@
 <map id="GulpPluginParams" name="GulpPluginParams">
-<area shape="rect" id="Node000001" title=" " alt="" coords="159,234,300,262"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="91,234,232,262"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,99,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,47,70,83,86,126,109,170,139,208,157,221,178,231,175,236,154,226,135,212,104,173,81,128,65,85,55,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,45,158,233,153,235,62,48"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="123,5,200,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,49,149,83,146,125,149,168,165,209,176,222,191,231,188,236,172,226,160,211,144,170,140,125,144,83,151,48"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,48,164,234,159,234,159,48"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="241,5,356,33"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,49,290,136,282,180,272,211,250,235,246,232,267,209,277,179,284,136,294,48"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="503,5,548,33"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="533,48,536,85,534,129,523,174,512,194,498,212,484,221,465,229,414,240,300,249,300,243,413,235,463,224,481,217,494,208,508,191,518,172,529,128,531,85,528,48"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="305,48,307,84,305,128,294,172,284,193,271,212,254,227,233,237,231,232,251,222,267,208,280,190,289,170,299,127,302,84,300,49"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['install_20dev_2emd_0',['Install Dev.md',['../_install_01_dev_8md.html',1,'']]],
-  ['install_20docker_2emd_1',['Install Docker.md',['../_install_01_docker_8md.html',1,'']]]
+  ['license_2emd_0',['LICENSE.md',['../_l_i_c_e_n_s_e_8md.html',1,'']]]
 ];

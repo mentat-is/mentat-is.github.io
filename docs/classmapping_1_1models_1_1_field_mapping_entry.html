@@ -241,13 +241,11 @@ Collaboration diagram for FieldMappingEntry:</div>
 <div class="dyncontent">
 <div class="center"><img src="classmapping_1_1models_1_1_field_mapping_entry__coll__graph.png" border="0" usemap="#a_field_mapping_entry_coll__map" alt="Collaboration graph"/></div>
 <map name="a_field_mapping_entry_coll__map" id="a_field_mapping_entry_coll__map">
-<area shape="rect" title=" " alt="" coords="91,200,232,228"/>
+<area shape="rect" title=" " alt="" coords="36,200,177,228"/>
 <area shape="rect" title=" " alt="" coords="5,5,99,33"/>
-<area shape="poly" title=" " alt="" coords="69,45,156,198,152,201,64,47"/>
+<area shape="poly" title=" " alt="" coords="62,47,106,199,100,200,57,48"/>
 <area shape="rect" title=" " alt="" coords="123,5,200,33"/>
-<area shape="poly" title=" " alt="" coords="164,48,164,200,159,200,159,48"/>
-<area shape="rect" title=" " alt="" coords="315,5,360,33"/>
-<area shape="poly" title=" " alt="" coords="343,49,343,78,340,113,329,148,310,178,279,194,233,205,232,200,277,189,306,174,325,145,335,112,338,78,338,49"/>
+<area shape="poly" title=" " alt="" coords="156,48,113,200,108,199,151,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -308,20 +306,20 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00143">143</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  143</span>    <span class="keyword">def </span>from_dict(d: dict) -&gt; <span class="stringliteral">&quot;FieldMappingEntry&quot;</span>:</div>
-<div class="line"><span class="lineno">  144</span>        <span class="comment"># print(&#39;FieldMappingEntry.from_dict: d=%s, type=%s&#39; % (d, type(d)))</span></div>
-<div class="line"><span class="lineno">  145</span>        fm = FieldMappingEntry(</div>
-<div class="line"><span class="lineno">  146</span>            map_to=d.get(<span class="stringliteral">&quot;map_to&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">  147</span>            event_code=d.get(<span class="stringliteral">&quot;event_code&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">  148</span>            do_multiply=d.get(<span class="stringliteral">&quot;do_multiply&quot;</span>, <span class="keywordtype">None</span>),</div>
-<div class="line"><span class="lineno">  149</span>            is_variable_mapping=d.get(<span class="stringliteral">&quot;is_variable_mapping&quot;</span>, <span class="keyword">False</span>),</div>
-<div class="line"><span class="lineno">  150</span>            is_timestamp=d.get(<span class="stringliteral">&quot;is_timestamp&quot;</span>, <span class="keyword">False</span>),</div>
-<div class="line"><span class="lineno">  151</span>            is_timestamp_chrome=d.get(<span class="stringliteral">&quot;is_timestamp_chrome&quot;</span>, <span class="keyword">False</span>)</div>
-<div class="line"><span class="lineno">  152</span>        )</div>
-<div class="line"><span class="lineno">  153</span>        <span class="comment"># print(&#39;FieldMappingEntry.from_dict: fm=%s, type=%s&#39; % (fm, type(fm)))</span></div>
-<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> fm</div>
-<div class="line"><span class="lineno">  155</span> </div>
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00144">144</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>    <span class="keyword">def </span>from_dict(d: dict) -&gt; <span class="stringliteral">&quot;FieldMappingEntry&quot;</span>:</div>
+<div class="line"><span class="lineno">  145</span>        <span class="comment"># print(&#39;FieldMappingEntry.from_dict: d=%s, type=%s&#39; % (d, type(d)))</span></div>
+<div class="line"><span class="lineno">  146</span>        fm = FieldMappingEntry(</div>
+<div class="line"><span class="lineno">  147</span>            map_to=d.get(<span class="stringliteral">&quot;map_to&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">  148</span>            event_code=d.get(<span class="stringliteral">&quot;event_code&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">  149</span>            do_multiply=d.get(<span class="stringliteral">&quot;do_multiply&quot;</span>, <span class="keywordtype">None</span>),</div>
+<div class="line"><span class="lineno">  150</span>            is_variable_mapping=d.get(<span class="stringliteral">&quot;is_variable_mapping&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">  151</span>            is_timestamp=d.get(<span class="stringliteral">&quot;is_timestamp&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">  152</span>            is_timestamp_chrome=d.get(<span class="stringliteral">&quot;is_timestamp_chrome&quot;</span>, <span class="keyword">False</span>),</div>
+<div class="line"><span class="lineno">  153</span>        )</div>
+<div class="line"><span class="lineno">  154</span>        <span class="comment"># print(&#39;FieldMappingEntry.from_dict: fm=%s, type=%s&#39; % (fm, type(fm)))</span></div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">return</span> fm</div>
+<div class="line"><span class="lineno">  156</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,17 +338,17 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00132">132</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  132</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
-<div class="line"><span class="lineno">  133</span>        d = {</div>
-<div class="line"><span class="lineno">  134</span>            <span class="stringliteral">&quot;map_to&quot;</span>: self.map_to,</div>
-<div class="line"><span class="lineno">  135</span>            <span class="stringliteral">&quot;is_timestamp&quot;</span>: self.is_timestamp,</div>
-<div class="line"><span class="lineno">  136</span>            <span class="stringliteral">&quot;event_code&quot;</span>: self.event_code,</div>
-<div class="line"><span class="lineno">  137</span>            <span class="stringliteral">&quot;do_multiply&quot;</span>: self.do_multiply,</div>
-<div class="line"><span class="lineno">  138</span>            <span class="stringliteral">&quot;is_timestamp_chrome&quot;</span>: self.is_timestamp_chrome,</div>
-<div class="line"><span class="lineno">  139</span>        }</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> d</div>
-<div class="line"><span class="lineno">  141</span> </div>
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00133">133</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>    <span class="keyword">def </span>to_dict(self) -&gt; dict:</div>
+<div class="line"><span class="lineno">  134</span>        d = {</div>
+<div class="line"><span class="lineno">  135</span>            <span class="stringliteral">&quot;map_to&quot;</span>: self.map_to,</div>
+<div class="line"><span class="lineno">  136</span>            <span class="stringliteral">&quot;is_timestamp&quot;</span>: self.is_timestamp,</div>
+<div class="line"><span class="lineno">  137</span>            <span class="stringliteral">&quot;event_code&quot;</span>: self.event_code,</div>
+<div class="line"><span class="lineno">  138</span>            <span class="stringliteral">&quot;do_multiply&quot;</span>: self.do_multiply,</div>
+<div class="line"><span class="lineno">  139</span>            <span class="stringliteral">&quot;is_timestamp_chrome&quot;</span>: self.is_timestamp_chrome,</div>
+<div class="line"><span class="lineno">  140</span>        }</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> d</div>
+<div class="line"><span class="lineno">  142</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -376,8 +374,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
 <div class="line">        <span class="keywordtype">None</span>,</div>
-<div class="line">        description=<span class="stringliteral">&#39;if set and if value is a number, or string representing a number, multiply it by this value (to divide, i.e. multiply by 0.5 to divide by 2).&lt;br&gt;&#39;</span></div>
-<div class="line">            <span class="stringliteral">&#39;NOTE: ignored if &quot;is_timestamp_chrome&quot; is set, result of the multiply/divide must be **nanoseconds**.&#39;</span></div>
+<div class="line">        description=<span class="stringliteral">&quot;if set and if value is a number, or string representing a number, multiply it by this value (to divide, i.e. multiply by 0.5 to divide by 2).&lt;br&gt;&quot;</span></div>
+<div class="line">        <span class="stringliteral">&#39;NOTE: ignored if &quot;is_timestamp_chrome&quot; is set, result of the multiply/divide must be **nanoseconds**.&#39;</span>,</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00115">115</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
@@ -405,7 +403,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
 <div class="line">        <span class="keywordtype">None</span>,</div>
-<div class="line">        description=<span class="stringliteral">&#39;if set, overrides &quot;default_event_code&quot; in the GulpMappingOptions (ignored if &quot;is_timestamp&quot; is not set).&#39;</span></div>
+<div class="line">        description=<span class="stringliteral">&#39;if set, overrides &quot;default_event_code&quot; in the GulpMappingOptions (ignored if &quot;is_timestamp&quot; is not set).&#39;</span>,</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00120">120</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
@@ -462,8 +460,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
 <div class="line">        <span class="keyword">False</span>,</div>
-<div class="line">        description=<span class="stringliteral">&#39;if set and if value is a number, or string representing a number, it is interpreted as a chrome/webkit timestamp (with epoch 01/01/1601) and converted to **nanoseconds from unix epoch**.&lt;br&gt;&#39;</span></div>
-<div class="line">            <span class="stringliteral">&#39;NOTE: ignored if &quot;do_multiply&quot; is set, if set together with &quot;is_timestamp&quot; will generate converted chrome &quot;@timestamp&quot; and &quot;@timestamp_nsec&quot;.&#39;</span></div>
+<div class="line">        description=<span class="stringliteral">&quot;if set and if value is a number, or string representing a number, it is interpreted as a chrome/webkit timestamp (with epoch 01/01/1601) and converted to **nanoseconds from unix epoch**.&lt;br&gt;&quot;</span></div>
+<div class="line">        <span class="stringliteral">&#39;NOTE: ignored if &quot;do_multiply&quot; is set, if set together with &quot;is_timestamp&quot; will generate converted chrome &quot;@timestamp&quot; and &quot;@timestamp_nsec&quot;.&#39;</span>,</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00110">110</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
@@ -555,7 +553,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line">        }</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00156">156</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00157">157</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>
 
 </div>
 </div>
@@ -579,7 +577,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=  Field(</div>
-<div class="line">        <span class="keywordtype">None</span>, description=<span class="stringliteral">&#39;INTERNAL USAGE ONLY. the destination dict representing the field (i.e. {&quot;@timestamp&quot;: 123456}).&#39;</span></div>
+<div class="line">        <span class="keywordtype">None</span>,</div>
+<div class="line">        description=<span class="stringliteral">&#39;INTERNAL USAGE ONLY. the destination dict representing the field (i.e. {&quot;@timestamp&quot;: 123456}).&#39;</span>,</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="models_8py_source.html#l00128">128</a> of file <a class="el" href="models_8py_source.html">models.py</a>.</p>

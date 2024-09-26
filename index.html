@@ -43,7 +43,7 @@
 
         <!-- Type -->
         <script src="/static/js/type.js" defer></script>
-
+        <audio style="display:hidden;" id="audio" src="/static/q.mp3"></audio>
     </head>
 
     <body>
@@ -272,7 +272,7 @@
                         <a href="https://mentat.is/" class="secondary">
                             Mentat
                         </a>
-                        with <em data-tooltip="QUACK!">🦆</em>.
+                        with <em data-tooltip="QUACK!" onclick="document.getElementById('audio').play()">🦆</em>.
                     </small>
 
                     <small

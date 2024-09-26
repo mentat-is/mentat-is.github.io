@@ -1,9 +1,8 @@
 /*Styles*/
-.splide * {
-    max-height: 700px;
+.glide__slide {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
 p a:link {
@@ -47,25 +46,6 @@ hr {
 .features {
     border: solid 1px;
     border-color: #946bae;
-}
-
-/*Responsive elements*/
-@media only screen and (min-width: 1301px) {
-    #splide-static {
-        display: none;
-    }
-    .splide {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    #splide-static {
-        display: block;
-    }
-    .splide {
-        display: none;
-    }
 }
 
 /*Animations*/

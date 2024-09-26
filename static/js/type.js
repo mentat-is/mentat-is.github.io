@@ -8,15 +8,25 @@ async function init() {
 
   while (true) {
     let words = [
-      "evtx",
-      "systemd",
-      "apache",
-      "registry",
-      "firewall",
-      "antivirus",
-      "browser",
+      "Windows event logs",
+      "systemd logs",
+      "webservers logs",
+      "Windows registry hives",
+      "firewall logs",
+      "antivirus logs",
+      "EDR logs",
+      "browsers history",
+      "VPN logs",
+      "SIEM logs",
+      "DFIR tools' outputs",
     ];
-    for (const w of words) {
+
+    let shuffled = words
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+
+    for (const w of shuffled) {
       await node.type(w);
       await sleep(3000);
       await node.delete(w);

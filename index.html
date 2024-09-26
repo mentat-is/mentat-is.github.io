@@ -1,193 +1,278 @@
-<!doctype html>
-<html>
+<html lang="en" data-theme="auto">
     <head>
-        <title>gULP</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
-        <style>
-            * {
-                -webkit-tap-highlight-color: transparent;
-                font-family:
-                    Consolas,
-                    Menlo,
-                    Monaco,
-                    Lucida Console,
-                    Liberation Mono,
-                    DejaVu Sans Mono,
-                    Bitstream Vera Sans Mono,
-                    Courier New,
-                    monospace,
-                    serif;
-                -webkit-user-select: none;
-                color: white;
-                background: black !important;
-                scroll-behavior: smooth;
-                -moz-user-select: none;
-                box-sizing: border-box;
-                text-decoration: none;
-                -ms-user-select: none;
-                letter-spacing: 0.5px;
-                user-select: none;
-                background: none;
-                font-weight: 300;
-                line-height: 1;
-                outline: none;
-                border: none;
-                padding: 0;
-                margin: 0;
-            }
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-weight: 500;
-            }
-            img {
-                -webkit-user-drag: none;
-            }
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>gULP.sh - Graphical Universal Log Processor</title>
+        <meta
+            name="description"
+            content="gULP! A graphical, universal log processor."
+        />
 
-            ul {
-                list-style-type: none;
-            }
-            li::marker {
-                display: none;
-            }
-            html,
-            body {
-                max-width: 100%;
-                width: 100%;
-                min-height: 100vh;
-                overflow-x: hidden;
-                overflow-y: visible;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 2px;
-            }
+        <!-- Pico.css -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+        />
 
-            body {
-                overflow: unset;
-                padding: 8px;
-            }
+        <!-- custom.css -->
+        <link rel="stylesheet" href="/static/css/custom.css" />
 
-            a:hover {
-                text-decoration: underline;
-            }
+        <!-- Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
-            input[type="search"]::-webkit-search-decoration,
-            input[type="search"]::-webkit-search-cancel-button,
-            input[type="search"]::-webkit-search-results-button,
-            input[type="search"]::-webkit-search-results-decoration {
-                -webkit-appearance: none;
-            }
-            .pad {
-                margin-left: 32px;
-            }
-        </style>
+        <!-- Prismjs -->
+        <link
+            rel="stylesheet"
+            href="/static/css/prismjs.css"
+        />
+        <script src="/static/js/prismjs.js" defer></script>
+
+        <!-- Minimal theme switcher -->
+        <script src="/static/js/theme-switcher.js" defer></script>
+
+        <!-- Slider -->
+        <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+        <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+        <script src="/static/js/splide.js" defer></script>
+
+        <!-- Type -->
+        <script src="/static/js/type.js" defer></script>
+
     </head>
+
     <body>
-        <p>
-        <pre style="color: #bb4acf;">
-                                                                '`'
-                                  .``^^^`'.                    ;lllI.
-                               ."Illlllllll:`                  ^lll"
-                              "llllllllllllll;.        ',:,'     .    ',:,'
-                         '`^":lllllllllllllllll.      .lllll         .lllll
-                      ',lllllllllllllllllllllll"       '^,^.          '",^.
-                     "llllllllllllllll,``^:llll,
-                    ,lllllllllllllll:.`,:"''''''.            ':ll".      '","'
-                   .llllllllllllllll`.lllllllllllI`          ,llll'      lllll
-                   .llllllllllllllll;.'",^.'''''."lI`         '^`.       ',:,'
-                    :lllllllllllllllll:^^";llll,  ."lI`                ',,.     `^^'
-                    'IllllllllllI"``^;lllllllll,    ."lI`              .^`     ,llll'
-                 .^;lllllllllll,.^:;".''''''''''      ."lI`.....`:;,'          .,I;"
-                "llllllllllllll''llllllllllllllI^.      `llllllllllll
-               ,lllllllllllllll:.'^"`.''''''''."lI`   ':l:'     '",^.
-              'llllllllllllllllll:"":lllllllll;'."lI^:l:'             .'.        'IlI'
-              'lllllllllllllllI"``";lllllllllll,  ^ll:'       `"""""",lllI.      ';l:.
-              .llllllllllllll".^::^'''''''''''''':l:'       `;l,`````"lll;.
-               'lllllllllllll.`llllllllllllllllll:'       `;l".       ...
-                ."lllllllllll,.'^^`.''''''''''''        `Il,.           ''     ';ll,.
-                   `"Illlllllll:"":lllI:;llllll,      `Il".            'll'    ,llll'
-                    `lllllllllllllll".'`'.``````    `;l,.     ."".              '``.
-                   .lllllllllllllll; :llll:::::::::Il".       .^".        .'.
-                   'llllllllllllllll.';lI^''''''''''.                    :lll:
-                    Illllllllllllllll"`''^;llll,                 `,^     ,lll,
-                    'llllllllllllllllllllllllll,                 '"`      ...
-                     .,llllllllllllllllllllllll,       .```.            .
-                       .`,lllllllllllllllllllll`      .llllI          "lll^
-                           ..'llllllllllllllll,        ^Ill^     .    Illl;
-                              .,llllllllllll;`                 ^lll,  .'`'
-                                .`,Illlll:^'                   :lll;
-                                     ..                         '''
-        </pre>
+        <!-- Navbar -->
+        <nav class="container-fluid" data-theme="auto">
+            <ul>
+                <li>
+                    <strong>
+                        <img
+                            width="70pt"
+                            height="70pt"
+                            src="/static/img/logo.svg"
+                        />
+                        gULP!
+                    </strong>
+                </li>
+            </ul>
 
-        <pre style="color: #b3b3b3; font-weight: bold;">
-                                'i+:           ;+I.    .I~;.              ,<~~~~~~~~i,'
-                                ~|||'         '|||^    l|||"             .|||||||||||||]'
-                .''.     '.     ~|||'         '|||^    l|||"             .|||;......`}||('
-             ^~||||||}:`|||"    ~|||'         '|||^    l|||"             .|||:       '|||+
-           '{|||-;,,l}|||||;    ~|||'         '|||^    l|||"             .|||:       `|||>
-          '|||]'      `)|||;    ~|||'         '|||^    l|||"             .|||i'''''',(||{.
-          ~|||.        ^|||;    ~|||'         '|||^    l|||"             .|||||||||||||!.
-          [||(         '|||;    >|||`         `|||`    l|||"             .|||-::::::,`.
-          ;|||^        I|||;    ^|||?.       .[||(.    l|||"             .|||:
-           -|||;'   .`~||||;     I|||(I`'.'^l(||(`     l|||;''''''''.    .|||:
-            ,(||||(||||-|||;      `_||||||||||(;.      I|||||||||||||}   .|||:
-              `:>_-+I^.^|||:        .`,l><>;,`         .,lllllllllll;`    ^I:.
-            .^^'      `{||(.
-            _||||{??}||||]'
-            .^;>?{)){?!"'
-                                                    gULP [generic Universal Log Processor]
-                                                    (c) Mentat Srl. All rights reserved.
-        </pre>
-        </p>
-        <p></p>
-        <br />
-        <br />
-        <p>Our socials:</p>
-        <p></p>
-        <p class="pad">
-            [1] <span style="color: lightblue;">Linked</span>In:
-            <a href="https://linkedin.com/company/mentat-solutions-srl"
-                >https://linkedin.com/company/mentat-solutions-srl</a
-            >
-        </p>
-        <p class="pad">
-            [2] GitHub:
-            <a href="https://github.com/mentat-is/gulp"
-                >https://github.com/mentat-is/gulp</a
-            >
-        </p>
-        <p class="pad">
-            [3] <span style="color: pink;">Discord</span>:
-            <a href="https://discord.gg/rWEzzRhtrp"
-                >https://discord.gg/rWEzzRhtrp</a
-            >
-        </p>
-        <p class="pad">
-            [4] Docs:
-            <a href="docs/"> ./docs </a>
-        </p>
-        <!-- <p>    X (Twitter): <a href="/">/</a></p> -->
-        <br />
-        <br />
-        <p id="end">gulp@Mentat/$</p>
+            <ul>
+                <li>
+                    <a
+                        class="contrast"
+                        aria-label="Toggle dark mode"
+                        data-discover="true"
+                        href="#"
+                        data-theme-switcher="light"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 32 32"
+                            fill="currentColor"
+                            class="icon-theme-toggle moon"
+                        >
+                            <clipPath id="theme-toggle-cutout">
+                                <path d="M0-11h25a1 1 0 0017 13v30H0Z"></path>
+                            </clipPath>
+                            <g clip-path="url(#theme-toggle-cutout)">
+                                <circle cx="16" cy="16" r="8.4"></circle>
+                                <path
+                                    d="M18.3 3.2c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3S14.7.9 16 .9s2.3 1 2.3 2.3zm-4.6 25.6c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3-1 2.3-2.3 2.3-2.3-1-2.3-2.3zm15.1-10.5c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM3.2 13.7c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3S.9 17.3.9 16s1-2.3 2.3-2.3zm5.8-7C9 7.9 7.9 9 6.7 9S4.4 8 4.4 6.7s1-2.3 2.3-2.3S9 5.4 9 6.7zm16.3 21c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zm2.4-21c0 1.3-1 2.3-2.3 2.3S23 7.9 23 6.7s1-2.3 2.3-2.3 2.4 1 2.4 2.3zM6.7 23C8 23 9 24 9 25.3s-1 2.3-2.3 2.3-2.3-1-2.3-2.3 1-2.3 2.3-2.3z"
+                                ></path>
+                            </g></svg
+                    ></a>
+                </li>
+                <li>
+                    <a href="/docs" class="contrast" data-theme="auto"
+                        >📚 Docs</a
+                    >
+                </li>
+
+                <li>
+                    <a
+                        href="/docs/md_docs_2_install_01_dev.html"
+                        role="button"
+                        class="secondary"
+                        aria-label="Download"
+                    >
+                        Get gULP!
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Header -->
+        <header class="container" data-theme="auto">
+            <div class="container" data-theme="auto">
+                <center>
+                    <p class="animated-text">
+                        <b class="accent">gULP!</b> simplify incident handling by viewing
+                        <b><span is="type-async" id="type-text" class="accent">any</span><span class="blinking-cursor">_</span></b> logs,
+                        <b>at a glance</b>.
+                    </p>
+                    <!-- Carousel -->
+                    <p>
+                        <section id="splide-static">
+                            <img
+                                src="/static/img/screenshot2.png"
+                            />
+                        </section>
+                        <section class="splide">
+                                <div class="splide__track">
+                              		<ul class="splide__list">
+                             			<li class="splide__slide">
+                                            <img
+                                                src="/static/img/screenshot1.png"
+                                            />
+                                        </li>
+                             			<li class="splide__slide">
+                                            <img
+                                                src="/static/img/screenshot2.png"
+                                            />
+                                        </li>
+                             			<li class="splide__slide">
+                                            <img
+                                                src="/static/img/screenshot3.png"
+                                            />
+                                        </li>
+                              		</ul>
+                                </div>
+                            </section>
+                    </p>
+
+                    <hr/>
+
+                </center>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="container" data-theme="auto">
+            <center>
+
+            <!-- Description -->
+            <div class="grid">
+                <div>
+                    <h1>What is it?</h1>
+                    <p style="text-align: left;">
+                        Graphical Universal Log Processor, <b>gULP</b> for short, is an open source log parser and visualizer built from the ground up by <a href="https://mentat.is">Mentat</a>!
+                        <br>
+                        It features an <b>innovative UI</b> and a lot of useful feature for all you incident response, threat hunting and forensics needs!
+                    </p>
+                </div>
+
+                <div>
+                    <h1>Get it now!</h1>
+                    <p>
+                        Simply copy-paste the code below inside your terminal to get rolling!
+                    </p>
+                    <div class="language-bash rounded" data-theme="dark">
+                        <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/setup.sh | sudo bash</code>
+                    </div>
+                </div>
+
+            </div>
+
+            </center>
+
+            <section>
+                <center>
+                    <!-- Cards -->
+                    <p><h1>Features</h1></p>
+                </center>
+                <div class="grid" data-theme="auto">
+                    <article class="features" data-theme="auto">
+                        <h4>
+                            <i
+                                class="fa fa-window-restore"
+                                aria-hidden="true"
+                            ></i>
+
+                            Fancy UI
+                        </h4>
+                        <p>
+                            Gulp has an innovative and data-driven UI, built by
+                            analysts for analysts.
+                        </p>
+                    </article>
+                    <article class="features" data-theme="auto">
+                        <h4>
+                            <i class="fa fa-users" aria-hidden="true"></i>
+
+                            Co-op / Collaboration
+                        </h4>
+                        <p>
+                            Easily collaborate with others in your team, leave
+                            notes, link events and catch the bad guys, together!
+                        </p>
+                    </article>
+                    <article class="features" data-theme="auto">
+                        <h4>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                            Sigma Rules
+                        </h4>
+                        <p>
+                            Built-in support for Sigma rules, automate detection
+                            of known attacks easily!
+                        </p>
+                    </article>
+                    <article class="features" data-theme="auto">
+                        <h4>
+                            <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+
+                            Extensible
+                        </h4>
+                        <p>
+                            Extend APIs, supported log formats and more with easy to write <a href="/docs/md_docs_2_creating_01_plugins.html">plugins</a>!
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section></section>
+        </main>
+
+        <!-- Footer -->
+        <footer data-theme="dark">
+            <center>
+                <div class="grid">
+                    <small
+                        >Made by
+                        <a href="https://mentat.is/" class="secondary">
+                            Mentat
+                        </a>
+                        with <em data-tooltip="QUACK!">🦆</em>.
+                    </small>
+
+                    <small
+                        >Code licensed
+                        <a
+                            href="https://github.com/mentat-is/gulp/blob/develop/LICENSE.AGPL-3.0.md"
+                            class="secondary"
+                            >AGPL3.0</a
+                        >
+                        +
+                        <a
+                            href="https://github.com/mentat-is/gulp/blob/develop/LICENSE.GULP.md"
+                            class="secondary"
+                            >GULP Dual License</a
+                        >
+                    </small>
+
+                    <small>
+                        Built using
+                        <a href="https://picocss.com/" class="secondary"
+                            >picocss</a
+                        ></small
+                    >
+                </div>
+            </center>
+        </footer>
     </body>
-
-    <script>
-        const endElement = document.getElementById("end");
-        let showCursor = true;
-
-        setInterval(() => {
-            if (showCursor) {
-                endElement.textContent = "gulp@Mentat/$ ";
-            } else {
-                endElement.textContent = "gulp@Mentat/$ |";
-            }
-            showCursor = !showCursor;
-        }, 500);
-    </script>
 </html>

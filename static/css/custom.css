@@ -1,0 +1,125 @@
+/*Styles*/
+.splide * {
+    max-height: 700px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p a:link {
+    color: #946bae;
+    text-decoration: none;
+}
+p a:visited {
+    color: #946bae;
+    text-decoration: none;
+}
+p a:hover {
+    color: #946bae;
+    text-decoration: none;
+}
+p a:active {
+    color: #946bae;
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+hr {
+    padding-top: 2em;
+    color: #946bae;
+    border-bottom: 1px solid #946bae;
+    border-top: 0px;
+}
+
+.accent {
+    color: #946bae;
+}
+
+.rounded {
+    border-radius: 0.5em;
+}
+
+.features {
+    border: solid 1px;
+    border-color: #946bae;
+}
+
+/*Responsive elements*/
+@media only screen and (min-width: 1301px) {
+    #splide-static {
+        display: none;
+    }
+    .splide {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #splide-static {
+        display: block;
+    }
+    .splide {
+        display: none;
+    }
+}
+
+/*Animations*/
+.blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+/*
+.animated-replace:before {
+    content: "";
+    animation-name: content-change;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes content-change {
+    0% {
+        content: "evtx";
+    }
+    10% {
+        content: "registry";
+    }
+    20% {
+        content: "eml";
+    }
+    30% {
+        content: "mbox";
+    }
+    40% {
+        content: "pcap";
+    }
+    50% {
+        content: "apache";
+    }
+    60% {
+        content: "browser";
+    }
+    70% {
+        content: "systemd";
+    }
+    80% {
+        content: "teamviewer";
+    }
+    90% {
+        content: "antivirus";
+    }
+    100% {
+        content: "any";
+    }
+}
+*/

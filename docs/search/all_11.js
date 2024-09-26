@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['name_0',['name',['../classgulp_1_1plugin__internal_1_1_gulp_plugin_option.html#ab74e6bf80237ddc4109968cedc58c151',1,'gulp.plugin_internal.GulpPluginOption.name'],['../classgulp_1_1plugin_1_1_plugin_base.html#a3cc5beb95fb74f4be44c04f84ed66a82',1,'gulp.plugin.PluginBase.name()']]],
-  ['net_20client_1',['.NET Client',['../index.html#autotoc_md64',1,'']]]
+  ['legacy_20client_20on_20linux_0',['Legacy client on Linux',['../md_docs_2_install_01_dev.html#autotoc_md22',1,'']]],
+  ['license_1',['LICENSE',['../md__l_i_c_e_n_s_e.html',1,'']]],
+  ['license_2emd_2',['LICENSE.md',['../_l_i_c_e_n_s_e_8md.html',1,'']]],
+  ['linux_3',['Legacy client on Linux',['../md_docs_2_install_01_dev.html#autotoc_md22',1,'']]],
+  ['list_5fplugins_4',['list_plugins',['../namespacegulp_1_1plugin.html#a5af35dd01859f67f273a67cc0c774701',1,'gulp::plugin']]],
+  ['load_5fplugin_5',['load_plugin',['../namespacegulp_1_1plugin.html#a9e4fe561ed6383abac17a3ffd5e99b59',1,'gulp::plugin']]]
 ];

@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['web_20client_0',['Web Client',['../index.html#autotoc_md63',1,'']]],
-  ['websocket_1',['Websocket',['../md_docs_2_architecture.html#autotoc_md9',1,'']]],
-  ['win_5fevtx_20plugin_2',['win_evtx plugin',['../md_docs_2_testing_01_plugins.html#autotoc_md36',1,'']]],
-  ['win_5freg_20plugin_3',['win_reg plugin',['../md_docs_2_testing_01_plugins.html#autotoc_md37',1,'']]],
-  ['ws_5fid_4',['ws_id',['../classgulp_1_1plugin_1_1_plugin_base.html#a333f06e1a7df05effecbc6a8fa238cca',1,'gulp::plugin::PluginBase']]]
+  ['ulp_0',['(g)ULP!',['../index.html',1,'']]],
+  ['unload_5fplugin_1',['unload_plugin',['../namespacegulp_1_1plugin.html#a0e97ab32e715777b3ab97717986e594f',1,'gulp::plugin']]],
+  ['usage_2',['Usage',['../md_docs_2_testing_01_plugins.html#autotoc_md36',1,'']]],
+  ['using_20the_20setup_20script_3',['Using the setup script',['../md_docs_2_install_01_dev.html#autotoc_md20',1,'']]]
 ];

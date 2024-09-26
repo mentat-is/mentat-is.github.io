@@ -222,10 +222,10 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> </p><div align="center"></div><div align="center">&lt;picture&gt; &lt;source media="(prefers-color-scheme: dark)" srcset="./image.png"&gt; &lt;source media="(prefers-color-scheme: light)" srcset="./image.png"&gt; <img src="./image.png" alt="gULP" width="30%" height="30%" class="inline"/> &lt;/picture&gt;</div><div align="center">the generic, universal Log processor for incident response!</div><div align="center"><em>made with :heart: by Mentat.</em></div><div align="center"></div><p><a href="https://github.com/mentat-is?tab=followers"><img src="https://img.shields.io/github/followers/mentat-is.svg?style=social&amp;label=Follow&amp;maxAge=2592000" alt="GitHub followers" style="pointer-events: none;" class="inline"/></a></p>
-<div align="center"></div><div align="center">Description - Architecture - API - Installation - Run &amp; examples - GUI - <a class="el" href="md_docs_2_troubleshooting.html">Troubleshooting</a></div><div align="center"></div><h2><a class="anchor" id="autotoc_md50"></a>
+<div align="center"></div><div align="center">Description - Architecture - API - Installation - Run &amp; examples - GUI - <a class="el" href="md_docs_2_troubleshooting.html">Troubleshooting</a></div><div align="center"></div><h2><a class="anchor" id="autotoc_md52"></a>
 Description</h2>
 <p>Gulp is a powerful software tool designed to streamline incident response and analysis. Its core features include:</p>
-<h3><a class="anchor" id="autotoc_md51"></a>
+<h3><a class="anchor" id="autotoc_md53"></a>
 Current features</h3>
 <ul>
 <li><b>Data Ingestion Plugins</b>: Gulp can ingest data from a variety of sources, thanks to its versatile plugin system.</li>
@@ -238,24 +238,24 @@ Current features</h3>
 <li><b>Python based</b>: Gulp is written in Python, leveraging open-source libraries whenever possible. This maximizes ease of adoption from the community, as Python is widely used and understood.</li>
 <li><b>UI clients</b>: While <a href="https://github.com/mentat-is/gulpui-web">a full fledged web-ui</a> is in the works, in the meantime you can use most of the features using the .NET client we use ourself to testdrive during development.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md54"></a>
 Timeline</h2>
 <p>Here's the rough timeline we put together, it is subject to change:</p>
 <p><img src=".images/timeline.png" alt="timeline" class="inline"/></p>
 <p>soon we will release the slides we did at <a href="https://moca.camp">MOCA2024</a>, stay tuned!</p>
-<h2><a class="anchor" id="autotoc_md53"></a>
+<h2><a class="anchor" id="autotoc_md55"></a>
 Installation</h2>
-<h3><a class="anchor" id="autotoc_md54"></a>
+<h3><a class="anchor" id="autotoc_md56"></a>
 Quick Install</h3>
 <div class="fragment"><div class="line">curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/setup.sh | sudo bash</div>
 </div><!-- fragment --><p> This will create a <code>gulp</code> folder, inside the current directory.</p>
-<h3><a class="anchor" id="autotoc_md55"></a>
+<h3><a class="anchor" id="autotoc_md57"></a>
 Other installation methods</h3>
 <ul>
 <li><a class="el" href="md_docs_2_install_01_docker.html">docker</a></li>
 <li><a class="el" href="md_docs_2_install_01_dev.html">install from sources</a></li>
 </ul>
-<h3><a class="anchor" id="autotoc_md56"></a>
+<h3><a class="anchor" id="autotoc_md58"></a>
 Environment variables</h3>
 <p>the following environment variables may be set to override configuration options.</p>
 <ul>
@@ -271,7 +271,7 @@ Environment variables</h3>
 <li><code>SMTP_FROM</code>: if set, overrides <code>smtp_from</code> in the configuration.</li>
 <li><code>GULP_INTEGRATION_TEST</code>: <b>TEST ONLY</b>, this must be set to 1 during integration testing (i.e. client api) to disable debug features which may interfere.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md57"></a>
+<h3><a class="anchor" id="autotoc_md59"></a>
 SSL</h3>
 <p>to use HTTPS, the following certificates must be available:</p>
 <blockquote class="doxtable">
@@ -301,7 +301,7 @@ SSL</h3>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md58"></a>
+<h3><a class="anchor" id="autotoc_md60"></a>
 Exposed services</h3>
 <ul>
 <li><em><a href="http://localhost:8080">http://localhost:8080</a></em>: gulp, swagger page <a href="http://localhost:8080/docs">here</a></li>
@@ -315,10 +315,10 @@ Exposed services</h3>
 </ul>
 </li>
 </ul>
-<h3><a class="anchor" id="autotoc_md59"></a>
+<h3><a class="anchor" id="autotoc_md61"></a>
 Run</h3>
 <p><a href="./docs/Install Docker.md#run">with docker</a> or <a href="./docs/Install Dev.md#3-run">with install from sources</a></p>
-<h4><a class="anchor" id="autotoc_md60"></a>
+<h4><a class="anchor" id="autotoc_md62"></a>
 Test ingestion</h4>
 <div class="fragment"><div class="line"># ingest single file</div>
 <div class="line">TEST_WS_ID=&quot;websocket_id&quot; ./test_scripts/test_ingest.sh -p ./samples/win_evtx/Application_no_crc32.evtx</div>
@@ -356,16 +356,16 @@ Test ingestion</h4>
 </ul>
 </blockquote>
 <p>resuming ingestion is supported <b>if the <code>req_id</code> parameter is the same across requests</b>.  </p>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md63"></a>
 Architecture</h2>
 <p><a class="el" href="md_docs_2_architecture.html">GULP architecture</a></p>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 Clients</h2>
-<h3><a class="anchor" id="autotoc_md63"></a>
+<h3><a class="anchor" id="autotoc_md65"></a>
 Web Client</h3>
 <p>If you want to use the web GUI visit it's repository <a href="https://github.com/mentat-is/gulpui-web">here</a>. It's still heavily under construction, so any contribution is highly appreciated!</p>
 <p>This is the intended official wanna-be client for gulp.</p>
-<h3><a class="anchor" id="autotoc_md64"></a>
+<h3><a class="anchor" id="autotoc_md66"></a>
 .NET Client</h3>
 <blockquote class="doxtable">
 <p>&zwj;[!IMPORTANT] ⚠ the .NET client is to be considered an internal-test version, this is the tool we use internally to testdrive the backend development. It is not feature complete and far from being production ready :). Feel free to open issues, but any contribution should go towards the new WIP <a href="https://github.com/mentat-is/gulpui-web">web client</a> </p>

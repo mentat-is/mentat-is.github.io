@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['re_20build_20image_0',['(re)build image',['../md_docs_2_install_01_docker.html#autotoc_md31',1,'']]],
-  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['record_5fto_5fgulp_5fdocument_2',['record_to_gulp_document',['../classgulp_1_1plugin_1_1_plugin_base.html#a38a3b56e6818d69a12aa847ac980895e',1,'gulp::plugin::PluginBase']]],
-  ['record_5fto_5fgulp_5fdocument_5ffun_3',['record_to_gulp_document_fun',['../classgulp_1_1plugin__internal_1_1_gulp_plugin_params.html#af60b7ddaa73e21a3356ee5be520b9e6e',1,'gulp::plugin_internal::GulpPluginParams']]],
-  ['regex_20plugin_4',['regex plugin',['../md_docs_2_testing_01_plugins.html#autotoc_md45',1,'']]],
-  ['reporting_5',['Bug reporting',['../md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2',1,'']]],
-  ['repositories_6',['2. clone repositories',['../md_docs_2_install_01_dev.html#autotoc_md23',1,'']]],
-  ['req_5fid_7',['req_id',['../classgulp_1_1plugin_1_1_plugin_base.html#a1370c514cd93cb996ddf27f0400840bc',1,'gulp::plugin::PluginBase']]],
-  ['result_8',['result',['../classmapping_1_1models_1_1_field_mapping_entry.html#a8793c9dfbfb26c808c7aaca46c0e2cbd',1,'mapping::models::FieldMappingEntry']]],
-  ['run_9',['Run',['../index.html#autotoc_md59',1,'']]],
-  ['run_10',['run',['../md_docs_2_install_01_dev.html#autotoc_md27',1,'3. run'],['../md_docs_2_install_01_docker.html#autotoc_md32',1,'run']]]
+  ['path_0',['path',['../classgulp_1_1plugin_1_1_plugin_base.html#aa28dc103258589d9cb421197fe2de90b',1,'gulp::plugin::PluginBase']]],
+  ['pipeline_1',['pipeline',['../classgulp_1_1plugin__internal_1_1_gulp_plugin_params.html#a502120db386a28e9f902ab8fa4f83d57',1,'gulp.plugin_internal.GulpPluginParams.pipeline'],['../classgulp_1_1plugin_1_1_plugin_base.html#acc159cfa2b2d043ffa24a5f62e5c80a3',1,'gulp.plugin.PluginBase.pipeline()']]],
+  ['plugin_2',['plugin',['../md_docs_2_testing_01_plugins.html#autotoc_md40',1,'apache_access_clf plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md41',1,'apache_error_clf plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md42',1,'chrome_history_sqlite_stacked plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md43',1,'chrome_webdata_sqlite_stacked plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md49',1,'csv plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md44',1,'eml plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md45',1,'mbox plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md47',1,'regex plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md50',1,'sqlite plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md48',1,'systemd_journal plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md46',1,'teamviewer_regex_stacked plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md38',1,'win_evtx plugin'],['../md_docs_2_testing_01_plugins.html#autotoc_md39',1,'win_reg plugin']]],
+  ['plugin_2epy_3',['plugin.py',['../plugin_8py.html',1,'']]],
+  ['plugin_5fcache_5fadd_4',['plugin_cache_add',['../namespacegulp_1_1plugin.html#a1c5c9184d00e49a445eb6b8f77ad60a3',1,'gulp::plugin']]],
+  ['plugin_5fcache_5fclear_5',['plugin_cache_clear',['../namespacegulp_1_1plugin.html#a714b6e278c22eb32907dd3d4afa0b56d',1,'gulp::plugin']]],
+  ['plugin_5fcache_5fget_6',['plugin_cache_get',['../namespacegulp_1_1plugin.html#a8d88e1de40580ca31b2c05838fdfc03f',1,'gulp::plugin']]],
+  ['plugin_5fcache_5fremove_7',['plugin_cache_remove',['../namespacegulp_1_1plugin.html#a49455ddc351f40d6438de1a81a68d742',1,'gulp::plugin']]],
+  ['plugin_5finternal_2epy_8',['plugin_internal.py',['../plugin__internal_8py.html',1,'']]],
+  ['pluginbase_9',['PluginBase',['../classgulp_1_1plugin_1_1_plugin_base.html',1,'gulp::plugin']]],
+  ['plugins_10',['Plugins',['../md_docs_2_creating_01_plugins.html',1,'Creating Plugins'],['../md_docs_2_architecture.html#autotoc_md5',1,'Plugins'],['../md_docs_2_testing_01_plugins.html',1,'Testing Plugins']]],
+  ['plugins_11',['plugins',['../md_docs_2_creating_01_plugins.html#autotoc_md16',1,'Extension plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md10',1,'Ingestion plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md15',1,'Python plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md18',1,'Query plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md17',1,'Sigma plugins'],['../md_docs_2_creating_01_plugins.html#autotoc_md14',1,'Stacked plugins']]],
+  ['prepare_20directories_20and_20configuration_12',['5. Prepare directories and configuration',['../md_docs_2_install_01_dev.html#autotoc_md27',1,'']]],
+  ['python_20plugins_13',['Python plugins',['../md_docs_2_creating_01_plugins.html#autotoc_md15',1,'']]]
 ];

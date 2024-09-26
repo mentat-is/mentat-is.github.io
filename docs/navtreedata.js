@@ -26,24 +26,24 @@ var NAVTREE =
 [
   [ "(g)ULP!", "index.html", [
     [ "Contributing To Gulp", "md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Description", "index.html#autotoc_md50", [
-        [ "Current features", "index.html#autotoc_md51", null ]
+      [ "Description", "index.html#autotoc_md52", [
+        [ "Current features", "index.html#autotoc_md53", null ]
       ] ],
-      [ "Timeline", "index.html#autotoc_md52", null ],
-      [ "Installation", "index.html#autotoc_md53", [
-        [ "Quick Install", "index.html#autotoc_md54", null ],
-        [ "Other installation methods", "index.html#autotoc_md55", null ],
-        [ "Environment variables", "index.html#autotoc_md56", null ],
-        [ "SSL", "index.html#autotoc_md57", null ],
-        [ "Exposed services", "index.html#autotoc_md58", null ],
-        [ "Run", "index.html#autotoc_md59", [
-          [ "Test ingestion", "index.html#autotoc_md60", null ]
+      [ "Timeline", "index.html#autotoc_md54", null ],
+      [ "Installation", "index.html#autotoc_md55", [
+        [ "Quick Install", "index.html#autotoc_md56", null ],
+        [ "Other installation methods", "index.html#autotoc_md57", null ],
+        [ "Environment variables", "index.html#autotoc_md58", null ],
+        [ "SSL", "index.html#autotoc_md59", null ],
+        [ "Exposed services", "index.html#autotoc_md60", null ],
+        [ "Run", "index.html#autotoc_md61", [
+          [ "Test ingestion", "index.html#autotoc_md62", null ]
         ] ]
       ] ],
-      [ "Architecture", "index.html#autotoc_md61", null ],
-      [ "Clients", "index.html#autotoc_md62", [
-        [ "Web Client", "index.html#autotoc_md63", null ],
-        [ ".NET Client", "index.html#autotoc_md64", null ]
+      [ "Architecture", "index.html#autotoc_md63", null ],
+      [ "Clients", "index.html#autotoc_md64", [
+        [ "Web Client", "index.html#autotoc_md65", null ],
+        [ ".NET Client", "index.html#autotoc_md66", null ]
       ] ],
       [ "For developers", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md1", null ],
       [ "Bug reporting", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md2", null ]
@@ -76,40 +76,42 @@ var NAVTREE =
     ] ],
     [ "Install From Sources", "md_docs_2_install_01_dev.html", [
       [ "Using the setup script", "md_docs_2_install_01_dev.html#autotoc_md20", null ],
-      [ "prerequisites", "md_docs_2_install_01_dev.html#autotoc_md21", [
-        [ "install OS dependencies", "md_docs_2_install_01_dev.html#autotoc_md22", null ],
-        [ "clone repositories", "md_docs_2_install_01_dev.html#autotoc_md23", null ],
-        [ "create and enter virtualenv", "md_docs_2_install_01_dev.html#autotoc_md24", null ],
-        [ "prepare directories and configuration", "md_docs_2_install_01_dev.html#autotoc_md25", null ]
+      [ "Install the client", "md_docs_2_install_01_dev.html#autotoc_md21", [
+        [ "Legacy client on Linux", "md_docs_2_install_01_dev.html#autotoc_md22", null ]
       ] ],
-      [ "dev install", "md_docs_2_install_01_dev.html#autotoc_md26", null ],
-      [ "run", "md_docs_2_install_01_dev.html#autotoc_md27", [
-        [ "test", "md_docs_2_install_01_dev.html#autotoc_md28", null ]
+      [ "Manual installation", "md_docs_2_install_01_dev.html#autotoc_md23", [
+        [ "Install OS dependencies", "md_docs_2_install_01_dev.html#autotoc_md24", null ],
+        [ "Clone repositories", "md_docs_2_install_01_dev.html#autotoc_md25", null ],
+        [ "Create and enter virtualenv", "md_docs_2_install_01_dev.html#autotoc_md26", null ],
+        [ "Prepare directories and configuration", "md_docs_2_install_01_dev.html#autotoc_md27", null ],
+        [ "Install gulp", "md_docs_2_install_01_dev.html#autotoc_md28", null ],
+        [ "Run", "md_docs_2_install_01_dev.html#autotoc_md29", null ],
+        [ "(Optional) Test", "md_docs_2_install_01_dev.html#autotoc_md30", null ]
       ] ],
-      [ "troubleshoot", "md_docs_2_install_01_dev.html#autotoc_md29", null ]
+      [ "Troubleshoot", "md_docs_2_install_01_dev.html#autotoc_md31", null ]
     ] ],
     [ "Docker Installation", "md_docs_2_install_01_docker.html", [
-      [ "(re)build image", "md_docs_2_install_01_docker.html#autotoc_md31", null ],
-      [ "run", "md_docs_2_install_01_docker.html#autotoc_md32", null ]
+      [ "(re)build image", "md_docs_2_install_01_docker.html#autotoc_md33", null ],
+      [ "run", "md_docs_2_install_01_docker.html#autotoc_md34", null ]
     ] ],
     [ "Testing Plugins", "md_docs_2_testing_01_plugins.html", [
-      [ "Intro", "md_docs_2_testing_01_plugins.html#autotoc_md33", [
-        [ "Usage", "md_docs_2_testing_01_plugins.html#autotoc_md34", null ]
+      [ "Intro", "md_docs_2_testing_01_plugins.html#autotoc_md35", [
+        [ "Usage", "md_docs_2_testing_01_plugins.html#autotoc_md36", null ]
       ] ],
-      [ "Examples", "md_docs_2_testing_01_plugins.html#autotoc_md35", [
-        [ "win_evtx plugin", "md_docs_2_testing_01_plugins.html#autotoc_md36", null ],
-        [ "win_reg plugin", "md_docs_2_testing_01_plugins.html#autotoc_md37", null ],
-        [ "apache_access_clf plugin", "md_docs_2_testing_01_plugins.html#autotoc_md38", null ],
-        [ "apache_error_clf plugin", "md_docs_2_testing_01_plugins.html#autotoc_md39", null ],
-        [ "chrome_history_sqlite_stacked plugin", "md_docs_2_testing_01_plugins.html#autotoc_md40", null ],
-        [ "chrome_webdata_sqlite_stacked plugin", "md_docs_2_testing_01_plugins.html#autotoc_md41", null ],
-        [ "eml plugin", "md_docs_2_testing_01_plugins.html#autotoc_md42", null ],
-        [ "mbox plugin", "md_docs_2_testing_01_plugins.html#autotoc_md43", null ],
-        [ "teamviewer_regex_stacked plugin", "md_docs_2_testing_01_plugins.html#autotoc_md44", null ],
-        [ "regex plugin", "md_docs_2_testing_01_plugins.html#autotoc_md45", null ],
-        [ "systemd_journal plugin", "md_docs_2_testing_01_plugins.html#autotoc_md46", null ],
-        [ "csv plugin", "md_docs_2_testing_01_plugins.html#autotoc_md47", null ],
-        [ "sqlite plugin", "md_docs_2_testing_01_plugins.html#autotoc_md48", null ]
+      [ "Examples", "md_docs_2_testing_01_plugins.html#autotoc_md37", [
+        [ "win_evtx plugin", "md_docs_2_testing_01_plugins.html#autotoc_md38", null ],
+        [ "win_reg plugin", "md_docs_2_testing_01_plugins.html#autotoc_md39", null ],
+        [ "apache_access_clf plugin", "md_docs_2_testing_01_plugins.html#autotoc_md40", null ],
+        [ "apache_error_clf plugin", "md_docs_2_testing_01_plugins.html#autotoc_md41", null ],
+        [ "chrome_history_sqlite_stacked plugin", "md_docs_2_testing_01_plugins.html#autotoc_md42", null ],
+        [ "chrome_webdata_sqlite_stacked plugin", "md_docs_2_testing_01_plugins.html#autotoc_md43", null ],
+        [ "eml plugin", "md_docs_2_testing_01_plugins.html#autotoc_md44", null ],
+        [ "mbox plugin", "md_docs_2_testing_01_plugins.html#autotoc_md45", null ],
+        [ "teamviewer_regex_stacked plugin", "md_docs_2_testing_01_plugins.html#autotoc_md46", null ],
+        [ "regex plugin", "md_docs_2_testing_01_plugins.html#autotoc_md47", null ],
+        [ "systemd_journal plugin", "md_docs_2_testing_01_plugins.html#autotoc_md48", null ],
+        [ "csv plugin", "md_docs_2_testing_01_plugins.html#autotoc_md49", null ],
+        [ "sqlite plugin", "md_docs_2_testing_01_plugins.html#autotoc_md50", null ]
       ] ]
     ] ],
     [ "Troubleshooting", "md_docs_2_troubleshooting.html", null ],

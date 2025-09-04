@@ -59,6 +59,41 @@ hr {
     }
 }
 
+/* Logo animation styles */
+.logo-div {
+    transition: all 0.5s ease-in-out;
+}
+
+.logo-div img {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-logo {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    width: 90px !important;
+    height: 90px !important;
+}
+
+.header-logo {
+    position: relative;
+}
+
+.header-logo img {
+    width: 250px !important;
+    height: 250px !important;
+}
+
+.logo-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 [data-theme="light"] .logo-div img { 
     filter:invert(0)
 }

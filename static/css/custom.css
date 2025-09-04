@@ -59,6 +59,84 @@ hr {
     }
 }
 
+[data-theme="light"] .logo-div img { 
+    filter:invert(0)
+}
+
+[data-theme="dark"] .logo-div img {
+    filter:invert(1)
+}
+
+
+
+.install-tabs {
+    margin: 1rem 0;
+}
+
+.install-tabs input[type="radio"] {
+    display: none;
+}
+
+.tab-labels {
+    display: flex;
+    border-bottom: 2px solid var(--pico-border-color);
+    margin-bottom: 1rem;
+}
+
+.tab-label {
+    flex: 1;
+    padding: 0.5rem 1rem; /* Reduced from 0.75rem to 0.5rem */
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    margin: 0;
+    color: var(--pico-muted-color); /* Default muted color for unselected tabs */
+}
+
+/* Rounded top corners for first and last tab */
+.tab-label:first-child {
+    border-radius: 0.5rem 0 0 0; /* Top-left rounded */
+}
+
+.tab-label:last-child {
+    border-radius: 0 0.5rem 0 0; /* Top-right rounded */
+}
+
+.tab-label:hover {
+    background-color: var(--pico-secondary-background);
+}
+
+/* Selected tab styling - PURPLE text and border */
+.install-tabs input[type="radio"]:nth-child(1):checked ~ .tab-labels .tab-label:nth-child(1),
+.install-tabs input[type="radio"]:nth-child(2):checked ~ .tab-labels .tab-label:nth-child(2), 
+.install-tabs input[type="radio"]:nth-child(3):checked ~ .tab-labels .tab-label:nth-child(3) {
+    border-bottom-color: #946bae; 
+    color: #946bae; 
+    font-weight: bold;
+    background-color: rgba(148, 107, 174, 0.3); 
+}
+
+/* Fixed width for code sections */
+.tab-content {
+    min-height: 80px; /* Minimum height to prevent jumping */
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel .language-bash {
+    min-width: 100%; /* Ensure full width */
+    min-height: 60px; /* Fixed minimum height for code blocks */
+}
+
+.install-tabs input[type="radio"]:nth-child(1):checked ~ .tab-content .tab-panel:nth-child(1),
+.install-tabs input[type="radio"]:nth-child(2):checked ~ .tab-content .tab-panel:nth-child(2), 
+.install-tabs input[type="radio"]:nth-child(3):checked ~ .tab-content .tab-panel:nth-child(3) {
+    display: block;
+}
+
 /*
 .animated-replace:before {
     content: "";

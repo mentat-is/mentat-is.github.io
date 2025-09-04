@@ -52,13 +52,10 @@
                 <li>
                     <strong>
                         <a href="#">
-                            <img
-                                width="70pt"
-                                height="70pt"
-                                src="/static/img/logo.svg"
-                            />
+                            <div class="logo-div">
+                                <img src="static/img/logo.svg" width="70p" height="70p">
+                            </div>
                         </a>
-                        gULP!
                     </strong>
                 </li>
             </ul>
@@ -70,7 +67,7 @@
                         aria-label="Toggle dark mode"
                         data-discover="true"
                         href="#"
-                        data-theme-switcher="light"
+                        data-theme-switcher="auto"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -92,14 +89,14 @@
                     ></a>
                 </li>
                 <li>
-                    <a href="/docs" class="contrast" data-theme="auto"
+                    <a href="https://github.com/mentat-is/gulp/wiki" class="contrast" data-theme="auto"
                         >📚 Docs</a
                     >
                 </li>
 
                 <li>
                     <a
-                        href="/docs/md_docs_2_install_01_dev.html"
+                        href="https://github.com/mentat-is/gulp/wiki/install_dev"
                         role="button"
                         class="secondary"
                         aria-label="Download"
@@ -173,12 +170,44 @@
                 </div>
 
                 <div>
-                    <h1>Get it now!</h1>
-                    <p>
-                        Simply copy-paste the code below inside your terminal to get rolling!
-                    </p>
-                    <div class="language-bash rounded" data-theme="dark">
-                        <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/setup.sh | sudo bash</code>
+                    <h1>Get it now!</h1>                    
+                    <!-- Installation tabs -->
+                    <div class="install-tabs">
+                        <input type="radio" id="tab-script" name="install-method" checked>
+                        <input type="radio" id="tab-docker-compose" name="install-method">
+                        <input type="radio" id="tab-docker" name="install-method">
+
+                        <div class="tab-labels">
+                            <label for="tab-script" class="tab-label">Script Install</label>
+                            <label for="tab-docker-compose" class="tab-label">Docker Compose</label>
+                            <label for="tab-docker" class="tab-label">Docker</label>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <div class="tab-panel rounded">
+                                <div class="language-bash rounded" data-theme="auto">
+                                    <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">
+                                        curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/setup.sh | sudo bash
+                                    </code>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-panel rounded">
+                                <div class="language-bash rounded" data-theme="auto">
+                                    <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">
+                                        curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/docker-compose.yml -o docker-compose.yml && docker compose --profile gulp --profile gui up -d
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="tab-panel rounded">
+                                <div class="language-bash rounded" data-theme="auto">
+                                    <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">
+                                        docker run -d -p 8080:8080 mentatis/gulp-core
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -238,7 +267,7 @@
                             Extensible
                         </h4>
                         <p>
-                            Extend APIs, supported log formats and more with easy to write <a href="/docs/md_docs_2_creating_01_plugins.html">plugins</a>!
+                            Extend APIs, supported log formats and more with easy to write <a href="https://github.com/mentat-is/gulp/wiki/plugins_and_mapping">plugins</a>!
                         </p>
                     </article>
                 </div>
@@ -263,7 +292,7 @@
         </main>
 
         <!-- Footer -->
-        <footer data-theme="dark">
+        <footer data-theme="auto">
             <center>
                 <div class="grid">
                     <small

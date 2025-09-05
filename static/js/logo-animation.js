@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navbarLogo.classList.remove('logo-hidden');
             navbarLogo.classList.add('navbar-logo');
             headerLogo.classList.add('logo-hidden');
-        } else if (scrollTop <= 100 && isScrolled) {
+        } else if (scrollTop <= 170 && isScrolled) {
             // User scrolled back to top
             isScrolled = false;
             navbarLogo.classList.add('logo-hidden');

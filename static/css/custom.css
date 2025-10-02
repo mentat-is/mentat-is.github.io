@@ -152,6 +152,17 @@ hr {
     background-color: rgba(148, 107, 174, 0.3); 
 }
 
+.bordered {
+    border-color: #946bae;
+    border-style: solid;
+    border-width: 1px;
+    min-height: 80px; 
+}
+
+.tab-content p {
+    margin-top: 10px;
+}
+
 /* Fixed width for code sections */
 .tab-content {
     min-height: 80px; /* Minimum height to prevent jumping */

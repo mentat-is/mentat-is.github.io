@@ -208,31 +208,26 @@
                     <h1>Get it now!</h1>                    
                     <!-- Installation tabs -->
                     <div class="install-tabs">
-                        <input type="radio" id="tab-script" name="install-method" checked>
-                        <input type="radio" id="tab-docker-compose" name="install-method">
+                        <input type="radio" id="tab-docker-compose" name="install-method" checked>
                         <input type="radio" id="tab-docker" name="install-method">
+                        <input type="radio" id="tab-script" name="install-method">
 
                         <div class="tab-labels">
-                            <label for="tab-script" class="tab-label">Script Install</label>
                             <label for="tab-docker-compose" class="tab-label">Docker Compose</label>
                             <label for="tab-docker" class="tab-label">Docker</label>
+                            <label for="tab-script" class="tab-label">Dev Install</label>
                         </div>
                         
-                        <div class="tab-content">
-                            <div class="tab-panel rounded">
-                                <div class="language-bash rounded" data-theme="auto">
-                                    <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">
-                                        curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/setup.sh | sudo bash
-                                    </code>
-                                </div>
-                            </div>
-                            
+                        <div class="tab-content">                            
                             <div class="tab-panel rounded">
                                 <div class="language-bash rounded" data-theme="auto">
                                     <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">
                                         curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/docker-compose.yml -o docker-compose.yml && docker compose --profile gulp --profile gui up -d
                                     </code>
                                 </div>
+                                <p>
+                                    <small>For more in-depth setup instructions please refer to the <a href="https://github.com/mentat-is/gulp/wiki/install_docker#run-with-docker-compose">installation guide.</a></small>
+                                </p>
                             </div>
 
                             <div class="tab-panel rounded">
@@ -241,6 +236,13 @@
                                         docker run -d -p 8080:8080 mentatis/gulp-core
                                     </code>
                                 </div>
+                                <p>
+                                    <small>This only installs gulp-core! For more in-depth setup instructions please refer to the <a href="https://github.com/mentat-is/gulp/wiki/install_docker">installation guide.</a></small>
+                                </p>
+                            </div>
+
+                            <div class="tab-panel rounded">
+                                <p class="bordered rounded">For the dev installation take a look at our <a href="https://github.com/mentat-is/gulp/wiki/install_dev">docs</a>!</p>
                             </div>
                         </div>
                     </div>

@@ -222,7 +222,9 @@
                             <div class="tab-panel rounded">
                                 <div class="language-bash rounded" data-theme="auto">
                                     <code data-placement="bottom" onclick="navigator.clipboard.writeText(this.innerText); this.setAttribute('data-tooltip', 'copied'); setTimeout(()=>{ this.removeAttribute('data-tooltip'); }, 3000);" class="features">
-                                        curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/docker-compose.yml -o docker-compose.yml && docker compose --profile gui up -d
+                                        curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/.env -o .env &&
+                                        curl https://raw.githubusercontent.com/mentat-is/gulp/refs/heads/develop/docker-compose.yml -o docker-compose.yml &&
+                                        docker compose --profile gui up -d
                                     </code>
                                 </div>
                                 <p>
